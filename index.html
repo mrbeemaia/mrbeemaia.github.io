@@ -126,38 +126,6 @@
             width: 200px;
         }
 
-        .curriculum-controls {
-            margin-bottom: 20px;
-            padding: 15px;
-            background-color: #f8f8f8;
-            border: 1px solid #ddd;
-        }
-
-        .control-row {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-
-        .control-row label {
-            margin-right: 10px;
-            font-weight: bold;
-            min-width: 120px;
-        }
-
-        .control-row select, .control-row input {
-            margin-right: 20px;
-            padding: 4px 8px;
-            border: 1px solid #ccc;
-        }
-
-        .curriculum-info {
-            margin: 20px 0;
-            padding: 10px;
-            background-color: #fff;
-            border-left: 4px solid #0066cc;
-        }
-
         .courses-table {
             width: 100%;
             border-collapse: collapse;
@@ -195,6 +163,14 @@
 
         .status-enrolled {
             color: #ff6600;
+        }
+
+        .status-reprovado {
+            color: #cc0000;
+        }
+
+        .status-nao-avaliado {
+            color: #666666;
         }
 
         .link {
@@ -369,43 +345,6 @@
         </div>
 
         <div class="section">
-            <h2>Visualizar</h2>
-            <div class="curriculum-controls">
-                <div class="control-row">
-                    <label>Plano Curricular:</label>
-                    <select>
-                        <option>Plano curricular mais recente</option>
-                    </select>
-                </div>
-                <div class="control-row">
-                    <label>Visualizar:</label>
-                    <select>
-                        <option>Todos</option>
-                    </select>
-                </div>
-                <div class="control-row">
-                    <label>Tipo de inscrições:</label>
-                    <select>
-                        <option>Aprovado/Inscrito</option>
-                    </select>
-                </div>
-                <div class="control-row">
-                    <label>Organizar por:</label>
-                    <input type="radio" name="organize" checked> Grupos
-                    <input type="radio" name="organize"> Anos Lectivos
-                </div>
-                <div class="control-row">
-                    <label>Detalhado:</label>
-                    <input type="radio" name="detailed"> Sim
-                    <input type="radio" name="detailed" checked> Não
-                </div>
-            </div>
-
-            <div class="curriculum-info">
-                <strong>Plano Curricular:</strong> Licenciatura Bolonha em Engenharia Naval e Oceânica - LENO 2021<br>
-                <strong>Data de Início:</strong> 28.08.2023
-            </div>
-
             <div style="background-color: #fff8dc; padding: 10px; margin: 20px 0;">
                 <strong>LENO 2021</strong>
             </div>
@@ -414,10 +353,10 @@
                 <thead>
                     <tr>
                         <th>1º Ciclo m(180.0), c(24.0), M(183.0)</th>
+                        <th>Aprovado/Reprovado</th>
                         <th>Nota</th>
                         <th>Peso</th>
                         <th>ECTS</th>
-                        <th></th>
                         <th></th>
                         <th></th>
                         <th></th>
@@ -425,153 +364,288 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <!-- 2023/2024, 1º semestre -->
                     <tr class="course-group">
-                        <td colspan="9"><strong>Formação Fundamental m(60.0), c(12.0), M(60.0)</strong></td>
+                        <td colspan="9" style="background-color: #fff8dc; font-weight: bold;">2023/2024, 1º semestre</td>
                     </tr>
                     <tr class="course-row">
-                        <td><a href="#" class="link">N9 - Química Geral</a></td>
+                        <td><a href="#" class="link">Álgebra Linear</a></td>
+                        <td><span class="status-reprovado">Reprovado (EN)</span></td>
+                        <td>RE</td>
                         <td>-</td>
-                        <td>-</td>
-                        <td><span class="status-approved">Aprovado (EN)</span></td>
-                        <td>13</td>
                         <td>6.0</td>
                         <td>6.0</td>
                         <td>EN</td>
+                        <td>-</td>
                         <td><a href="#" class="link">Estatísticas</a></td>
                     </tr>
                     <tr class="course-row">
-                        <td><a href="#" class="link">Fundamentos da Programação</a></td>
+                        <td><a href="#" class="link">Cálculo Diferencial e Integral I</a></td>
+                        <td><span class="status-reprovado">Reprovado (EN)</span></td>
+                        <td>RE</td>
                         <td>-</td>
-                        <td>-</td>
-                        <td><span class="status-approved">Aprovado (EN)</span></td>
-                        <td>15</td>
                         <td>6.0</td>
                         <td>6.0</td>
                         <td>EN</td>
+                        <td>-</td>
                         <td><a href="#" class="link">Estatísticas</a></td>
-                    </tr>
-                    <tr class="course-row">
-                        <td><a href="#" class="link">Introdução a Mecânica Quântica</a></td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td><span class="status-enrolled">Inscrito (EN)</span></td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>3.0</td>
-                        <td>-</td>
-                        <td></td>
-                    </tr>
-                    <tr class="course-row">
-                        <td><a href="#" class="link">0558 - Relatividade</a></td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td><span class="status-enrolled">Inscrito (EN)</span></td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>3.0</td>
-                        <td>-</td>
-                        <td></td>
-                    </tr>
-                    <tr class="course-group">
-                        <td colspan="9"><strong>Área Principal m(87.0), c(9.0), M(87.0)</strong></td>
                     </tr>
                     <tr class="course-row">
                         <td><a href="#" class="link">Desenho de Construção Naval</a></td>
-                        <td>-</td>
-                        <td>-</td>
                         <td><span class="status-approved">Aprovado (EN)</span></td>
                         <td>15</td>
+                        <td>-</td>
                         <td>6.0</td>
                         <td>6.0</td>
                         <td>EN</td>
+                        <td>-</td>
+                        <td><a href="#" class="link">Estatísticas</a></td>
+                    </tr>
+                    <tr class="course-row">
+                        <td><a href="#" class="link">Gestão</a></td>
+                        <td><span class="status-reprovado">Reprovado (EN)</span></td>
+                        <td>RE</td>
+                        <td>-</td>
+                        <td>3.0</td>
+                        <td>3.0</td>
+                        <td>EN</td>
+                        <td>-</td>
                         <td><a href="#" class="link">Estatísticas</a></td>
                     </tr>
                     <tr class="course-row">
                         <td><a href="#" class="link">Introdução à Engenharia Naval e Oceânica</a></td>
-                        <td>-</td>
-                        <td>-</td>
                         <td><span class="status-approved">Aprovado (EN)</span></td>
                         <td>13</td>
+                        <td>-</td>
                         <td>3.0</td>
                         <td>3.0</td>
                         <td>EN</td>
+                        <td>-</td>
                         <td><a href="#" class="link">Estatísticas</a></td>
                     </tr>
                     <tr class="course-row">
+                        <td><a href="#" class="link">N9 - Química Geral</a></td>
+                        <td><span class="status-approved">Aprovado (EN)</span></td>
+                        <td>13</td>
+                        <td>-</td>
+                        <td>6.0</td>
+                        <td>6.0</td>
+                        <td>EN</td>
+                        <td>-</td>
+                        <td><a href="#" class="link">Estatísticas</a></td>
+                    </tr>
+
+                    <!-- 2023/2024, 2º semestre -->
+                    <tr class="course-group">
+                        <td colspan="9" style="background-color: #fff8dc; font-weight: bold;">2023/2024, 2º semestre</td>
+                    </tr>
+                    <tr class="course-row">
+                        <td><a href="#" class="link">Cálculo Diferencial e Integral II</a></td>
+                        <td><span class="status-reprovado">Reprovado (EN)</span></td>
+                        <td>RE</td>
+                        <td>-</td>
+                        <td>6.0</td>
+                        <td>6.0</td>
+                        <td>EN</td>
+                        <td>-</td>
+                        <td><a href="#" class="link">Estatísticas</a></td>
+                    </tr>
+                    <tr class="course-row">
+                        <td><a href="#" class="link">Ciência de Materiais</a></td>
+                        <td><span class="status-reprovado">Reprovado (EN)</span></td>
+                        <td>RE</td>
+                        <td>-</td>
+                        <td>6.0</td>
+                        <td>6.0</td>
+                        <td>EN</td>
+                        <td>-</td>
+                        <td><a href="#" class="link">Estatísticas</a></td>
+                    </tr>
+                    <tr class="course-row">
+                        <td><a href="#" class="link">Fundamentos da Programação</a></td>
+                        <td><span class="status-approved">Aprovado (EN)</span></td>
+                        <td>15</td>
+                        <td>-</td>
+                        <td>6.0</td>
+                        <td>6.0</td>
+                        <td>EN</td>
+                        <td>-</td>
+                        <td><a href="#" class="link">Estatísticas</a></td>
+                    </tr>
+                    <tr class="course-row">
+                        <td><a href="#" class="link">HASS I (Introdução à Economia)</a></td>
+                        <td><span class="status-approved">Aprovado (EN)</span></td>
+                        <td>13</td>
+                        <td>Opcional</td>
+                        <td>3.0</td>
+                        <td>3.0</td>
+                        <td>EN</td>
+                        <td>-</td>
+                        <td><a href="#" class="link">Estatísticas</a></td>
+                    </tr>
+                    <tr class="course-row">
+                        <td><a href="#" class="link">Mecânica Aplicada I</a></td>
+                        <td><span class="status-reprovado">Reprovado (EN)</span></td>
+                        <td>RE</td>
+                        <td>-</td>
+                        <td>6.0</td>
+                        <td>6.0</td>
+                        <td>EN</td>
+                        <td>-</td>
+                        <td><a href="#" class="link">Estatísticas</a></td>
+                    </tr>
+
+                    <!-- 2024/2025, 1º semestre -->
+                    <tr class="course-group">
+                        <td colspan="9" style="background-color: #fff8dc; font-weight: bold;">2024/2025, 1º semestre</td>
+                    </tr>
+                    <tr class="course-row">
+                        <td><a href="#" class="link">Álgebra Linear</a></td>
+                        <td><span class="status-approved">Aprovado (EN)</span></td>
+                        <td>15</td>
+                        <td>-</td>
+                        <td>6.0</td>
+                        <td>6.0</td>
+                        <td>EN</td>
+                        <td>-</td>
+                        <td><a href="#" class="link">Estatísticas</a></td>
+                    </tr>
+                    <tr class="course-row">
+                        <td><a href="#" class="link">Cálculo Diferencial e Integral I</a></td>
+                        <td><span class="status-approved">Aprovado (EN)</span></td>
+                        <td>14</td>
+                        <td>-</td>
+                        <td>6.0</td>
+                        <td>6.0</td>
+                        <td>EN</td>
+                        <td>-</td>
+                        <td><a href="#" class="link">Estatísticas</a></td>
+                    </tr>
+                    <tr class="course-row">
+                        <td><a href="#" class="link">Eletromagnetismo e Óptica</a></td>
+                        <td><span class="status-approved">Aprovado (EN)</span></td>
+                        <td>12</td>
+                        <td>-</td>
+                        <td>6.0</td>
+                        <td>6.0</td>
+                        <td>EN</td>
+                        <td>-</td>
+                        <td><a href="#" class="link">Estatísticas</a></td>
+                    </tr>
+                    <tr class="course-row">
+                        <td><a href="#" class="link">Gestão</a></td>
+                        <td><span class="status-approved">Aprovado (EN)</span></td>
+                        <td>14</td>
+                        <td>-</td>
+                        <td>3.0</td>
+                        <td>3.0</td>
+                        <td>EN</td>
+                        <td>-</td>
+                        <td><a href="#" class="link">Estatísticas</a></td>
+                    </tr>
+                    <tr class="course-row">
+                        <td><a href="#" class="link">Matemática Computacional</a></td>
+                        <td><span class="status-approved">Aprovado (EN)</span></td>
+                        <td>11</td>
+                        <td>-</td>
+                        <td>6.0</td>
+                        <td>6.0</td>
+                        <td>EN</td>
+                        <td>-</td>
+                        <td><a href="#" class="link">Estatísticas</a></td>
+                    </tr>
+                    <tr class="course-row">
+                        <td><a href="#" class="link">Mecânica dos Materiais</a></td>
+                        <td><span class="status-approved">Aprovado (EN)</span></td>
+                        <td>10</td>
+                        <td>-</td>
+                        <td>6.0</td>
+                        <td>6.0</td>
+                        <td>EN</td>
+                        <td>-</td>
+                        <td><a href="#" class="link">Estatísticas</a></td>
+                    </tr>
+
+                    <!-- 2024/2025, 2º semestre -->
+                    <tr class="course-group">
+                        <td colspan="9" style="background-color: #fff8dc; font-weight: bold;">2024/2025, 2º semestre</td>
+                    </tr>
+                    <tr class="course-row">
                         <td><a href="#" class="link">Arquitectura Naval</a></td>
-                        <td>-</td>
-                        <td>-</td>
                         <td><span class="status-enrolled">Inscrito (EN)</span></td>
                         <td>-</td>
                         <td>-</td>
+                        <td>-</td>
                         <td>6.0</td>
+                        <td>-</td>
                         <td>-</td>
                         <td></td>
                     </tr>
                     <tr class="course-row">
                         <td><a href="#" class="link">Ciência de Materiais</a></td>
-                        <td>-</td>
-                        <td>-</td>
                         <td><span class="status-enrolled">Inscrito (EN)</span></td>
                         <td>-</td>
                         <td>-</td>
+                        <td>-</td>
                         <td>6.0</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td></td>
+                    </tr>
+                    <tr class="course-row">
+                        <td><a href="#" class="link">Introdução à Mecânica Quântica</a></td>
+                        <td><span class="status-enrolled">Inscrito (EN)</span></td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>3.0</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td></td>
+                    </tr>
+                    <tr class="course-row">
+                        <td><a href="#" class="link">Mecânica Aplicada I</a></td>
+                        <td><span class="status-approved">Aprovado (EN)</span></td>
+                        <td>10</td>
+                        <td>-</td>
+                        <td>6.0</td>
+                        <td>6.0</td>
+                        <td>EN</td>
+                        <td>-</td>
+                        <td><a href="#" class="link">Estatísticas</a></td>
+                    </tr>
+                    <tr class="course-row">
+                        <td><a href="#" class="link">0558 - Relatividade</a></td>
+                        <td><span class="status-enrolled">Inscrito (EN)</span></td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>3.0</td>
+                        <td>-</td>
                         <td>-</td>
                         <td></td>
                     </tr>
                     <tr class="course-row">
                         <td><a href="#" class="link">Tecnologia de Construção Naval</a></td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td><span class="status-enrolled">Inscrito (EN)</span></td>
+                        <td><span class="status-approved">Aprovado (EN)</span></td>
+                        <td>12</td>
                         <td>-</td>
                         <td>-</td>
                         <td>6.0</td>
+                        <td>-</td>
                         <td>-</td>
                         <td></td>
                     </tr>
                     <tr class="course-row">
                         <td><a href="#" class="link">Termodinâmica I</a></td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td><span class="status-enrolled">Inscrito (EN)</span></td>
+                        <td><span class="status-reprovado">Reprovado (EN)</span></td>
+                        <td>RE</td>
                         <td>-</td>
                         <td>-</td>
                         <td>6.0</td>
                         <td>-</td>
-                        <td></td>
-                    </tr>
-                    <tr class="course-group">
-                        <td colspan="9"><strong>Humanidades, Artes e Ciências Sociais m(9.0), c(3.0), M(12.0)</strong></td>
-                    </tr>
-                    <tr class="course-row">
-                        <td colspan="9"><strong>- Gestão m(3.0), c(0.0), M(3.0)</strong></td>
-                    </tr>
-                    <tr class="course-row">
-                        <td colspan="9"><strong>Opções H.A.C.S. c(3.0)</strong></td>
-                    </tr>
-                    <tr class="course-row">
-                        <td><a href="#" class="link">HASS I (Introdução à Economia)</a></td>
                         <td>-</td>
-                        <td>Opcional</td>
-                        <td><span class="status-approved">Aprovado (EN)</span></td>
-                        <td>13</td>
-                        <td>3.0</td>
-                        <td>3.0</td>
-                        <td>EN</td>
-                        <td><a href="#" class="link">Estatísticas</a></td>
-                    </tr>
-                    <tr class="course-group">
-                        <td colspan="9"><strong>Pré-Major c(0.0)</strong></td>
-                    </tr>
-                    <tr class="course-group">
-                        <td colspan="9"><strong>Projeto Integrador m(12.0), c(0.0), M(12.0)</strong></td>
-                    </tr>
-                    <tr class="course-group">
-                        <td colspan="9"><strong>Extra-Curriculares</strong></td>
-                    </tr>
-                    <tr class="course-group">
-                        <td colspan="9"><strong>Propedêuticas</strong></td>
+                        <td></td>
                     </tr>
                 </tbody>
             </table>
@@ -599,21 +673,28 @@
                             <div class="bar-label">2023/2024 - 1º sem</div>
                             <div class="bar-container">
                                 <div class="bar-enrolled" style="width: 100%;"></div>
-                                <div class="bar-approved" style="width: 60%;"></div>
+                                <div class="bar-approved" style="width: 50%;"></div>
                             </div>
                         </div>
                         <div class="bar-row">
                             <div class="bar-label">2023/2024 - 2º sem</div>
                             <div class="bar-container">
                                 <div class="bar-enrolled" style="width: 85%;"></div>
-                                <div class="bar-approved" style="width: 30%;"></div>
+                                <div class="bar-approved" style="width: 40%;"></div>
                             </div>
                         </div>
                         <div class="bar-row">
                             <div class="bar-label">2024/2025 - 1º sem</div>
                             <div class="bar-container">
-                                <div class="bar-enrolled" style="width: 95%;"></div>
-                                <div class="bar-approved" style="width: 0%;"></div>
+                                <div class="bar-enrolled" style="width: 100%;"></div>
+                                <div class="bar-approved" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                        <div class="bar-row">
+                            <div class="bar-label">2024/2025 - 2º sem</div>
+                            <div class="bar-container">
+                                <div class="bar-enrolled" style="width: 100%;"></div>
+                                <div class="bar-approved" style="width: 29%;"></div>
                             </div>
                         </div>
                     </div>
