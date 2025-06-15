@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Fenix Curriculum Redirect",
+  "version": "1.0",
+  "description": "Redirect Fenix curriculum page to a custom version.",
+  "permissions": ["webRequest", "webRequestBlocking", "declarativeNetRequest", "storage"],
+  "host_permissions": ["https://fenix.tecnico.ulisboa.pt/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Curriculum Redirect"
+  }
+}
