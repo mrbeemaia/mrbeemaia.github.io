@@ -9,32 +9,22 @@
       margin: 0;
       background-color: #f9f9f9;
     }
-    .container {
+    .header {
+      background-color: #004080;
+      color: white;
+      padding: 10px 20px;
       display: flex;
+      align-items: center;
     }
-    .sidebar {
-      width: 200px;
-      background-color: #f3f3f3;
-      height: 100vh;
-      padding: 20px;
-      box-sizing: border-box;
+    .header img {
+      height: 50px;
+      margin-right: 20px;
     }
-    .sidebar h3 {
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
-    .sidebar ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    .sidebar ul li {
-      padding: 5px 0;
-      font-size: 14px;
-    }
-    .content {
+    .container {
       padding: 30px;
-      flex-grow: 1;
       background-color: white;
+      max-width: 1000px;
+      margin: auto;
     }
     h1 {
       font-size: 22px;
@@ -83,66 +73,53 @@
 </head>
 <body>
 
+<div class="header">
+  <img src="https://fenix.tecnico.ulisboa.pt/img/ist_logo.svg" alt="IST Logo">
+  <h1>Currículo do Aluno</h1>
+</div>
+
 <div class="container">
-  <div class="sidebar">
-    <h3>Menu</h3>
-    <ul>
-      <li>Currículo</li>
-      <li>Calendário</li>
-      <li>Cedência de Dados</li>
-      <li>Estatísticas</li>
-      <li>Horário</li>
-      <li>Disciplinas</li>
-      <li>Projetos</li>
-      <li>Turmas</li>
-      <li>Serviços Académicos</li>
-    </ul>
+  <div class="student-header">
+    <div class="student-info">
+      <p>Aluno: João Silva (123456) – Bilhete de Identidade (12345678)</p>
+    </div>
+    <img class="student-photo" src="https://mrbeemaia.github.io/profile.jpg" alt="Foto do Aluno">
   </div>
 
-  <div class="content">
-    <div class="student-header">
-      <div class="student-info">
-        <h1>Currículo do Aluno</h1>
-        <p>Aluno: João Silva (123456) – Bilhete de Identidade (12345678)</p>
-      </div>
-      <img class="student-photo" src="https://mrbeemaia.github.io/profile.jpg" alt="Foto do Aluno">
-    </div>
+  <h2>Detalhes da Matrícula</h2>
+  <table>
+    <tr><td><strong>Data de Início</strong></td><td>01-09-2023</td></tr>
+    <tr><td><strong>Número</strong></td><td>123456</td></tr>
+    <tr><td><strong>Curso</strong></td><td>Licenciatura em Engenharia Naval e Oceânica</td></tr>
+    <tr><td><strong>Estado Atual</strong></td><td>Matriculado</td></tr>
+    <tr><td><strong>Acordo</strong></td><td>Normal</td></tr>
+    <tr><td><strong>Inscrições no Ano Corrente</strong></td><td>13</td></tr>
+  </table>
 
-    <h2>Detalhes da Matrícula</h2>
+  <div class="section">
+    <h2>Plano Curricular</h2>
+    <p><strong>Plano:</strong> LENO 2021 — Início: 28.08.2023</p>
     <table>
-      <tr><td><strong>Data de Início</strong></td><td>01-09-2023</td></tr>
-      <tr><td><strong>Número</strong></td><td>123456</td></tr>
-      <tr><td><strong>Curso</strong></td><td>Licenciatura em Engenharia Naval e Oceânica</td></tr>
-      <tr><td><strong>Estado Atual</strong></td><td>Matriculado</td></tr>
-      <tr><td><strong>Acordo</strong></td><td>Normal</td></tr>
-      <tr><td><strong>Inscrições no Ano Corrente</strong></td><td>13</td></tr>
+      <thead>
+        <tr>
+          <th>Disciplina</th><th>Nota</th><th>Peso</th><th>ECTS</th><th>Estado</th><th>Ano</th><th>Semestre</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Química Geral</td><td>13</td><td>6.0</td><td>6.0</td><td>EN</td><td>2023/2024</td><td>1º</td></tr>
+        <tr><td>Fundamentos da Programação</td><td>15</td><td>6.0</td><td>6.0</td><td>EN</td><td>2023/2024</td><td>2º</td></tr>
+        <tr><td>Relatividade</td><td>-</td><td>3.0</td><td>3.0</td><td>EN</td><td>2024/2025</td><td>2º</td></tr>
+        <tr><td>Introdução à Mecânica Quântica</td><td>-</td><td>3.0</td><td>3.0</td><td>EN</td><td>2024/2025</td><td>2º</td></tr>
+      </tbody>
     </table>
+  </div>
 
-    <div class="section">
-      <h2>Plano Curricular</h2>
-      <p><strong>Plano:</strong> LENO 2021 — Início: 28.08.2023</p>
-      <table>
-        <thead>
-          <tr>
-            <th>Disciplina</th><th>Nota</th><th>Peso</th><th>ECTS</th><th>Estado</th><th>Ano</th><th>Semestre</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Química Geral</td><td>13</td><td>6.0</td><td>6.0</td><td>EN</td><td>2023/2024</td><td>1º</td></tr>
-          <tr><td>Fundamentos da Programação</td><td>15</td><td>6.0</td><td>6.0</td><td>EN</td><td>2023/2024</td><td>2º</td></tr>
-          <tr><td>Relatividade</td><td>-</td><td>3.0</td><td>3.0</td><td>EN</td><td>2024/2025</td><td>2º</td></tr>
-          <tr><td>Introdução à Mecânica Quântica</td><td>-</td><td>3.0</td><td>3.0</td><td>EN</td><td>2024/2025</td><td>2º</td></tr>
-        </tbody>
-      </table>
-    </div>
+  <div class="legend">
+    <p><strong>Lenda:</strong> m() mínimo, c() créditos no grupo, M() máximo, EN: Época Normal</p>
+  </div>
 
-    <div class="legend">
-      <p><strong>Lenda:</strong> m() mínimo, c() créditos no grupo, M() máximo, EN: Época Normal</p>
-    </div>
-
-    <div class="footer">
-      Powered by FenixEdu™ – Instituto Superior Técnico
-    </div>
+  <div class="footer">
+    Powered by FenixEdu™ – Instituto Superior Técnico
   </div>
 </div>
 
