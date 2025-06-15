@@ -1,36 +1,55 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Custom Curriculum Page</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 40px;
-        line-height: 1.6;
-      }
-      .section {
-        height: 1000px;
-        background-color: #f4f4f4;
-        margin-bottom: 40px;
-        padding: 20px;
-        border-radius: 8px;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Custom Curriculum Page</h1>
-    <p>This page simulates a curriculum view. Scroll to explore more content.</p>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Currículo do Aluno</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; color: #333; }
+    header { display: flex; align-items: center; margin-bottom: 20px; }
+    header img { border-radius: 50%; width: 100px; height: 100px; margin-right: 20px; }
+    h1 { margin: 0; }
+    .details, .grades { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+    .details td { padding: 8px; border: 1px solid #ddd; }
+    .section-header { background: #f4f4f4; padding: 10px; margin: 20px 0 10px; font-weight: bold; }
+    select { padding: 5px; margin-bottom: 10px; }
+    .grades th, .grades td { padding: 8px; border: 1px solid #ddd; }
+    .grades th { background: #eee; }
+    .footer { margin-top: 40px; color: #777; font-size: 0.9em; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://mrbeemaia.github.io/profile.jpg" alt="Student Photo">
+    <h1>Currículo do Aluno ― João Silva (123456)</h1>
+  </header>
 
-    <div class="section">
-      <h2>Course List</h2>
-      <p>Example course A - Completed</p>
-      <p>Example course B - Ongoing</p>
-      <p>Example course C - Pending</p>
-    </div>
+  <table class="details">
+    <tr><td><strong>Data de Início</strong></td><td>01-09-2023</td></tr>
+    <tr><td><strong>Número</strong></td><td>123456</td></tr>
+    <tr><td><strong>Curso</strong></td><td>Engenharia Naval e Oceânica</td></tr>
+    <tr><td><strong>Estado Atual</strong></td><td>Matriculado</td></tr>
+  </table>
 
-    <div class="section">
-      <h2>Additional Information</h2>
-      <p>This section contains additional academic records.</p>
-    </div>
-  </body>
+  <div class="section-header">Visualizar</div>
+  <select>
+    <option>Plano curricular mais recente</option>
+  </select>
+
+  <table class="grades">
+    <thead>
+      <tr>
+        <th>Disciplina</th><th>Nota</th><th>ECTS</th><th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Química Geral</td><td>13</td><td>6.0</td><td>Aprovado</td></tr>
+      <tr><td>Fundamentos da Programação</td><td>15</td><td>6.0</td><td>Aprovado</td></tr>
+      <tr><td>Relatividade</td><td>–</td><td>3.0</td><td>Inscrito</td></tr>
+    </tbody>
+  </table>
+
+  <div class="footer">
+    Powered by FenixEdu™ — Instituto Superior Técnico
+  </div>
+</body>
 </html>
