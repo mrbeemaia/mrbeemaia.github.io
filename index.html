@@ -198,80 +198,6 @@
             margin: 5px 0;
             font-size: 12px;
         }
-
-        .chart-section {
-            margin-top: 30px;
-        }
-
-        .chart-container {
-            background-color: #fff;
-            padding: 20px;
-            border: 1px solid #ddd;
-            margin-top: 20px;
-        }
-
-        .chart-title {
-            text-align: center;
-            font-size: 16px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-
-        .chart {
-            width: 100%;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .bar-chart {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .bar-row {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .bar-label {
-            width: 120px;
-            font-size: 12px;
-            text-align: right;
-        }
-
-        .bar-container {
-            flex: 1;
-            height: 30px;
-            background-color: #f0f0f0;
-            position: relative;
-            border: 1px solid #ddd;
-        }
-
-        .bar-enrolled {
-            height: 100%;
-            background-color: #87ceeb;
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-
-        .bar-approved {
-            height: 100%;
-            background-color: #ffd699;
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-
-        .chart-axis {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 5px;
-            font-size: 10px;
-            color: #666;
-        }
     </style>
 </head>
 <body>
@@ -606,7 +532,7 @@
                     <tr class="course-row">
                         <td><a href="#" class="link">Mecânica Aplicada I</a></td>
                         <td><span class="status-approved">Aprovado (EN)</span></td>
-                        <td>10</td>
+                        <td>14</td>
                         <td>-</td>
                         <td>6.0</td>
                         <td>6.0</td>
@@ -638,14 +564,14 @@
                     </tr>
                     <tr class="course-row">
                         <td><a href="#" class="link">Termodinâmica I</a></td>
-                        <td><span class="status-reprovado">Reprovado (EN)</span></td>
-                        <td>RE</td>
-                        <td>-</td>
+                        <td><span class="status-approved">Aprovado (EN)</span></td>
+                        <td>13</td>
                         <td>-</td>
                         <td>6.0</td>
+                        <td>6.0</td>
+                        <td>EN</td>
                         <td>-</td>
-                        <td>-</td>
-                        <td></td>
+                        <td><a href="#" class="link">Estatísticas</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -662,55 +588,6 @@
             <div class="legend-item"><strong>EE:</strong> Época Especial</div>
             <div class="legend-item"><strong>MN:</strong> Melhoria de Nota</div>
             <div class="legend-item"><strong>EN:</strong> Época Normal</div>
-        </div>
-
-        <div class="chart-section">
-            <div class="chart-container">
-                <div class="chart-title">Cadeiras Inscritas/Aprovadas</div>
-                <div class="chart">
-                    <div class="bar-chart">
-                        <div class="bar-row">
-                            <div class="bar-label">2023/2024 - 1º sem</div>
-                            <div class="bar-container">
-                                <div class="bar-enrolled" style="width: 100%;"></div>
-                                <div class="bar-approved" style="width: 50%;"></div>
-                            </div>
-                        </div>
-                        <div class="bar-row">
-                            <div class="bar-label">2023/2024 - 2º sem</div>
-                            <div class="bar-container">
-                                <div class="bar-enrolled" style="width: 85%;"></div>
-                                <div class="bar-approved" style="width: 40%;"></div>
-                            </div>
-                        </div>
-                        <div class="bar-row">
-                            <div class="bar-label">2024/2025 - 1º sem</div>
-                            <div class="bar-container">
-                                <div class="bar-enrolled" style="width: 100%;"></div>
-                                <div class="bar-approved" style="width: 100%;"></div>
-                            </div>
-                        </div>
-                        <div class="bar-row">
-                            <div class="bar-label">2024/2025 - 2º sem</div>
-                            <div class="bar-container">
-                                <div class="bar-enrolled" style="width: 100%;"></div>
-                                <div class="bar-approved" style="width: 29%;"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="chart-axis">
-                        <span>0</span>
-                        <span>1</span>
-                        <span>2</span>
-                        <span>3</span>
-                        <span>4</span>
-                        <span>5</span>
-                        <span>6</span>
-                        <span>7</span>
-                    </div>
-                    <div style="text-align: right; font-size: 10px; margin-top: 5px;">Nº de Cadeiras</div>
-                </div>
-            </div>
         </div>
     </div>
 </body>
