@@ -1,0 +1,84 @@
+<!-- Página IMQ modificada com novo link Excel -->
+<!DOCTYPE html>
+<html dir="ltr" lang="pt_PT">
+<head> 
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="pt" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5">
+  <title>Testes · Introdução à Mecânica Quântica</title>
+  <link href="https://fenix.tecnico.ulisboa.pt/cms/assets/fenixedu-learning-theme/117a7569aa22b88e/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fenix.tecnico.ulisboa.pt/cms/assets/fenixedu-learning-theme/117a7569aa22b88e/css/publicPages.css" rel="stylesheet">
+  <script src="https://fenix.tecnico.ulisboa.pt/cms/assets/fenixedu-learning-theme/117a7569aa22b88e/js/jquery-2.1.1.min.js"></script>
+</head>
+
+<body>
+  <div id="headcounter">
+    <div class="container">
+      <div class="row" style="padding-top:50px; padding-bottom:25px;">
+        <div class="col-sm-9">
+          <div><a href="http://tecnico.ulisboa.pt" target="_blank"><img class="logo" src="/api/bennu-portal/configuration/logo" /></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9">
+        <h2 style="font-weight:300;" class="site-header">
+          <a href="https://fenix.tecnico.ulisboa.pt/disciplinas/IMQ236/2024-2025/2-semestre">Introdução à Mecânica Quântica</a>
+        </h2>
+      </div>
+      <div class="col-sm-3 hidden-xs">
+        <div style="margin-top:25px;">
+          <img src="https://fenix.tecnico.ulisboa.pt/cms/assets/fenixedu-learning-theme/117a7569aa22b88e/images/icon_global.svg" width="13" height="13" style="margin-bottom:2px;margin-right:10px"/>
+          <a class="locale-changer active" onclick="setLang('pt_PT')">pt</a>
+          <a class="locale-changer" onclick="setLang('en_GB')">en</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <main class="row">
+      <div class="col-sm-9 main-content" id="content-block">
+        <h3 style="font-weight:300; margin-bottom:22px; margin-top:0px;"></h3>
+        <div>
+          <h4>Notas</h4>
+          <ul>
+            <li><a href="https://mrbeemaia.github.io/notasmap45IMQ.xls">Download de notasmap45IMQ.xls</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <nav class="col-sm-3" style="padding-left:0px; padding-top:60px; z-index:999; margin-left:-1px;">
+        <!-- Aqui permanece o menu lateral tal como está no original -->
+      </nav>
+    </main>
+  </div>
+
+  <footer class="container" style="border-top:1px solid #ddd; margin-top:30px">
+    <div class="col-sm-9">
+      <a class="brand" href="http://fenixedu.org"><img width="150" height="34" src="https://fenix.tecnico.ulisboa.pt/cms/assets/fenixedu-learning-theme/117a7569aa22b88e/images/logo_fenixedu_footer.svg" alt="Powered by FenixEdu"></a>
+    </div>
+    <div class="col-sm-3" style="color:#888"><span style="padding-left:15px;">© Instituto Superior Técnico</span></div>
+  </footer>
+
+  <script>
+    (function() {
+      $('.menuFolder:not(.open)>.children').hide();
+      $('.menuFolder>p').click(function(event){
+        $(this).parent().toggleClass('open');
+        $(this).parent().children('.children').slideToggle();
+        event.preventDefault();
+      });
+      setLang = function(l){
+        $.post('/api/bennu-core/profile/locale/' + l.replace('_', '-')).always(function(){location.reload();})
+      }
+    })();
+  </script>
+  <script src="https://fenix.tecnico.ulisboa.pt/cms/assets/fenixedu-learning-theme/117a7569aa22b88e/js/bootstrap.min.js" async></script>
+</body>
+</html>
