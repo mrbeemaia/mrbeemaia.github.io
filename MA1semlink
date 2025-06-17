@@ -1,0 +1,2241 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="pt_PT">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Language" content="pt" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Description" content="FenixEdu™ is an open-source academic information platform." />
+    <meta name="Keywords" content="FenixEdu, open-source, academic, information, platform, academic administration, higher education, e-learning" />
+    <meta name="Language" content="pt_PT" />
+    <meta name="Author" content="FenixEdu" />
+    <meta name="Email" content="hello@fenixedu.org" />
+    <meta name="Copyright" content="Técnico Lisboa - Instituto Superior Técnico" />
+    <meta name="Distribution" content="Global" />
+    <meta name="Rating" content="General" />
+
+    <!-- OpenGraph Specific Metas -->
+    <meta property="og:title" content="FenixEdu™" />
+    <meta property="og:type" content="application" />
+    <meta property="og:url" content="http://www.fenixedu.org" />
+    <meta property="og:site_name" content="FenixEdu" />
+    <meta property="og:description" content="FenixEdu Learning is an open-source academic information platform." />
+    <meta property="fb:profile_id" content="379238245509413" />
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5">
+
+            <title>Notas · Mecânica Aplicada I</title>
+    
+    <link href="https://fenix.tecnico.ulisboa.pt/cms/assets/fenixedu-learning-theme/117a7569aa22b88e/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fenix.tecnico.ulisboa.pt/cms/assets/fenixedu-learning-theme/117a7569aa22b88e/css/publicPages.css" rel="stylesheet">
+    <script src="https://fenix.tecnico.ulisboa.pt/cms/assets/fenixedu-learning-theme/117a7569aa22b88e/js/jquery-2.1.1.min.js" type="text/javascript"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://fenix.tecnico.ulisboa.pt/cms/assets/fenixedu-learning-theme/117a7569aa22b88e/js/html5shiv.js"></script>
+      <script src="https://fenix.tecnico.ulisboa.pt/cms/assets/fenixedu-learning-theme/117a7569aa22b88e/js/respond.min.js"></script>
+    <![endif]-->
+
+    
+    <!-- Header -->
+    <meta name="robots" content="noindex" />
+<meta name="googlebot" content="noindex" />
+    <!-- End Header -->
+    
+    <link rel="shortcut icon" type="image/x-icon" href="/api/bennu-portal/configuration/favicon">
+  </head>
+
+  <body>
+
+        	<div id="headcounter">
+		<div class="container">
+			
+
+		<div class="row" style="padding-top:50px; padding-bottom:25px;" >
+			<div class="col-sm-9">
+        <div>
+				  <a href="http://tecnico.ulisboa.pt" target="_blank"><img class="logo" src="/api/bennu-portal/configuration/logo" /></a>
+        </div>
+			</div>
+			<div class="col-sm-3 ">
+        <div >
+	           
+        </div>
+			</div>
+		</div>
+		</div>
+	</div>
+	
+		<div class="container">
+      <div class="row">
+        <div class="col-sm-9">
+          <h2 style="font-weight:300;" class="site-header"><a href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre">Mecânica Aplicada I</a>  </h2>
+          
+            <div style="font-size:15px; color:#888; margin-top:5px; margin-bottom:15px;"><small>
+              &nbsp;</small></div>          
+        </div>
+        <div class="col-sm-3 hidden-xs">
+              <div style="margin-top: 25px;">
+                <img src="https://fenix.tecnico.ulisboa.pt/cms/assets/fenixedu-learning-theme/117a7569aa22b88e/images/icon_global.svg" width="13" height="13" style="margin-bottom:2px;margin-right:10px"/>
+                                        <a class="locale-changer active" title="português (Portugal)" onclick="setLang('pt_PT')">pt</a>
+                                        <a class="locale-changer " title="inglês (Reino Unido)" onclick="setLang('en_GB')">en</a>
+                                </div>
+        </div>
+      </div>
+	  		</div>
+	
+    <div class="container">
+
+      <main class="row">
+
+        <div class="col-sm-9 main-content" id="content-block">
+          <h3 style="font-weight:300; margin-bottom: 22px; margin-top:0px;">
+                        Notas  
+                        
+          </h3>
+          
+    
+        <p><em><strong>Informa-se que, para todos os efeitos, a informação respeitante a classificações contida nesta página não tem qualquer valor oficial.</strong></em></p>
+        <p><i>(Número de alunos: 273)</i></p>
+
+        <table class="table table-condensed table-bordered">
+            <tr>
+                <th nowrap>Username</th>
+                <th nowrap>Número</th>
+                <th nowrap>Nome</th>
+                <th nowrap>Curso</th>
+                                    				<th nowrap>
+																    Final					</th>
+	
+                                    		
+                                    		
+                                    		
+                                    		
+                                    		
+                            </tr>
+                                                            <tr>
+                    <td nowrap>ist162433</td>
+                    <td nowrap>62433</td>
+                    <td nowrap>José Cristiano de Medeiros Amaral</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>10</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist181576</td>
+                    <td nowrap>81576</td>
+                    <td nowrap>Pedro António Da Cunha Justo Campos Mendes</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>NA</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist191046</td>
+                    <td nowrap>91046</td>
+                    <td nowrap>André Sousa Lajas</td>
+                    <td nowrap>Plano Curricular de Unidades Isoladas</td>
+                                                                    <td nowrap>13</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist192960</td>
+                    <td nowrap>92960</td>
+                    <td nowrap>Rúben Rafael Graça de Oliveira</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>NA</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist196300</td>
+                    <td nowrap>96300</td>
+                    <td nowrap>Pedro Guia Lucas</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1100051</td>
+                    <td nowrap>100051</td>
+                    <td nowrap>Pedro de Almeida Seixo</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>NA</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1100215</td>
+                    <td nowrap>100215</td>
+                    <td nowrap>Lourenço Santa Clara Costa Rebelo da Silva</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>NA</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1100252</td>
+                    <td nowrap>100252</td>
+                    <td nowrap>Pedro Ferrer</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>RE</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1100525</td>
+                    <td nowrap>100525</td>
+                    <td nowrap>Henrique Marques</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>NA</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1100701</td>
+                    <td nowrap>100701</td>
+                    <td nowrap>Mateus de Figueiredo Leandro</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>NA</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1102040</td>
+                    <td nowrap>102040</td>
+                    <td nowrap>Marília Zenaida Bernardo Manuel</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>NA</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1102627</td>
+                    <td nowrap>102627</td>
+                    <td nowrap>Duarte Martinho Cabeça Godinho Cabral</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>RE</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1103411</td>
+                    <td nowrap>103411</td>
+                    <td nowrap>David Gouveia Pereira</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1103684</td>
+                    <td nowrap>103684</td>
+                    <td nowrap>Afonso de Sousa Vieira</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>RE</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1103825</td>
+                    <td nowrap>103825</td>
+                    <td nowrap>Ana Patrícia Caetano da Cruz Miguel de Oliveira</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>RE</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1103995</td>
+                    <td nowrap>103995</td>
+                    <td nowrap>Melissa Pereira de Sousa Carvalho</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>NA</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1104061</td>
+                    <td nowrap>104061</td>
+                    <td nowrap>Lewis Moisés Dos Passos Santos</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>RE</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1105961</td>
+                    <td nowrap>105961</td>
+                    <td nowrap>Gonçalo Vilarinho Nunes</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>15</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1105975</td>
+                    <td nowrap>105975</td>
+                    <td nowrap>Ricardo de Albuquerque Muñoz</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1105983</td>
+                    <td nowrap>105983</td>
+                    <td nowrap>Guilherme Alexandre Malhão Silvério Falcão</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>NA</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1106421</td>
+                    <td nowrap>106421</td>
+                    <td nowrap>Rafaela Martins Brás</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1106523</td>
+                    <td nowrap>106523</td>
+                    <td nowrap>Matheus Kappke Dias</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>13</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1106569</td>
+                    <td nowrap>106569</td>
+                    <td nowrap>Dinis Santiago Costa Fonseca Lacerda Campos</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>10</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1106620</td>
+                    <td nowrap>106620</td>
+                    <td nowrap>Henrique Agostinho Loureiro dos Santos de Oliveira</td>
+                    <td nowrap>Plano Curricular de Unidades Isoladas</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1106641</td>
+                    <td nowrap>106641</td>
+                    <td nowrap>Carolina Isabel Parreira Anes de Oliveira</td>
+                    <td nowrap>Plano Curricular de Unidades Isoladas</td>
+                                                                    <td nowrap>RE</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1106655</td>
+                    <td nowrap>106655</td>
+                    <td nowrap>Salvador Caiano da Silva de Sousa Rodrigues</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>10</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1106663</td>
+                    <td nowrap>106663</td>
+                    <td nowrap>Gonçalo São Pedro Cordeiro Leiria</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>11</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1106672</td>
+                    <td nowrap>106672</td>
+                    <td nowrap>Gustavo Manuel do Amaral Curado</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>10</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1106681</td>
+                    <td nowrap>106681</td>
+                    <td nowrap>António Gonzalez Nisa da Silva</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>13</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1106954</td>
+                    <td nowrap>106954</td>
+                    <td nowrap>Jose Cruz Gomes Ramos de Magalhaes</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>10</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1107051</td>
+                    <td nowrap>107051</td>
+                    <td nowrap>Ana Margarida Fernandes Bota</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>RE</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1107231</td>
+                    <td nowrap>107231</td>
+                    <td nowrap>Daniel Fernandes de Meneses</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>RE</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1107401</td>
+                    <td nowrap>107401</td>
+                    <td nowrap>Cleide Glória Germano Canjundo</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1107402</td>
+                    <td nowrap>107402</td>
+                    <td nowrap>Fernanda Isabel Simão Ferramenta</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>10</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1107542</td>
+                    <td nowrap>107542</td>
+                    <td nowrap>Diogo Mendes Barros</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>15</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1107562</td>
+                    <td nowrap>107562</td>
+                    <td nowrap>Miguel Lopes dos Santos</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>NA</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1107570</td>
+                    <td nowrap>107570</td>
+                    <td nowrap>Diego Lavine Amarante Querido Varela</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>RE</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1108069</td>
+                    <td nowrap>108069</td>
+                    <td nowrap>Diego Alejandro Gomez Leon</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1109289</td>
+                    <td nowrap>109289</td>
+                    <td nowrap>Salvador Maria Sanchez Rosa de Albuquerque D&#39;Orey</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>19</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1109318</td>
+                    <td nowrap>109318</td>
+                    <td nowrap>Miguel Gonçalves Dinis</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>13</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1109323</td>
+                    <td nowrap>109323</td>
+                    <td nowrap>Manuel Fernandes de Magalhães</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>10</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1109329</td>
+                    <td nowrap>109329</td>
+                    <td nowrap>Mariana Fontes Pereira</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>11</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1109341</td>
+                    <td nowrap>109341</td>
+                    <td nowrap>Vasco Alves Oliveira Onofre Castel-Branco</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>15</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1109379</td>
+                    <td nowrap>109379</td>
+                    <td nowrap>João Pedro Freitas Delfim Almeida Souto</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>13</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1109401</td>
+                    <td nowrap>109401</td>
+                    <td nowrap>João Luís Trindade Borda de Água</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>NA</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1109433</td>
+                    <td nowrap>109433</td>
+                    <td nowrap>Pedro de Oliveira Inês</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>17</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1109467</td>
+                    <td nowrap>109467</td>
+                    <td nowrap>Gonçalo Ceitil de Melo Cabral</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1109497</td>
+                    <td nowrap>109497</td>
+                    <td nowrap>Maria Benedita Silveira Duarte Lopes</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>15</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1109510</td>
+                    <td nowrap>109510</td>
+                    <td nowrap>Bernardo Maria Rodrigues de Sousa Martins</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>RE</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1109516</td>
+                    <td nowrap>109516</td>
+                    <td nowrap>Rodrigo Navalho Alcobia</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>16</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1109542</td>
+                    <td nowrap>109542</td>
+                    <td nowrap>Pedro Manuel Ribeiro Baptista</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>11</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1109672</td>
+                    <td nowrap>109672</td>
+                    <td nowrap>Simão Maria da Silva Cabral</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>16</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1109678</td>
+                    <td nowrap>109678</td>
+                    <td nowrap>José Maria Leonor Oliveira Costa</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1109703</td>
+                    <td nowrap>109703</td>
+                    <td nowrap>Tomás Póvoa Ferreira</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>11</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1109710</td>
+                    <td nowrap>109710</td>
+                    <td nowrap>Maria da Graca da Silva Passos Ferreira do Amaral</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>15</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1109712</td>
+                    <td nowrap>109712</td>
+                    <td nowrap>Helena Sofia Veiga de Lima</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>10</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1109793</td>
+                    <td nowrap>109793</td>
+                    <td nowrap>Hugo Ono da Silva</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>14</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1109838</td>
+                    <td nowrap>109838</td>
+                    <td nowrap>Lourenço Tirano Tomaz Martinez Evangelista</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>13</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1109866</td>
+                    <td nowrap>109866</td>
+                    <td nowrap>Carolina Marques Vinagre</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1109876</td>
+                    <td nowrap>109876</td>
+                    <td nowrap>Salvador José Vieira de Freitas</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>18</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1109896</td>
+                    <td nowrap>109896</td>
+                    <td nowrap>Henrique Duarte Barral</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>RE</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1109907</td>
+                    <td nowrap>109907</td>
+                    <td nowrap>Rúben Filipe dos Santos Duarte</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>18</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1109914</td>
+                    <td nowrap>109914</td>
+                    <td nowrap>Madalena Ribeiro Borda d&#39;Água David</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1109916</td>
+                    <td nowrap>109916</td>
+                    <td nowrap>Xavier Alexandre Machado Matias Martins Perpétuo</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1110058</td>
+                    <td nowrap>110058</td>
+                    <td nowrap>Alexandre Miguel da Costa Gaspar</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>13</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1110075</td>
+                    <td nowrap>110075</td>
+                    <td nowrap>João Nuno Gil dos Santos</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>14</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1110100</td>
+                    <td nowrap>110100</td>
+                    <td nowrap>João Nuno Pinto Coelho</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>RE</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1110101</td>
+                    <td nowrap>110101</td>
+                    <td nowrap>Afonso Maria Duarte da Fonseca</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>10</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1110242</td>
+                    <td nowrap>110242</td>
+                    <td nowrap>Miguel Cardoso Reis</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>11</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1110290</td>
+                    <td nowrap>110290</td>
+                    <td nowrap>Guilherme Domingues de Bastos Vieira</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>18</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1110384</td>
+                    <td nowrap>110384</td>
+                    <td nowrap>Alexandre Salvador Chambel Nobre Ferreira</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>10</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1110393</td>
+                    <td nowrap>110393</td>
+                    <td nowrap>Guilherme Manuel Soares Francisco da Gama Augusto</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>15</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1110402</td>
+                    <td nowrap>110402</td>
+                    <td nowrap>Leonardo Simões Costa</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>15</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1110501</td>
+                    <td nowrap>110501</td>
+                    <td nowrap>André Duarte Maia</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>14</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1110513</td>
+                    <td nowrap>110513</td>
+                    <td nowrap>Pedro Gonçalves Ribeiro</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>14</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1110548</td>
+                    <td nowrap>110548</td>
+                    <td nowrap>André Vicente Alves Dias</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>NA</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1110585</td>
+                    <td nowrap>110585</td>
+                    <td nowrap>Rodrigo Miguel Ribeiro Sousa</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1110616</td>
+                    <td nowrap>110616</td>
+                    <td nowrap>Pedro Nuno Linhares Espírito Santo</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>NA</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1110672</td>
+                    <td nowrap>110672</td>
+                    <td nowrap>Dinis Pacheco Soares</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>11</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1110734</td>
+                    <td nowrap>110734</td>
+                    <td nowrap>Pedro Vicente Vasconcelos de Almeida</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>NA</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1110747</td>
+                    <td nowrap>110747</td>
+                    <td nowrap>Tomás Manuel Ramos Cravo de Oliveira Rodrigues</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>13</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1111076</td>
+                    <td nowrap>111076</td>
+                    <td nowrap>Diogo Azevedo Estêvão dos Santos</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>RE</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1111112</td>
+                    <td nowrap>111112</td>
+                    <td nowrap>Luís Henrique Dauphinet de Barros Léchaud</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>10</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1111148</td>
+                    <td nowrap>111148</td>
+                    <td nowrap>Tomás Dechamps Vieira</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>NA</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1111214</td>
+                    <td nowrap>111214</td>
+                    <td nowrap>Omar Sharif Hassane Kamissa Júnior</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>RE</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1111249</td>
+                    <td nowrap>111249</td>
+                    <td nowrap>Lissa Ladine Mendes Ferreira</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>10</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113144</td>
+                    <td nowrap>113144</td>
+                    <td nowrap>Erick Silva Lopes</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>RE</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113344</td>
+                    <td nowrap>113344</td>
+                    <td nowrap>Ricardo Souza Moreira Junior</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>NA</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113387</td>
+                    <td nowrap>113387</td>
+                    <td nowrap>David Alexandre Francisco Oliveira</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>13</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113392</td>
+                    <td nowrap>113392</td>
+                    <td nowrap>João Ferro Gomes Fernandes</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>15</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113393</td>
+                    <td nowrap>113393</td>
+                    <td nowrap>Maria Leonor da Cruz Dourado</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>15</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113408</td>
+                    <td nowrap>113408</td>
+                    <td nowrap>Afonso Sengo Canudo Henriques</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113409</td>
+                    <td nowrap>113409</td>
+                    <td nowrap>Bernardo Teixeira Sá Matos</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>11</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113417</td>
+                    <td nowrap>113417</td>
+                    <td nowrap>Miguel Ramos Guerra</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>16</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113438</td>
+                    <td nowrap>113438</td>
+                    <td nowrap>Gil Buxo Fernandes</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>13</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113440</td>
+                    <td nowrap>113440</td>
+                    <td nowrap>Maria Leonor Nero Valente</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>11</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113449</td>
+                    <td nowrap>113449</td>
+                    <td nowrap>Diogo Vasques Nunes</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>RE</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113456</td>
+                    <td nowrap>113456</td>
+                    <td nowrap>Guilherme André Pereira Valente</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>14</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113464</td>
+                    <td nowrap>113464</td>
+                    <td nowrap>Alexandre de Abreu O´neill Mendes</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>17</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113465</td>
+                    <td nowrap>113465</td>
+                    <td nowrap>Manuel Bernardo Sequeira Coutinho Pereira</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113483</td>
+                    <td nowrap>113483</td>
+                    <td nowrap>Pedro Afonso Gaspar Abreu</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>13</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113486</td>
+                    <td nowrap>113486</td>
+                    <td nowrap>Vicente de Matos Sousa</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113489</td>
+                    <td nowrap>113489</td>
+                    <td nowrap>Carmo Silveira Borges Pinto Parrulas</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>11</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113490</td>
+                    <td nowrap>113490</td>
+                    <td nowrap>Lourenço Martinho Grão Próspero dos Santos</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>13</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113491</td>
+                    <td nowrap>113491</td>
+                    <td nowrap>Diogo Samuel dos Santos Ferreira</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>15</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113495</td>
+                    <td nowrap>113495</td>
+                    <td nowrap>Francisco de Oliveira Louro Guedelha Rodrigues</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>14</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113518</td>
+                    <td nowrap>113518</td>
+                    <td nowrap>Tomas Lemos Vieira</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>NA</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113519</td>
+                    <td nowrap>113519</td>
+                    <td nowrap>Pedro José Ferreira Pires</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>14</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113524</td>
+                    <td nowrap>113524</td>
+                    <td nowrap>Afonso Soares Henriques</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>16</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113526</td>
+                    <td nowrap>113526</td>
+                    <td nowrap>João Rosa Freire</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>10</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113536</td>
+                    <td nowrap>113536</td>
+                    <td nowrap>Martim da Cunha Leal Girão</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113539</td>
+                    <td nowrap>113539</td>
+                    <td nowrap>Emídio Miguel de Sousa Pires Gil Santos</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>19</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113551</td>
+                    <td nowrap>113551</td>
+                    <td nowrap>Frederico Cardoso Rodrigues Andrade</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>10</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113557</td>
+                    <td nowrap>113557</td>
+                    <td nowrap>Francisco Geadas Lopes Domingos</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113560</td>
+                    <td nowrap>113560</td>
+                    <td nowrap>Sebastião Carmona Pacheco</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>13</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113561</td>
+                    <td nowrap>113561</td>
+                    <td nowrap>Pedro Miguel Matela Tavares</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>14</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113562</td>
+                    <td nowrap>113562</td>
+                    <td nowrap>Rodrigo Melo de Albuquerque Barradas</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>16</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113593</td>
+                    <td nowrap>113593</td>
+                    <td nowrap>Simão Monteiro Rolo Trindade Costa</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>RE</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113595</td>
+                    <td nowrap>113595</td>
+                    <td nowrap>Guilherme Nunes Nóbrega</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>15</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113596</td>
+                    <td nowrap>113596</td>
+                    <td nowrap>Sofia Mariana Chailloux Climaco Pereira</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>14</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113603</td>
+                    <td nowrap>113603</td>
+                    <td nowrap>Afonso Rebelo da Costa Madruga Pereira</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>16</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113604</td>
+                    <td nowrap>113604</td>
+                    <td nowrap>Rodrigo Nunes-Viciosa</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>16</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113613</td>
+                    <td nowrap>113613</td>
+                    <td nowrap>Gabriel Libório Neto</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>13</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113623</td>
+                    <td nowrap>113623</td>
+                    <td nowrap>Vasco Daniel Cópio Carvalho</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>RE</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113629</td>
+                    <td nowrap>113629</td>
+                    <td nowrap>Tomas Rodrigues Mourão Rato</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>RE</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113640</td>
+                    <td nowrap>113640</td>
+                    <td nowrap>Gonçalo Nogueira Gomes Mota Oliveira</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>19</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113665</td>
+                    <td nowrap>113665</td>
+                    <td nowrap>Afonso Moreira Gonçalves</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>14</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113684</td>
+                    <td nowrap>113684</td>
+                    <td nowrap>Bernardo Maria Gonçalves Nunes Almeida Faria</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>14</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113710</td>
+                    <td nowrap>113710</td>
+                    <td nowrap>Rodrigo Natário Rodrigues</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>10</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113713</td>
+                    <td nowrap>113713</td>
+                    <td nowrap>Filipe Miguel Santos Duarte</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>15</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113716</td>
+                    <td nowrap>113716</td>
+                    <td nowrap>Miguel Linares Pascoal</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>11</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113717</td>
+                    <td nowrap>113717</td>
+                    <td nowrap>Joaquim Gabriel Santos Carvalho</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>11</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113718</td>
+                    <td nowrap>113718</td>
+                    <td nowrap>João Diogo Bexiga Barra Ludovino</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>14</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113722</td>
+                    <td nowrap>113722</td>
+                    <td nowrap>Madalena Sacramento Ferreira</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>14</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113725</td>
+                    <td nowrap>113725</td>
+                    <td nowrap>Mariana Luís de Figueiredo Araújo Pinto Soares</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>17</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113732</td>
+                    <td nowrap>113732</td>
+                    <td nowrap>Guilherme Afonso Rodrigues Amaro</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113746</td>
+                    <td nowrap>113746</td>
+                    <td nowrap>Raquel Agostinho Aguiar</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>15</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113761</td>
+                    <td nowrap>113761</td>
+                    <td nowrap>Rafael Gonçalves dos Reis</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>10</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113785</td>
+                    <td nowrap>113785</td>
+                    <td nowrap>Frederico Garrido Marques da Silva</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>11</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113791</td>
+                    <td nowrap>113791</td>
+                    <td nowrap>Diogo Rafael Mufume Baptista</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>13</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113793</td>
+                    <td nowrap>113793</td>
+                    <td nowrap>Afonso dos Reis Cruz de Vasconcelos Cipriano</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>NA</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113823</td>
+                    <td nowrap>113823</td>
+                    <td nowrap>Miguel Santos Francisco Carvalho do Carmo</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>14</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113835</td>
+                    <td nowrap>113835</td>
+                    <td nowrap>Afonso Nuno Dionisio de Ornelas</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113836</td>
+                    <td nowrap>113836</td>
+                    <td nowrap>Filipa Mota Guerreiro Cabrita</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>19</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113838</td>
+                    <td nowrap>113838</td>
+                    <td nowrap>Alexandre Nunes Malveiro</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>15</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113879</td>
+                    <td nowrap>113879</td>
+                    <td nowrap>Duarte Pedrosa de Sousa</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113880</td>
+                    <td nowrap>113880</td>
+                    <td nowrap>Martim Bernardo Pereira Goncalves</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>14</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113899</td>
+                    <td nowrap>113899</td>
+                    <td nowrap>Júlia de Melo Ramalho Domingues</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>RE</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113906</td>
+                    <td nowrap>113906</td>
+                    <td nowrap>João Pedro e Silva Aguiar</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113927</td>
+                    <td nowrap>113927</td>
+                    <td nowrap>Nuno Lee Leitão</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>18</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113928</td>
+                    <td nowrap>113928</td>
+                    <td nowrap>Martim Neves Ferreira</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>17</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113933</td>
+                    <td nowrap>113933</td>
+                    <td nowrap>Martim Almeida Alves Caetano</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>15</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113935</td>
+                    <td nowrap>113935</td>
+                    <td nowrap>Pedro Áser Marques Rebelo Castillo Lorenzo</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>NA</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113954</td>
+                    <td nowrap>113954</td>
+                    <td nowrap>Marta Costa Gomes</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>16</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113956</td>
+                    <td nowrap>113956</td>
+                    <td nowrap>Guilherme Alexandre Rocha Boto</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>17</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113957</td>
+                    <td nowrap>113957</td>
+                    <td nowrap>Francisco Barracosa da Silva Pires</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>RE</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113960</td>
+                    <td nowrap>113960</td>
+                    <td nowrap>Jimena Marbella Valverde Prado</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>11</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113961</td>
+                    <td nowrap>113961</td>
+                    <td nowrap>David Brás Ferreira</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>13</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113975</td>
+                    <td nowrap>113975</td>
+                    <td nowrap>Afonso da Silva de Sousa</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>14</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113989</td>
+                    <td nowrap>113989</td>
+                    <td nowrap>André Pereira Wong</td>
+                    <td nowrap>Plano Curricular de Unidades Isoladas</td>
+                                                                    <td nowrap>14</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113990</td>
+                    <td nowrap>113990</td>
+                    <td nowrap>Goncalo Carrico Chaveiro Silva</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>11</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1113994</td>
+                    <td nowrap>113994</td>
+                    <td nowrap>Rodrigo Miguel Fernandes Evaristo</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>13</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114007</td>
+                    <td nowrap>114007</td>
+                    <td nowrap>Teresa Dionísio de Brito</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>16</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114021</td>
+                    <td nowrap>114021</td>
+                    <td nowrap>Tiago Amaral de Gouveia Ferreira da Silva</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>RE</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114034</td>
+                    <td nowrap>114034</td>
+                    <td nowrap>Maria Leonor Bacelar Xavier</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114052</td>
+                    <td nowrap>114052</td>
+                    <td nowrap>Diogo Guerreiro Monteiro</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>16</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114054</td>
+                    <td nowrap>114054</td>
+                    <td nowrap>Manuel Antonio Pestana de Andrade</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114057</td>
+                    <td nowrap>114057</td>
+                    <td nowrap>Frederico Godinho Matias</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>16</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114063</td>
+                    <td nowrap>114063</td>
+                    <td nowrap>Alexandre Vargas Harris</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>18</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114067</td>
+                    <td nowrap>114067</td>
+                    <td nowrap>Norberto Júnio Gomes Vieira</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>18</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114072</td>
+                    <td nowrap>114072</td>
+                    <td nowrap>Filipa Cheng</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>13</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114079</td>
+                    <td nowrap>114079</td>
+                    <td nowrap>Afonso Dourado Viegas</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114092</td>
+                    <td nowrap>114092</td>
+                    <td nowrap>Francisco Viana Pimpão Graça</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114096</td>
+                    <td nowrap>114096</td>
+                    <td nowrap>Guilherme Merca e Silva</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>13</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114098</td>
+                    <td nowrap>114098</td>
+                    <td nowrap>Martim Nunes Martinho</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>11</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114099</td>
+                    <td nowrap>114099</td>
+                    <td nowrap>Duarte Filipe Vieira da Silva</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>14</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114104</td>
+                    <td nowrap>114104</td>
+                    <td nowrap>Guilherme Gomes Prestes</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>15</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114108</td>
+                    <td nowrap>114108</td>
+                    <td nowrap>Pedro Miguel Maximiano Jorge Nunes Alves</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>10</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114110</td>
+                    <td nowrap>114110</td>
+                    <td nowrap>Pedro Lopes Mendes</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114112</td>
+                    <td nowrap>114112</td>
+                    <td nowrap>Tomé José Castro Velosa de Freitas</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>14</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114114</td>
+                    <td nowrap>114114</td>
+                    <td nowrap>Simão Maria dos Santos Baptista</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>11</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114120</td>
+                    <td nowrap>114120</td>
+                    <td nowrap>Jose Pedro Goncalves Martins Leal Lima</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>16</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114121</td>
+                    <td nowrap>114121</td>
+                    <td nowrap>Francisco da Rocha Diogo</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>16</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114125</td>
+                    <td nowrap>114125</td>
+                    <td nowrap>André Duarte Jesus Colaço Jorge</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>15</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114132</td>
+                    <td nowrap>114132</td>
+                    <td nowrap>Manuel Afonso Rodrigues Henriques</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>11</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114140</td>
+                    <td nowrap>114140</td>
+                    <td nowrap>Diogo Maria Fernandes Correia Marques</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>15</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114153</td>
+                    <td nowrap>114153</td>
+                    <td nowrap>Santiago dos Santos Ramos das Neves</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>14</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114161</td>
+                    <td nowrap>114161</td>
+                    <td nowrap>Eduardo Miguel Luís Tabosa</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>18</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114166</td>
+                    <td nowrap>114166</td>
+                    <td nowrap>Daniel Rodrigo dos Santos Rodrigues</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>11</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114173</td>
+                    <td nowrap>114173</td>
+                    <td nowrap>António Maria Moutela Ferreira Chambel dos Giões</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>NA</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114192</td>
+                    <td nowrap>114192</td>
+                    <td nowrap>João Pedro Barata Reis</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>RE</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114202</td>
+                    <td nowrap>114202</td>
+                    <td nowrap>Rodrigo Miguel de Nunes Fernandes</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114203</td>
+                    <td nowrap>114203</td>
+                    <td nowrap>Guilherme Évora Justino</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>13</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114204</td>
+                    <td nowrap>114204</td>
+                    <td nowrap>João Maria Ferro Freire</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>13</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114218</td>
+                    <td nowrap>114218</td>
+                    <td nowrap>Francisco Lopes Faísca</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>14</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114223</td>
+                    <td nowrap>114223</td>
+                    <td nowrap>Pedro Henrique de Jesus Gouveia</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114226</td>
+                    <td nowrap>114226</td>
+                    <td nowrap>Tiago André Salvado Lopes</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>15</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114229</td>
+                    <td nowrap>114229</td>
+                    <td nowrap>Diogo Gaspar Cristina Neves</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>17</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114239</td>
+                    <td nowrap>114239</td>
+                    <td nowrap>Henrique João Ramos Vardasca Pereira</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>15</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114246</td>
+                    <td nowrap>114246</td>
+                    <td nowrap>Antonio Luis Marques Centeio e Vaz</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>15</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114262</td>
+                    <td nowrap>114262</td>
+                    <td nowrap>Francisca Vieira Cardoso</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>11</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114264</td>
+                    <td nowrap>114264</td>
+                    <td nowrap>João David Ledo Rito</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>NA</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114285</td>
+                    <td nowrap>114285</td>
+                    <td nowrap>Salvador Costa Barata Almeida Sousa</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>11</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114286</td>
+                    <td nowrap>114286</td>
+                    <td nowrap>Francisco António Coelho Teixeira</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>19</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114299</td>
+                    <td nowrap>114299</td>
+                    <td nowrap>Afonso Miguel de Almeida Monteiro</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>16</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114302</td>
+                    <td nowrap>114302</td>
+                    <td nowrap>Henrique Teixeira Fernandes</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>14</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114303</td>
+                    <td nowrap>114303</td>
+                    <td nowrap>Fábio Filipe Grencho da Silva</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>17</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114319</td>
+                    <td nowrap>114319</td>
+                    <td nowrap>Diogo Neves Sequeira de Melo Ramos</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>13</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114321</td>
+                    <td nowrap>114321</td>
+                    <td nowrap>Miguel de Almeida André Girão Gouveia</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>15</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114328</td>
+                    <td nowrap>114328</td>
+                    <td nowrap>Rita Margarida dos Santos e Silva Ribeiro Brígido</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>14</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114333</td>
+                    <td nowrap>114333</td>
+                    <td nowrap>Miguel Duarte Coelho</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>15</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114338</td>
+                    <td nowrap>114338</td>
+                    <td nowrap>Tiago Farinha Santos</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>16</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114340</td>
+                    <td nowrap>114340</td>
+                    <td nowrap>Gustavo Miguel dos Reis Maurício</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>16</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114351</td>
+                    <td nowrap>114351</td>
+                    <td nowrap>Gustavo Reis Antunes Dantas de Campos</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>15</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114370</td>
+                    <td nowrap>114370</td>
+                    <td nowrap>Rita Ferrão Baptista Fernandes</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114398</td>
+                    <td nowrap>114398</td>
+                    <td nowrap>Beatriz Marques Nordeste Filipe Rei</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>17</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114401</td>
+                    <td nowrap>114401</td>
+                    <td nowrap>Luís Guilherme Sario Neves de Almeida</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>11</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114409</td>
+                    <td nowrap>114409</td>
+                    <td nowrap>Francisco Miguel Gamboa Franco</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>15</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114417</td>
+                    <td nowrap>114417</td>
+                    <td nowrap>Ricardo Azevedo Laginhas</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>15</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114433</td>
+                    <td nowrap>114433</td>
+                    <td nowrap>Gonçalo Rodrigues Sendas</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114435</td>
+                    <td nowrap>114435</td>
+                    <td nowrap>Afonso Gabriel Nóbrega</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>17</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114468</td>
+                    <td nowrap>114468</td>
+                    <td nowrap>Francisca Henriques Soares</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>13</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114471</td>
+                    <td nowrap>114471</td>
+                    <td nowrap>Hugo Mota Santos</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>13</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114510</td>
+                    <td nowrap>114510</td>
+                    <td nowrap>Aires Morais Magalhães</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>16</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114513</td>
+                    <td nowrap>114513</td>
+                    <td nowrap>José Maria Salsa Gameiro e Lopes</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>10</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114515</td>
+                    <td nowrap>114515</td>
+                    <td nowrap>Rodrigo Figueiredo e Sousa Pissarra</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>10</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114517</td>
+                    <td nowrap>114517</td>
+                    <td nowrap>João Pedro da Silva Bento Aires</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>14</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114518</td>
+                    <td nowrap>114518</td>
+                    <td nowrap>Rodrigo Miguel Esteves Pereira</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>17</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114527</td>
+                    <td nowrap>114527</td>
+                    <td nowrap>Alexandre Moura Peres</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>16</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114532</td>
+                    <td nowrap>114532</td>
+                    <td nowrap>Tiago Manuel Inverneiro Antunes</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>16</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114541</td>
+                    <td nowrap>114541</td>
+                    <td nowrap>Noel Gonçalves Leopoldo</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114543</td>
+                    <td nowrap>114543</td>
+                    <td nowrap>Alice Silva Teves Pereira Rodrigues</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>15</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114554</td>
+                    <td nowrap>114554</td>
+                    <td nowrap>José Alberto Garcia e Costa Galvão dos Santos</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114578</td>
+                    <td nowrap>114578</td>
+                    <td nowrap>Santiago Gomes de Almeida Drewitt Oliveira</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>RE</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114579</td>
+                    <td nowrap>114579</td>
+                    <td nowrap>Guilherme Teixeira Santos Marques</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114614</td>
+                    <td nowrap>114614</td>
+                    <td nowrap>Tomé Costa Lobo</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>15</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114617</td>
+                    <td nowrap>114617</td>
+                    <td nowrap>Diogo Miguel Chen</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>RE</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114623</td>
+                    <td nowrap>114623</td>
+                    <td nowrap>Leonardo Magalhães Alves</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114624</td>
+                    <td nowrap>114624</td>
+                    <td nowrap>Rodrigo Paixão Nunes</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114640</td>
+                    <td nowrap>114640</td>
+                    <td nowrap>André Amaral Lageira</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>17</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114650</td>
+                    <td nowrap>114650</td>
+                    <td nowrap>Luís Maria Cília Adão da Fonseca</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>14</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114655</td>
+                    <td nowrap>114655</td>
+                    <td nowrap>Afonso Manuel Miranda Galvão</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>13</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114659</td>
+                    <td nowrap>114659</td>
+                    <td nowrap>Tomás Félix Lazera Rosa</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>13</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114661</td>
+                    <td nowrap>114661</td>
+                    <td nowrap>Martim Lobo Carriço</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>10</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114667</td>
+                    <td nowrap>114667</td>
+                    <td nowrap>Natalie Renner</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>19</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114686</td>
+                    <td nowrap>114686</td>
+                    <td nowrap>Tomás Sequeira Tomé Bettencourt Ribeiro</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>14</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114688</td>
+                    <td nowrap>114688</td>
+                    <td nowrap>Gonçalo Manuel Braga Madeira</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>16</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114704</td>
+                    <td nowrap>114704</td>
+                    <td nowrap>Diogo Miguel Fagundes Alencastre Velosa</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114736</td>
+                    <td nowrap>114736</td>
+                    <td nowrap>Luís Miguel Franco Fernandes</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>NA</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114739</td>
+                    <td nowrap>114739</td>
+                    <td nowrap>Pedro Parreira Ganilho Santos</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>16</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114761</td>
+                    <td nowrap>114761</td>
+                    <td nowrap>Miguel Pinto Cravo</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>RE</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114765</td>
+                    <td nowrap>114765</td>
+                    <td nowrap>José Miguel Neves Mendes</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114769</td>
+                    <td nowrap>114769</td>
+                    <td nowrap>Afonso Câmara Wurster Barros</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>11</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114775</td>
+                    <td nowrap>114775</td>
+                    <td nowrap>Diogo Alexandre Guerra Martins</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>16</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114776</td>
+                    <td nowrap>114776</td>
+                    <td nowrap>Kristian Petkov Bonchev</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>16</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114830</td>
+                    <td nowrap>114830</td>
+                    <td nowrap>Francisco Salgueiro Bule Lopes Vieira</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>10</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114831</td>
+                    <td nowrap>114831</td>
+                    <td nowrap>Diogo Fiqueli Fontinha</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114856</td>
+                    <td nowrap>114856</td>
+                    <td nowrap>Vasco Cabrita Trindade</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>13</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114863</td>
+                    <td nowrap>114863</td>
+                    <td nowrap>Luis Joao Lou Tenreiro</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>11</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114865</td>
+                    <td nowrap>114865</td>
+                    <td nowrap>Carolina Mourinha Brandão</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>12</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114870</td>
+                    <td nowrap>114870</td>
+                    <td nowrap>André Vicente Martins Campião Grade</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>10</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114871</td>
+                    <td nowrap>114871</td>
+                    <td nowrap>Gabriel Cony Albanese</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>10</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114877</td>
+                    <td nowrap>114877</td>
+                    <td nowrap>Tomás Dias de Andrade Pinto</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>15</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114889</td>
+                    <td nowrap>114889</td>
+                    <td nowrap>Maria Stela Cruz Fernandes</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>11</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114893</td>
+                    <td nowrap>114893</td>
+                    <td nowrap>João Diogo Rodrigues dos Reis</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>10</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114897</td>
+                    <td nowrap>114897</td>
+                    <td nowrap>Diogo Silva Ferreira</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>NA</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114902</td>
+                    <td nowrap>114902</td>
+                    <td nowrap>Daniel Galvão Valério</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>15</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114923</td>
+                    <td nowrap>114923</td>
+                    <td nowrap>Alberto Henrique Botelho Pires Lopes Dias</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>13</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1114965</td>
+                    <td nowrap>114965</td>
+                    <td nowrap>Rodrigo Tomás Marques de Brito Jacob</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>13</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1115098</td>
+                    <td nowrap>115098</td>
+                    <td nowrap>Tiago Eliseu Fonseca Évora</td>
+                    <td nowrap>LENO 2021</td>
+                                                                    <td nowrap>RE</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1115172</td>
+                    <td nowrap>115172</td>
+                    <td nowrap>João Capelo de Sousa Chaby Rosa</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>NA</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1115181</td>
+                    <td nowrap>115181</td>
+                    <td nowrap>Rita Miguel Tomé Nobre Nazário</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>NA</td>
+                                    </tr>
+                                                            <tr>
+                    <td nowrap>ist1115198</td>
+                    <td nowrap>115198</td>
+                    <td nowrap>Ndully Feliz Malate</td>
+                    <td nowrap>LEMec 2021</td>
+                                                                    <td nowrap>10</td>
+                                    </tr>
+                    </table>
+
+    
+
+        </div>
+        
+
+
+<nav class="col-sm-3" style="padding-left:0px; padding-top:60px;z-index:999; margin-left:-1px;">
+  <!-- REGULAR MENU -->
+            <div class="sidebar-module">
+            
+                  <ul class="nav nav-pills nav-stacked list-unstyled children">
+                              <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/pagina-inicial">
+      Página Inicial              <a class="rsslink" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/rss/announcement"><i style="float:right;">&nbsp;</i></a>
+          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/grupos">
+      Grupos          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/avaliacao">
+      Avaliação          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/bibliografia">
+      Bibliografia          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/horario">
+      Horário          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/metodos-de-avaliacao">
+      Métodos de Avaliação          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/objectivos">
+      Objectivos          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/planeamento">
+      Planeamento          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/programa">
+      Programa          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/turnos">
+      Turnos          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/anuncios">
+      Anúncios              <a class="rsslink" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/rss/announcement"><i style="float:right;">&nbsp;</i></a>
+          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/sumarios">
+      Sumários              <a class="rsslink" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/rss/summary"><i style="float:right;">&nbsp;</i></a>
+          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/pre-requisitos">
+      Pré-requisitos          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/componente-laboratorial">
+      Componente Laboratorial          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/componente-de-programacao-e-computacao">
+      Componente de Programação e Computação          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/competencias-transversais">
+      Competências Transversais          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/principios-eticos">
+      Princípios Éticos          </a>
+        </li>
+                                        <li class="menuItem open active">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/notas">
+      Notas          </a>
+        </li>
+                    </ul>
+          </div>
+            <div class="sidebar-module">
+            
+                  <ul class="nav nav-pills nav-stacked list-unstyled children">
+                              <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/regras-da-cadeira">
+      Regras Da Cadeira          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/cronograma-e-horarios-de-duvidas">
+      Cronograma e Horários de Dúvidas          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/aulas-teoricas">
+      Aulas Teóricas          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/material-de-apoio-a-resolucao-de-exercicios">
+      Material de Apoio à Resolução de Problemas          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/enunciados-de-exercicios">
+      Enunciados de exercícios          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/formulario-da-cadeira">
+      Formulário da Cadeira           </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/enunciados-de-avaliacoes-de-anos-anteriores">
+      Enunciados de avaliações de anos anteriores          </a>
+          <ul class="nav nav-pills nav-stacked list-unstyled children">
+                              <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/enunciados-e-resolucoes-de-2024-2025">
+      Enunciados (e resoluções) de 2024-2025          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/enunciados-e-resolucoes-de-2023-2024">
+      Enunciados (e resoluções) de 2023-2024          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/enunciados-e-resolucoes-de-2022-2023">
+      Enunciados (e resoluções) de 2022-2023          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/enunciados-e-resolucoes-de-2021-2022---p3">
+      Enunciados (e resoluções) de 2021-2022 - P3          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/enunciados-e-resolucoes-de-2021-2022---p1">
+      Enunciados (e resoluções) de 2021-2022 - P1          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/enunciados-e-resolucoes-de-2020-2021">
+      Enunciados (e resoluções) de 2020-2021          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/enunciados-e-resolucoes-de-2019-2020">
+      Enunciados (e resoluções) de 2019-2020          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/enunciados-e-resolucoes-de-2018-2019">
+      Enunciados (e resoluções) de 2018-2019          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/enunciados-de-avaliacoes-de-cinematica">
+      Enunciados de avaliações de cinemática          </a>
+        </li>
+                    </ul>
+    </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/laboratorio">
+      Laboratório          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/aulas-de-problemas">
+      Aulas de Problemas          </a>
+          <ul class="nav nav-pills nav-stacked list-unstyled children">
+                              <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/prof-carlos-tiago">
+      Prof. Carlos Tiago          </a>
+        </li>
+                    </ul>
+    </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA266/2024-2025/2-semestre/pautas">
+      Pautas          </a>
+        </li>
+                    </ul>
+          </div>
+    
+    <div class="sidebar-module">
+    </div>
+</nav>
+
+<script type="text/javascript">
+(function() {
+  $('.menuFolder:not(.open)>.children').hide();
+  $('.menuFolder>p').click(function(event){
+    $(this).parent().toggleClass('open');
+    $(this).parent().children('.children').slideToggle();
+    event.preventDefault();
+  });
+  setLang=function(l){$.post('/api/bennu-core/profile/locale/'+l.replace('_', '-')).always(function(){location.reload();})}
+})();
+</script>
+
+      </main><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="container" style="border-top:1px solid #ddd; margin-top:30px">
+      <div class="col-sm-9">
+        <a class="brand" href="http://fenixedu.org"><img width="150" height="34" src="https://fenix.tecnico.ulisboa.pt/cms/assets/fenixedu-learning-theme/117a7569aa22b88e/images/logo_fenixedu_footer.svg" alt="Powered by FenixEdu"></a>
+      </div>
+
+      <div class="col-sm-3" style="color:#888">
+        <span style="padding-left:15px;">© Instituto Superior Técnico</span>
+      </div>
+      
+    </footer>
+
+    <script src="https://fenix.tecnico.ulisboa.pt/cms/assets/fenixedu-learning-theme/117a7569aa22b88e/js/bootstrap.min.js" type="text/javascript" async></script>
+  </body>
+</html>
