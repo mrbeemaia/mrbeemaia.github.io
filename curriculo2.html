@@ -1,0 +1,653 @@
+<!--
+
+    Copyright © 2013 Instituto Superior Técnico
+
+    This file is part of FenixEdu IST Integration.
+
+    FenixEdu IST Integration is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Lesser General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    FenixEdu IST Integration is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public License
+    along with FenixEdu IST Integration.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html lang="en" class="ie ie9"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html dir="ltr" lang="pt_PT"> <!--<![endif]-->
+  <head>
+
+	<!-- Basic Page Needs -->
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Language" content="pt" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="Description" content="FenixEdu™ is an open-source academic information platform." />
+	<meta name="Keywords" content="FenixEdu, open-source, academic, information, platform, academic administration, higher education, e-learning" />
+	<meta name="Language" content="pt_PT" />
+	<meta name="Robots" content="all" />
+	<meta name="Author" content="FenixEdu" />
+	<meta name="Email" content="hello@fenixedu.org" />
+	<meta name="Copyright" content="Técnico Lisboa — Instituto Superior Técnico" />
+	<meta name="Distribution" content="Global" />
+	<meta name="Rating" content="General" />
+
+	<!-- OpenGraph Specific Metas -->
+	<meta property="og:title" content="FenixEdu™" />
+	<meta property="og:type" content="application" />
+	<meta property="og:url" content="http://www.fenixedu.org" />
+	<meta property="og:site_name" content="FenixEdu" />
+	<meta property="og:description" content="FenixEdu™ is an open-source academic information platform." />
+	<meta property="fb:profile_id" content="379238245509413" />
+
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5">
+
+    <title>Currículo · Estudante</title>
+
+    <!-- Bootstrap core CSS -->
+	<link rel="stylesheet" type="text/css" media="screen" href="/themes/ashes/css/general.css">
+    <link href="/themes/ashes/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="/bennu-portal/js/jquery.min.js"></script>
+	<script src="/themes/ashes/js/bootstrap.min.js"></script>
+	<script> setLang = function(l) {
+		$.post('/api/bennu-core/profile/locale/' + l.replace('_', '-')).always(function() { location.reload(); });
+	}
+	</script>
+	
+	<!-- Favicons & TouchIcons-->
+	<link rel="shortcut icon" type="image/x-icon" href="/api/bennu-portal/configuration/favicon">
+
+  </head>
+
+  <body>
+  	<!-- Bar -->
+<div class="navbar navbar-inverse hidden-xs fenixedu-bar">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="/" target="_blank">Técnico Lisboa</a></li>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li></li>
+								<li><a><img src="https://fenix.tecnico.ulisboa.pt/user/photo/ist1110501?s=20" width="20" heigth="20" style="margin-right: 10px" class="img-circle"/>André Duarte Maia</a></li>
+								<li class="active"><a href="/logout">Logout</a></li>
+							</ul>
+		</div>
+	</div>
+</div>
+<div id="alerts" style="display: none;">
+</div>
+
+	<header class="clearfix" role="banner">
+		<div class="col-sm-2 logo-container text-center">
+			<button type="button" class="navbar-toggle hamburger" data-toggle="collapse" data-target="#topNav">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+							<a href="http://tecnico.ulisboa.pt" target="_blank">
+					<img src="/api/bennu-portal/configuration/logo" title="Técnico Lisboa" />
+				</a>
+					</div>
+		<nav class="col-sm-10 collapse" id="topNav" role="navigation">
+			<ul class="nav navbar-bottom nav-pills nav-menu">
+							<li class=""><a href="/messaging">Comunicação</a></li>
+							<li class="active"><a href="/student">Estudante</a></li>
+							<li class=""><a href="/personal">Pessoal</a></li>
+							<li class=""><a href="/space-management">Gestão de Espaços</a></li>
+							<li class="visible-xs"><a href="/logout"><strong>Logout</strong></a></li>
+			</ul>
+		</nav>
+	</header>
+	<div>
+				<main class="col-sm-10 col-sm-push-2" role="main">
+			<ol class="breadcrumb">
+							<li><a href="/student">Estudante</a></li>
+							<li><a href="/student/consult">Consultar</a></li>
+							<li><a href="/student/consult/curriculum">Currículo</a></li>
+			
+				<span class="pull-right">
+											<a class="locale-changer active" title="português (Portugal)" onclick="setLang('pt_PT')">pt</a>
+											<a class="locale-changer " title="inglês (Reino Unido)" onclick="setLang('en_GB')">en</a>
+									</span>
+			</ol>
+			<div id="main-content-wrapper">
+				
+
+
+
+
+
+
+
+
+
+
+
+<h2>Currículo de Matrícula</h2>
+
+
+
+
+
+<p class="mvert2">
+	<span class="showpersonid">
+	Aluno: 
+		
+			
+				
+			
+		<span>
+  <span>
+    André Duarte Maia (110501) - Bilhete de Identidade (30570349)
+  </span>
+</span>
+	</span>
+</p>
+
+
+
+
+		
+	
+    	<div class="panel panel-default" style="margin-top: 10px">
+  			<div class="panel-heading">
+    			<h3 class="panel-title"><strong>Informação do Apuramento</strong></h3>
+  			</div>
+  			<div class="panel-body">
+				
+				
+					<div class="alert alert-warning" role="alert">A Matrícula do Aluno ainda não foi submetida ao Apuramento Final.  </div>
+				
+			</div>
+		</div>
+	
+
+	<h3>Aprovações</h3>
+	<h4>Resumo</h4>
+    <table class="tstyle4 thlight tdcenter mtop15">
+        <tr>
+            <th>Aprovações</th>
+            <th>Total Créditos ECTS</th>
+            <th>Média</th>
+            <th>Ano Curricular</th>
+        </tr>
+        <tr>
+            
+            <td>6</td>
+            <td>27.0</td>
+            
+            
+                
+                    <td>13.89</td>
+                    <td>1</td>
+                
+                          
+            
+        </tr>
+    </table>
+
+	
+
+		<p>
+			<h4>Notas</h4>
+			
+				
+					  
+				                              
+			<div>
+  <div style="padding-bottom: 3.5em;">
+    <table class="scplan table">
+      <tbody>
+        <tr class="scplangroup">
+          <td colspan="14" class=" scplancolcurricularcourse">
+            Inscrições
+          </td>
+          <td colspan="1" class=" scplancolgrade">
+            Nota
+          </td>
+          <td colspan="1" class=" scplancolects">
+            Peso
+          </td>
+          <td colspan="2" class=" scplancolgrade">
+            Ano Lectivo
+          </td>
+        </tr>
+        <tr class="scplanenrollment">
+          <td colspan="14" class=" scplancolcurricularcourse">
+            <span>
+              Desenho de Construção Naval
+            </span>
+          </td>
+          <td colspan="1" class=" scplancolgrade">
+            15
+          </td>
+          <td colspan="1" class=" scplancolweight">
+            6.0
+          </td>
+          <td colspan="1" class=" scplancolyear">
+            2023/2024
+          </td>
+          <td colspan="1" class=" scplancolsemester">
+            1 Sem.
+          </td>
+        </tr>
+        <tr class="scplanenrollment">
+          <td colspan="14" class=" scplancolcurricularcourse">
+            <span>
+              Introdução à Engenharia Naval e Oceânica
+            </span>
+          </td>
+          <td colspan="1" class=" scplancolgrade">
+            13
+          </td>
+          <td colspan="1" class=" scplancolweight">
+            3.0
+          </td>
+          <td colspan="1" class=" scplancolyear">
+            2023/2024
+          </td>
+          <td colspan="1" class=" scplancolsemester">
+            1 Sem.
+          </td>
+        </tr>
+        <tr class="scplanenrollment">
+          <td colspan="14" class=" scplancolcurricularcourse">
+            <span>
+              N9 - Química Geral
+            </span>
+          </td>
+          <td colspan="1" class=" scplancolgrade">
+            13
+          </td>
+          <td colspan="1" class=" scplancolweight">
+            6.0
+          </td>
+          <td colspan="1" class=" scplancolyear">
+            2023/2024
+          </td>
+          <td colspan="1" class=" scplancolsemester">
+            1 Sem.
+          </td>
+        </tr>
+        <tr class="scplanenrollment">
+          <td colspan="14" class=" scplancolcurricularcourse">
+            <span>
+              Fundamentos da Programação
+            </span>
+          </td>
+          <td colspan="1" class=" scplancolgrade">
+            15
+          </td>
+          <td colspan="1" class=" scplancolweight">
+            6.0
+          </td>
+          <td colspan="1" class=" scplancolyear">
+            2023/2024
+          </td>
+          <td colspan="1" class=" scplancolsemester">
+            2 Sem.
+          </td>
+        </tr>
+        <tr class="scplanenrollment">
+          <td colspan="14" class=" scplancolcurricularcourse">
+            <span>
+              Introdução à Economia
+            </span>
+          </td>
+          <td colspan="1" class=" scplancolgrade">
+            13
+          </td>
+          <td colspan="1" class=" scplancolweight">
+            3.0
+          </td>
+          <td colspan="1" class=" scplancolyear">
+            2023/2024
+          </td>
+          <td colspan="1" class=" scplancolsemester">
+            2 Sem.
+          </td>
+        </tr>
+        <tr class="scplanenrollment">
+          <td colspan="14" class=" scplancolcurricularcourse">
+            <span>
+              0558 - Relatividade
+            </span>
+          </td>
+          <td colspan="1" class=" scplancolgrade">
+            13
+          </td>
+          <td colspan="1" class=" scplancolweight">
+            3.0
+          </td>
+          <td colspan="1" class=" scplancolyear">
+            2024/2025
+          </td>
+          <td colspan="1" class=" scplancolsemester">
+            2 Sem.
+          </td>
+        </tr>
+        <tr class="scplanenrollment">
+          <td colspan="14" class=" scplancolcurricularcourse">
+            <span>
+              Álgebra Linear
+            </span>
+          </td>
+          <td colspan="1" class=" scplancolgrade">
+            13
+          </td>
+          <td colspan="1" class=" scplancolweight">
+            3.0
+          </td>
+          <td colspan="1" class=" scplancolyear">
+            2024/2025
+          </td>
+          <td colspan="1" class=" scplancolsemester">
+            2 Sem.
+          </td>
+        </tr>     
+        <tr class="scplanenrollment">
+          <td colspan="14" class=" scplancolcurricularcourse">
+            <span>
+              Cálculo Diferencial e Integral I 
+            </span>
+          </td>
+          <td colspan="1" class=" scplancolgrade">
+            14
+          </td>
+          <td colspan="1" class=" scplancolweight">
+            6.0
+          </td>
+          <td colspan="1" class=" scplancolyear">
+            2024/2025
+          </td>
+          <td colspan="1" class=" scplancolsemester">
+            1 Sem.
+          </td>
+        </tr>
+        <tr class="scplanenrollment">
+          <td colspan="14" class=" scplancolcurricularcourse">
+            <span>
+              
+            </span>
+          </td>
+          <td colspan="1" class=" scplancolgrade">
+            13
+          </td>
+          <td colspan="1" class=" scplancolweight">
+            3.0
+          </td>
+          <td colspan="1" class=" scplancolyear">
+            2024/2025
+          </td>
+          <td colspan="1" class=" scplancolsemester">
+            2 Sem.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <table class="scplan table">
+      <tbody>
+        <tr class="scplangroup">
+          <td colspan="14" rowspan="2" class=" scplancolcurricularcourse">
+            
+          </td>
+          <td colspan="1" class=" scplancolgrade">
+            Ano Curricular
+          </td>
+          <td colspan="2" rowspan="2" class=" scplancolgrade">
+            Ano Lectivo
+          </td>
+        </tr>
+        <tr class="scplangroup">
+          <td colspan="1" class=" scplancolects">
+            ECTS
+          </td>
+        </tr>
+        <tr class="scplanenrollment">
+          <td colspan="14" class=" scplancolcurricularcourse">
+            <span>
+              Desenho de Construção Naval
+            </span>
+          </td>
+          <td colspan="1" class=" scplancolects">
+            6.0
+          </td>
+          <td colspan="1" class=" scplancolyear">
+            2023/2024
+          </td>
+          <td colspan="1" class=" scplancolsemester">
+            1 Sem.
+          </td>
+        </tr>
+        <tr class="scplanenrollment">
+          <td colspan="14" class=" scplancolcurricularcourse">
+            <span>
+              Introdução à Engenharia Naval e Oceânica
+            </span>
+          </td>
+          <td colspan="1" class=" scplancolects">
+            3.0
+          </td>
+          <td colspan="1" class=" scplancolyear">
+            2023/2024
+          </td>
+          <td colspan="1" class=" scplancolsemester">
+            1 Sem.
+          </td>
+        </tr>
+        <tr class="scplanenrollment">
+          <td colspan="14" class=" scplancolcurricularcourse">
+            <span>
+              N9 - Química Geral
+            </span>
+          </td>
+          <td colspan="1" class=" scplancolects">
+            6.0
+          </td>
+          <td colspan="1" class=" scplancolyear">
+            2023/2024
+          </td>
+          <td colspan="1" class=" scplancolsemester">
+            1 Sem.
+          </td>
+        </tr>
+        <tr class="scplanenrollment">
+          <td colspan="14" class=" scplancolcurricularcourse">
+            <span>
+              Fundamentos da Programação
+            </span>
+          </td>
+          <td colspan="1" class=" scplancolects">
+            6.0
+          </td>
+          <td colspan="1" class=" scplancolyear">
+            2023/2024
+          </td>
+          <td colspan="1" class=" scplancolsemester">
+            2 Sem.
+          </td>
+        </tr>
+        <tr class="scplanenrollment">
+          <td colspan="14" class=" scplancolcurricularcourse">
+            <span>
+              Introdução à Economia
+            </span>
+          </td>
+          <td colspan="1" class=" scplancolects">
+            3.0
+          </td>
+          <td colspan="1" class=" scplancolyear">
+            2023/2024
+          </td>
+          <td colspan="1" class=" scplancolsemester">
+            2 Sem.
+          </td>
+        </tr>
+        <tr class="scplanenrollment">
+          <td colspan="14" class=" scplancolcurricularcourse">
+            <span>
+              0558 - Relatividade
+            </span>
+          </td>
+          <td colspan="1" class=" scplancolects">
+            3.0
+          </td>
+          <td colspan="1" class=" scplancolyear">
+            2024/2025
+          </td>
+          <td colspan="1" class=" scplancolsemester">
+            2 Sem.
+          </td>
+        </tr>
+        <tr class="scplangroup">
+          <td colspan="14" style="text-align: right;">
+            Somatórios
+          </td>
+          <td class=" scplancolgrade">
+            27.0
+          </td>
+          <td colspan="2" class=" scplancolgrade"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+		</p>
+	
+
+			</div>
+		</main>
+		<nav class="col-sm-2 col-sm-pull-10" id="context">
+												<ul class="nav nav-pills nav-stacked">
+				<li class="navheader"><strong>Consultar</strong></li>
+									<li><a href="/student/consult/curriculum" target="_self">Currículo</a></li>
+									<li><a href="/student/consult/calendar" target="_self">Calendário</a></li>
+									<li><a href="/student/consult/data-share" target="_self">Cedência de Dados</a></li>
+									<li><a href="/student/consult/phds" target="_self">Doutoramentos</a></li>
+									<li><a href="/student/consult/statistics" target="_self">Estatísticas do Aluno</a></li>
+									<li><a href="/student/consult/statutes" target="_self">Estatutos do Aluno</a></li>
+									<li><a href="/student/consult/time-table" target="_self">Horário</a></li>
+									<li><a href="/student/consult/sync" target="_self">Sincronizar</a></li>
+									<li><a href="/student/consult/tutor-info" target="_self">Tutoria</a></li>
+							</ul>
+					<ul class="nav nav-pills nav-stacked">
+				<li class="navheader"><strong>Participar</strong></li>
+									<li><a href="/student/participate/weekly-workload" target="_self">Esforço Semanal</a></li>
+									<li><a href="/student/participate/forums" target="_self">Fóruns das Disciplinas</a></li>
+									<li><a href="/student/participate/outbound-mobility" target="_self">Mobilidade</a></li>
+									<li><a href="/student/participate/delegate-election" target="_self">Eleição de Delegados</a></li>
+									<li><a href="/student/participate/inquiry" target="_self">QUC - Inquéritos</a></li>
+									<li><a href="/student/participate/quc-audit-processes" target="_self">QUC - Processos de Auditoria</a></li>
+							</ul>
+					<ul class="nav nav-pills nav-stacked">
+				<li class="navheader"><strong>Submeter</strong></li>
+									<li><a href="/student/submit/thesis" target="_self">Dissertação</a></li>
+									<li><a href="/student/submit/tests" target="_self">Fichas de Trabalho</a></li>
+									<li><a href="/student/submit/projects" target="_self">Projectos</a></li>
+							</ul>
+					<ul class="nav nav-pills nav-stacked">
+				<li class="navheader"><strong>Inscrever</strong></li>
+									<li><a href="/student/enroll/enrollment-evaluations-showEvaluations" target="">Avaliações</a></li>
+									<li><a href="/student/enroll/courses" target="_self">Disciplinas</a></li>
+									<li><a href="/student/enroll/student-groups" target="_self">Grupos</a></li>
+									<li><a href="/student/enroll/special-season" target="_self">Época Especial</a></li>
+									<li><a href="/student/enroll/extraordinary-season" target="">Época Extraordinária</a></li>
+									<li><a href="/student/enroll/shift-enrollment" target="_self">Turmas</a></li>
+							</ul>
+					<ul class="nav nav-pills nav-stacked">
+				<li class="navheader"><strong>Finalistas</strong></li>
+									<li><a href="/student/finalists/studentCandidacies" target="_self">Candidatura a Dissertação/Projeto</a></li>
+							</ul>
+					<ul class="nav nav-pills nav-stacked">
+				<li class="navheader"><strong>Serviços Académicos</strong></li>
+									<li><a href="/student/academic-services/view-document-requests" target="_self">Consultar Pedidos</a></li>
+									<li><a href="/student/academic-services/prices" target="_self">Preçário</a></li>
+									<li><a href="/student/academic-services/registrationSelfService" target="">Gerir Regime Integral/Parcial</a></li>
+							</ul>
+				</nav>
+			</div>
+		<footer class="clearfix" role="contentinfo" >
+		<div class="col-sm-2 text-center">
+			<a class="brand" href="http://fenixedu.org"><img src="/themes/ashes/img/logo_fenixedu_footer.svg" alt="Powered by FenixEdu XXX"></a>
+		</div>
+		<p class="col-sm-10">
+			<span>© Instituto Superior Técnico</span>
+			<a href="" onclick="openSupport(); return false;">
+				Formulário de Suporte			</a>
+		</p>
+</footer>
+<div class="modal fade" id="supportModal"></div>
+<script>
+	openSupport = function() {
+		$('#supportModal').load('/themes/ashes-ist/supportModal.jsp'); $('#supportModal').modal('show');
+		window.current$functionality = '7400228653061';
+	};
+
+	var alertString = '' ;
+	if (alertString !== "") {
+		var alerts = JSON.parse(alertString);
+		var alertDiv = document.getElementById('alerts');
+		var i = 0;
+		for (var alert of alerts) {
+
+			var tag = alert.type;
+			var color = tag === 'success' ? '#d9ffb3' : tag === 'info' ? '#ccffff' : tag === 'warning' ? '#ffe0b3' : tag === 'danger' ? '#ffb3d1' : '#f2f2f2';
+			alertDiv.innerHTML += '<div style="background-color: ' + color + '; font-weight: bolder; text-align: center; vertical-align: middle; padding-top: 15px; padding-bottom: 15px;">' + alert.message.replaceAll('##X##', i) + '</div>';
+
+			fetch("/api/bennu-portal/alert/count", {
+				method: "POST",
+				body: JSON.stringify(alert),
+				headers: {
+					"Content-type": "application/json; charset=UTF-8",
+					"X-Requested-With": "XMLHttpRequest"
+				}
+			});
+
+			i++;
+		}
+		if (alerts.length > 0) {
+			alertDiv.style.display = "block";
+		}
+	}
+
+	function dismissAlert(num) {
+		if (alertString !== "") {
+			var alerts = JSON.parse(alertString);
+			var alert = alerts[num];
+
+			fetch("/api/bennu-portal/alert/dismiss", {
+				method: "POST",
+				body: JSON.stringify(alert),
+				headers: {
+					"Content-type": "application/json; charset=UTF-8",
+					"X-Requested-With": "XMLHttpRequest"
+				}
+			});
+
+			var linkElement = document.getElementById('alert' + num);
+			linkElement.parentElement.style.display = "none";
+		}
+		return;
+	}
+</script>
+	</body>
+</html>
