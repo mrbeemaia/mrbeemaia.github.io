@@ -55,11 +55,12 @@
     .page-wrapper { display: flex; }
 
     /* SIDEBAR */
-    nav#context { width: 200px; flex-shrink: 0; padding: 15px 0 15px 15px; background-color: #f5f5f5; }
-    .nav-stacked { list-style: none; margin-bottom: 8px; background-color: #fff; border: 1px solid #ddd; border-radius: 4px; overflow: hidden; }
-    .nav-stacked .navheader { background-color: #f5f5f5; border-bottom: 1px solid #ddd; padding: 7px 12px; font-size: 12px; }
-    .nav-stacked li a { display: block; padding: 5px 12px; color: #337ab7; font-size: 12px; text-decoration: none; border-bottom: 1px solid #f2f2f2; }
-    .nav-stacked li a:hover { background-color: #f5f5f5; }
+    nav#context { width: 200px; flex-shrink: 0; padding: 10px 10px 15px 10px; background-color: #d8d8d8; border-right: 1px solid #c0c0c0; }
+    .nav-stacked { list-style: none; margin-bottom: 0; background-color: transparent; border: none; border-top: 1px solid #b0b0b0; overflow: hidden; }
+    .nav-stacked:first-child { border-top: none; }
+    .nav-stacked .navheader { background-color: transparent; border: none; padding: 8px 5px 4px 5px; font-size: 12px; color: #333; }
+    .nav-stacked li a { display: block; padding: 3px 5px; color: #333; font-size: 12px; text-decoration: none; background-color: transparent; border: none; }
+    .nav-stacked li a:hover { text-decoration: underline; background-color: transparent; }
     .nav-stacked li:last-child a { border-bottom: none; }
 
     /* MAIN CONTENT */
@@ -119,16 +120,20 @@
 
     /* Main curriculum table */
     table.scplan { width: 100%; border-collapse: collapse; font-size: 12px; margin-bottom: 20px; }
-    table.scplan td { padding: 4px 6px; border: 1px solid #ddd; vertical-align: middle; }
-    tr.scplangroup td { background-color: #f0f0f0; font-weight: bold; font-size: 12px; color: #444; padding: 5px 8px; }
-    tr.scplanenrollment:nth-child(even) td { background-color: #fafafa; }
-    tr.scplanenrollment:hover td { background-color: #f5f5f5; }
+    table.scplan td { padding: 5px 8px; border: 1px solid #ddd; vertical-align: middle; background-color: #fff; color: #333; }
+    tr.scplangroup td { background-color: #fffacd; font-weight: bold; font-size: 12px; color: #333; padding: 5px 8px; border-color: #e8e0a0; }
+    tr.scplanenrollment td { background-color: #fff; }
+    tr.scplanenrollment:nth-child(even) td { background-color: #fffff5; }
+    tr.scplanenrollment:hover td { background-color: #f5f5e8; }
+    tr.scplanenrollment td a { color: #333; }
+    tr.scplanenrollment td a:hover { text-decoration: underline; color: #333; }
+    .scplancolgrade { text-align: center; width: 42px; background-color: #e8e8e8; color: #555; }
     .scplancolcurricularcourse { }
-    .scplancolgrade, .scplancolweight, .scplancolects { text-align: center; width: 42px; }
+    .scplancolweight, .scplancolects { text-align: center; width: 42px; }
     .scplancolenrollmentstate { width: 130px; font-size: 11px; }
     .scplancolenrolmentevaluationtype { text-align: center; width: 32px; }
     .scplancolstatistics a { font-size: 11px; white-space: nowrap; }
-    .scplancolyear, .scplancolsemester { display: none; }
+    .scplancolyear, .scplancolsemester { display: table-cell; text-align: center; width: 60px; font-size: 11px; color: #666; }
 
     /* Legend */
     .print_fsize08 { font-size: 12px; margin-top: 20px; }
@@ -170,7 +175,7 @@
 <header>
   <div class="logo-container">
     <a href="#">
-      <img src="ist-logo.png" alt="Técnico Lisboa" style="max-height: 45px;" />
+      <img src="ist-logo.png" alt="Técnico Lisboa" style="max-height: 45px; max-width: 160px;" />
     </a>
   </div>
   <nav id="topNav">
@@ -254,7 +259,7 @@
 
       <div style="float: right;">
         <img class="img-thumbnail" src="student.jpg" width="100" height="100"
-          onerror="this.style.background:'#eee';this.style.width='100px';this.style.height='100px';" />
+          onerror="this.style.background='#eee';" />
       </div>
 
       <p class="mvert2">
