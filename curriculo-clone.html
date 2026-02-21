@@ -1,684 +1,698 @@
-<!-- atualização mínima para novo deploy --> 
 <!DOCTYPE html>
-<html lang="pt">
+<html dir="ltr" lang="pt_PT">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo: Estudante - ULISBOA</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
- 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-        }
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5">
+  <title>Currículo · Estudante</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #333; background-color: #f5f5f5; }
+    a { color: #337ab7; text-decoration: none; }
+    a:hover { text-decoration: underline; color: #23527c; }
 
-        .top-header {
-            background-color: #fff;
-            border-bottom: 1px solid #ddd;
-            padding: 15px 20px;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
+    /* TOP FENIXEDU BAR */
+    .fenixedu-bar {
+      background-color: #222; color: #9d9d9d; min-height: 34px;
+      display: flex; align-items: center;
+    }
+    .fenixedu-bar .inner {
+      width: 100%; padding: 0 15px; display: flex;
+      justify-content: space-between; align-items: center;
+    }
+    .fenixedu-bar .navbar-brand {
+      color: #9d9d9d; font-size: 15px; font-weight: bold; text-decoration: none;
+    }
+    .fenixedu-bar .navbar-brand:hover { color: #fff; }
+    .fenixedu-bar .nav-right { list-style: none; display: flex; align-items: center; }
+    .fenixedu-bar .nav-right li a {
+      color: #9d9d9d; padding: 8px 12px; display: block; font-size: 13px; text-decoration: none;
+    }
+    .fenixedu-bar .nav-right li a:hover { color: #fff; background-color: #080808; }
+    .fenixedu-bar .nav-right li.active a { color: #fff; background-color: #080808; }
 
-        .ist-logo {
-            width: 120px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 4px;
-        }
+    /* MAIN HEADER */
+    header {
+      background-color: #fff; border-bottom: 1px solid #e7e7e7;
+      min-height: 60px; display: flex; align-items: stretch;
+    }
+    .logo-container {
+      width: 200px; flex-shrink: 0; display: flex; align-items: center;
+      justify-content: center; padding: 10px 15px; border-right: 1px solid #e7e7e7;
+    }
+    .logo-text { font-size: 22px; font-weight: bold; color: #006fba; font-family: Georgia, serif; display: block; }
+    .logo-sub { font-size: 9px; color: #888; display: block; letter-spacing: 1px; text-transform: uppercase; text-align: right; }
+    nav#topNav { flex: 1; display: flex; align-items: flex-end; padding: 0 10px; }
+    .nav-menu { list-style: none; display: flex; }
+    .nav-menu li a {
+      display: block; padding: 12px 15px; color: #555; font-size: 14px;
+      text-decoration: none; border-bottom: 3px solid transparent; margin-bottom: -1px;
+    }
+    .nav-menu li a:hover { color: #333; background-color: #f5f5f5; border-bottom-color: #ddd; }
+    .nav-menu li.active a { color: #555; border-bottom-color: #337ab7; }
 
-        .ist-logo img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
-        }
+    /* PAGE LAYOUT */
+    .page-wrapper { display: flex; }
 
-        .main-content {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 4px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
+    /* SIDEBAR */
+    nav#context { width: 200px; flex-shrink: 0; padding: 15px 0 15px 15px; background-color: #f5f5f5; }
+    .nav-stacked { list-style: none; margin-bottom: 8px; background-color: #fff; border: 1px solid #ddd; border-radius: 4px; overflow: hidden; }
+    .nav-stacked .navheader { background-color: #f5f5f5; border-bottom: 1px solid #ddd; padding: 7px 12px; font-size: 12px; }
+    .nav-stacked li a { display: block; padding: 5px 12px; color: #337ab7; font-size: 12px; text-decoration: none; border-bottom: 1px solid #f2f2f2; }
+    .nav-stacked li a:hover { background-color: #f5f5f5; }
+    .nav-stacked li:last-child a { border-bottom: none; }
 
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 30px;
-        }
+    /* MAIN CONTENT */
+    main { flex: 1; padding: 15px 20px; min-width: 0; background-color: #fff; }
 
-        .student-info h1 {
-            font-size: 24px;
-            margin-bottom: 10px;
-            color: #333;
-        }
+    /* Breadcrumb */
+    .breadcrumb {
+      list-style: none; display: flex; flex-wrap: wrap; align-items: center;
+      padding: 6px 0 8px; margin-bottom: 15px; background: transparent;
+      font-size: 12px; border-bottom: 1px solid #eee;
+    }
+    .breadcrumb li { display: inline-flex; align-items: center; }
+    .breadcrumb li + li::before { content: " / "; padding: 0 4px; color: #bbb; }
+    .pull-right { margin-left: auto; }
+    .locale-changer { color: #aaa; font-size: 11px; padding: 0 3px; text-decoration: none; }
+    .locale-changer.active { color: #337ab7; font-weight: bold; }
 
-        .student-details {
-            color: #666;
-            font-size: 14px;
-        }
+    /* Headings & utils */
+    h2 { font-size: 21px; font-weight: 500; margin-bottom: 14px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+    h3.separator2 { font-size: 15px; font-weight: normal; border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-bottom: 10px; }
+    .mtop2 { margin-top: 16px; }
+    .mtop1 { margin-top: 8px; }
+    .mbottom1 { margin-bottom: 8px; }
+    .mbottom0 { margin-bottom: 0; }
+    .mvert2 { margin: 14px 0; }
+    .mvert05 { margin: 3px 0; }
+    .fwnormal { font-weight: normal; }
+    .col-sm-6 { width: 50%; float: left; }
+    .clearfix::after { content: ""; display: table; clear: both; }
+    .cboth { clear: both; }
 
-        .student-photo {
-            width: 100px;
-            height: 120px;
-            background-color: #f0f0f0;
-            border: 2px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+    /* Student photo */
+    .img-thumbnail { border: 1px solid #ddd; border-radius: 4px; padding: 4px; background: #fff; }
 
-        .student-photo img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+    /* Details table */
+    table.tstyle1 { width: 100%; border-collapse: collapse; font-size: 13px; }
+    table.tstyle1 th {
+      text-align: right; font-weight: bold; padding: 5px 10px;
+      background-color: #f9f9f9; border: 1px solid #ddd; width: 200px;
+      white-space: nowrap; vertical-align: top; color: #555;
+    }
+    table.tstyle1 td { padding: 5px 10px; border: 1px solid #ddd; background-color: #fff; vertical-align: top; }
 
-        .photo-placeholder {
-            width: 60px;
-            height: 60px;
-            background-color: #ddd;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #999;
-            font-size: 24px;
-        }
+    /* Visualizar form table */
+    table.tstyle5 { border-collapse: collapse; font-size: 13px; margin-bottom: 15px; }
+    table.tstyle5 th {
+      text-align: right; font-weight: bold; padding: 5px 10px;
+      background-color: #f9f9f9; border: 1px solid #ddd; white-space: nowrap; vertical-align: middle; color: #555;
+    }
+    table.tstyle5 td { padding: 5px 10px; border: 1px solid #ddd; background-color: #fff; vertical-align: middle; }
+    table.tstyle5 select { font-size: 12px; padding: 2px 4px; border: 1px solid #ccc; border-radius: 3px; }
+    table.tstyle5 input[type="radio"] { margin-right: 4px; }
 
-        .section {
-            margin-bottom: 40px;
-        }
+    /* Plan info */
+    .mvert2.mtop0 { margin-top: 0; }
+    .mvert2 p { margin: 3px 0; font-size: 13px; }
 
-        .section h2 {
-            font-size: 18px;
-            margin-bottom: 20px;
-            color: #333;
-        }
+    /* Main curriculum table */
+    table.scplan { width: 100%; border-collapse: collapse; font-size: 12px; margin-bottom: 20px; }
+    table.scplan td { padding: 4px 6px; border: 1px solid #ddd; vertical-align: middle; }
+    tr.scplangroup td { background-color: #f0f0f0; font-weight: bold; font-size: 12px; color: #444; padding: 5px 8px; }
+    tr.scplanenrollment:nth-child(even) td { background-color: #fafafa; }
+    tr.scplanenrollment:hover td { background-color: #f5f5f5; }
+    .scplancolcurricularcourse { }
+    .scplancolgrade, .scplancolweight, .scplancolects { text-align: center; width: 42px; }
+    .scplancolenrollmentstate { width: 130px; font-size: 11px; }
+    .scplancolenrolmentevaluationtype { text-align: center; width: 32px; }
+    .scplancolstatistics a { font-size: 11px; white-space: nowrap; }
+    .scplancolyear, .scplancolsemester { display: none; }
 
-        .details-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
+    /* Legend */
+    .print_fsize08 { font-size: 12px; margin-top: 20px; }
+    .print_fsize08 em { font-style: normal; color: #555; }
 
-        .details-table td {
-            padding: 8px 12px;
-            border: 1px solid #ddd;
-            background-color: #f9f9f9;
-        }
+    /* Graph placeholder */
+    #graph {
+      margin: 20px 0 10px; padding: 15px; background: #f9f9f9;
+      border: 1px solid #eee; border-radius: 4px; min-height: 60px;
+      display: flex; align-items: center; justify-content: center;
+      color: #aaa; font-size: 12px; font-style: italic;
+    }
 
-        .details-table td:first-child {
-            font-weight: bold;
-            background-color: #f0f0f0;
-            width: 200px;
-        }
-
-        .courses-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-
-        .courses-table th,
-        .courses-table td {
-            padding: 8px;
-            border: 1px solid #ddd;
-            text-align: left;
-            font-size: 12px;
-        }
-
-        .courses-table th {
-            background-color: #f0f0f0;
-            font-weight: bold;
-        }
-
-        .course-group {
-            background-color: #fff8dc;
-        }
-
-        .course-group td {
-            font-weight: bold;
-        }
-
-        .course-row td {
-            background-color: #fff;
-        }
-
-        .status-approved {
-            color: #333;
-        }
-
-        .status-enrolled {
-            color: #333;
-        }
-
-        .status-reprovado {
-            color: #333;
-        }
-
-        .status-nao-avaliado {
-            color: #333;
-        }
-
-        .link {
-            color: #0066cc;
-            text-decoration: none;
-        }
-
-        .link:hover {
-            text-decoration: underline;
-        }
-
-        .legend {
-            margin: 20px 0;
-            padding: 15px;
-            background-color: #f8f8f8;
-            border: 1px solid #ddd;
-        }
-
-        .legend h3 {
-            margin-bottom: 10px;
-            font-size: 16px;
-        }
-
-        .legend-item {
-            margin: 5px 0;
-            font-size: 12px;
-        }
-    </style>
+    /* FOOTER */
+    footer {
+      background-color: #fff; border-top: 1px solid #ddd;
+      padding: 12px 20px; font-size: 12px; color: #777;
+      display: flex; align-items: center; gap: 20px; clear: both;
+    }
+    footer .brand-text { font-size: 14px; font-weight: bold; color: #006fba; opacity: 0.7; }
+    footer a { color: #337ab7; margin-left: 12px; }
+    footer span { margin-right: 5px; }
+  </style>
 </head>
 <body>
-    <div class="top-header">
-        <div class="ist-logo">
-            <img src="ist-logo.png" alt="IST Logo">
+
+<!-- TOP BAR -->
+<div class="fenixedu-bar">
+  <div class="inner">
+    <a class="navbar-brand" href="#">Técnico Lisboa</a>
+    <ul class="nav-right">
+      <li><a>André Duarte Maia</a></li>
+      <li class="active"><a href="#">Logout</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- MAIN HEADER -->
+<header>
+  <div class="logo-container">
+    <a href="#">
+      <img src="ist-logo.png" alt="Técnico Lisboa" style="max-height: 45px;" />
+    </a>
+  </div>
+  <nav id="topNav">
+    <ul class="nav-menu">
+      <li><a href="#">Comunicação</a></li>
+      <li class="active"><a href="#">Estudante</a></li>
+      <li><a href="#">Pessoal</a></li>
+      <li><a href="#">Gestão de Espaços</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- PAGE WRAPPER -->
+<div class="page-wrapper">
+
+  <!-- SIDEBAR -->
+  <nav id="context">
+    <ul class="nav-stacked">
+      <li class="navheader"><strong>Consultar</strong></li>
+      <li><a href="#">Currículo</a></li>
+      <li><a href="#">Calendário</a></li>
+      <li><a href="#">Cedência de Dados</a></li>
+      <li><a href="#">Doutoramentos</a></li>
+      <li><a href="#">Estatísticas do Aluno</a></li>
+      <li><a href="#">Estatutos do Aluno</a></li>
+      <li><a href="#">Horário</a></li>
+      <li><a href="#">Sincronizar</a></li>
+      <li><a href="#">Tutoria</a></li>
+    </ul>
+    <ul class="nav-stacked">
+      <li class="navheader"><strong>Participar</strong></li>
+      <li><a href="#">Esforço Semanal</a></li>
+      <li><a href="#">Fóruns das Disciplinas</a></li>
+      <li><a href="#">Mobilidade</a></li>
+      <li><a href="#">Eleição de Delegados</a></li>
+      <li><a href="#">QUC - Inquéritos</a></li>
+      <li><a href="#">QUC - Processos de Auditoria</a></li>
+    </ul>
+    <ul class="nav-stacked">
+      <li class="navheader"><strong>Submeter</strong></li>
+      <li><a href="#">Dissertação</a></li>
+      <li><a href="#">Fichas de Trabalho</a></li>
+      <li><a href="#">Projectos</a></li>
+    </ul>
+    <ul class="nav-stacked">
+      <li class="navheader"><strong>Inscrever</strong></li>
+      <li><a href="#">Avaliações</a></li>
+      <li><a href="#">Disciplinas</a></li>
+      <li><a href="#">Grupos</a></li>
+      <li><a href="#">Época Especial</a></li>
+      <li><a href="#">Época Extraordinária</a></li>
+      <li><a href="#">Turmas</a></li>
+    </ul>
+    <ul class="nav-stacked">
+      <li class="navheader"><strong>Finalistas</strong></li>
+      <li><a href="#">Candidatura a Dissertação/Projeto</a></li>
+    </ul>
+    <ul class="nav-stacked">
+      <li class="navheader"><strong>Serviços Académicos</strong></li>
+      <li><a href="#">Consultar Pedidos</a></li>
+      <li><a href="#">Preçário</a></li>
+      <li><a href="#">Gerir Regime Integral/Parcial</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <ol class="breadcrumb">
+      <li><a href="#">Estudante</a></li>
+      <li><a href="#">Consultar</a></li>
+      <li><a href="#">Currículo</a></li>
+      <span class="pull-right">
+        <a class="locale-changer active" href="#">pt</a>
+        <a class="locale-changer" href="#">en</a>
+      </span>
+    </ol>
+
+    <div id="main-content-wrapper">
+
+      <h2>Currículo do Aluno</h2>
+
+      <div style="float: right;">
+        <img class="img-thumbnail" src="student.jpg" width="100" height="100"
+          onerror="this.style.background:'#eee';this.style.width='100px';this.style.height='100px';" />
+      </div>
+
+      <p class="mvert2">
+        Aluno: André Duarte Maia (110501) - Bilhete de Identidade (30570349)
+      </p>
+
+      <div class="clearfix">
+        <h3 class="separator2 mbottom1 fwnormal">Detalhes da Matrícula</h3>
+        <div class="col-sm-6">
+          <table class="tstyle1">
+            <tbody>
+              <tr><th>Data de Início:</th><td>01-09-2023</td></tr>
+              <tr><th>Número:</th><td>110501</td></tr>
+              <tr><th>Curso:</th><td>Licenciatura Bolonha em Engenharia Naval e Oceânica</td></tr>
+              <tr><th>Estado Actual:</th><td>Matriculado</td></tr>
+              <tr><th>Acordo:</th><td>Normal</td></tr>
+              <tr><th>Inscrições no Ano Corrente:</th><td>13</td></tr>
+              <tr><th>Data de Homologação:</th><td>-</td></tr>
+              <tr><th>Data de Início de Estudos:</th><td>14/09/2023</td></tr>
+              <tr><th>Código de Ingresso:</th><td>CNA01 - Contingente Geral</td></tr>
+              <tr><th>Fase de Entrada:</th><td>1</td></tr>
+            </tbody>
+          </table>
         </div>
-        <div>
-            <span style="font-weight: bold; color: #666;">Instituto Superior Técnico - Universidade de Lisboa</span>
+        <p class="mtop1 mbottom1" style="clear:both; padding-top:8px; font-size:12px;">
+          <a href="#">Ver Currículo de Matrícula</a>
+        </p>
+      </div>
+
+      <h3 class="separator2 mbottom1 mtop2 fwnormal">Visualizar</h3>
+      <table class="tstyle5">
+        <tr>
+          <th>Plano Curricular</th>
+          <td>
+            <select>
+              <option selected>Plano curricular mais recente</option>
+              <option>Todos os planos curriculares</option>
+              <option>Licenciatura Bolonha em Engenharia Naval e Oceânica, LENO 2021 - 2023-08-28</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>Visualizar:</th>
+          <td>
+            <select><option selected>Todos</option><option>Inscrições</option><option>Dispensas</option></select>
+          </td>
+        </tr>
+        <tr>
+          <th>Tipo de inscrições:</th>
+          <td>
+            <select><option selected>Todas</option><option>Aprovado</option><option>Aprovado/Inscrito</option></select>
+          </td>
+        </tr>
+        <tr>
+          <th>Organizar por:</th>
+          <td>
+            <input type="radio" name="organizedBy" value="GROUPS" /> Grupos &nbsp;
+            <input type="radio" name="organizedBy" value="EXECUTION_YEARS" checked /> Anos Lectivos
+          </td>
+        </tr>
+        <tr>
+          <th>Detalhado:</th>
+          <td>
+            <input type="radio" name="detailed" value="true" /> Sim &nbsp;
+            <input type="radio" name="detailed" value="false" checked /> Não
+          </td>
+        </tr>
+      </table>
+
+      <div class="mvert2 mtop0">
+        <p><strong>Plano Curricular: </strong> Licenciatura Bolonha em Engenharia Naval e Oceânica - LENO 2021</p>
+        <p><strong>Data de Início: </strong> 28.08.2023</p>
+      </div>
+
+      <!-- ===== CURRICULUM TABLE ===== -->
+      <div>
+        <table class="scplan">
+          <tbody>
+
+            <!-- 2023/2024 1S -->
+            <tr class="scplangroup">
+              <td colspan="14" class="scplancolcurricularcourse">2023/2024, 1º semestre</td>
+              <td colspan="1"></td><td colspan="1"></td><td colspan="1"></td>
+              <td colspan="1" class="scplancolgrade">Nota</td>
+              <td colspan="1" class="scplancolweight">Peso</td>
+              <td colspan="1" class="scplancolects">ECTS</td>
+              <td colspan="6"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="https://fenix.tecnico.ulisboa.pt/disciplinas/AL11/2023-2024/1-semestre" target="_blank">Álgebra Linear</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td>
+              <td colspan="1" class="scplancolenrollmentstate">Reprovado (EN)</td>
+              <td colspan="1" class="scplancolgrade">RE</td><td colspan="1" class="scplancolweight">6.0</td><td colspan="1" class="scplancolects">6.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td>
+              <td colspan="1" class="scplancolyear">2023/2024</td><td colspan="1" class="scplancolsemester">1 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI18/2023-2024/1-semestre" target="_blank">Cálculo Diferencial e Integral I</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td>
+              <td colspan="1" class="scplancolenrollmentstate">Reprovado (EN)</td>
+              <td colspan="1" class="scplancolgrade">RE</td><td colspan="1" class="scplancolweight">6.0</td><td colspan="1" class="scplancolects">6.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td>
+              <td colspan="1" class="scplancolyear">2023/2024</td><td colspan="1" class="scplancolsemester">1 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="https://fenix.tecnico.ulisboa.pt/disciplinas/DCN/2023-2024/1-semestre" target="_blank">Desenho de Construção Naval</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td>
+              <td colspan="1" class="scplancolenrollmentstate">Aprovado (EN)</td>
+              <td colspan="1" class="scplancolgrade">15</td><td colspan="1" class="scplancolweight">6.0</td><td colspan="1" class="scplancolects">6.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td>
+              <td colspan="1" class="scplancolyear">2023/2024</td><td colspan="1" class="scplancolsemester">1 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="#" target="_blank">Gestão</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td>
+              <td colspan="1" class="scplancolenrollmentstate">Reprovado (EN)</td>
+              <td colspan="1" class="scplancolgrade">RE</td><td colspan="1" class="scplancolweight">3.0</td><td colspan="1" class="scplancolects">3.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td>
+              <td colspan="1" class="scplancolyear">2023/2024</td><td colspan="1" class="scplancolsemester">1 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="#" target="_blank">Introdução à Engenharia Naval e Oceânica</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td>
+              <td colspan="1" class="scplancolenrollmentstate">Aprovado (EN)</td>
+              <td colspan="1" class="scplancolgrade">13</td><td colspan="1" class="scplancolweight">3.0</td><td colspan="1" class="scplancolects">3.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td>
+              <td colspan="1" class="scplancolyear">2023/2024</td><td colspan="1" class="scplancolsemester">1 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="#" target="_blank">N9 - Química Geral</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td>
+              <td colspan="1" class="scplancolenrollmentstate">Aprovado (EN)</td>
+              <td colspan="1" class="scplancolgrade">13</td><td colspan="1" class="scplancolweight">6.0</td><td colspan="1" class="scplancolects">6.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td>
+              <td colspan="1" class="scplancolyear">2023/2024</td><td colspan="1" class="scplancolsemester">1 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+
+            <!-- 2023/2024 2S -->
+            <tr class="scplangroup">
+              <td colspan="14" class="scplancolcurricularcourse">2023/2024, 2º semestre</td>
+              <td colspan="1"></td><td colspan="1"></td><td colspan="1"></td>
+              <td colspan="1" class="scplancolgrade">Nota</td><td colspan="1" class="scplancolweight">Peso</td><td colspan="1" class="scplancolects">ECTS</td>
+              <td colspan="6"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="#" target="_blank">Cálculo Diferencial e Integral II</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td>
+              <td colspan="1" class="scplancolenrollmentstate">Reprovado (EN)</td>
+              <td colspan="1" class="scplancolgrade">RE</td><td colspan="1" class="scplancolweight">6.0</td><td colspan="1" class="scplancolects">6.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td>
+              <td colspan="1" class="scplancolyear">2023/2024</td><td colspan="1" class="scplancolsemester">2 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="#" target="_blank">Ciência de Materiais</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td>
+              <td colspan="1" class="scplancolenrollmentstate">Reprovado (EN)</td>
+              <td colspan="1" class="scplancolgrade">RE</td><td colspan="1" class="scplancolweight">3.0</td><td colspan="1" class="scplancolects">3.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td>
+              <td colspan="1" class="scplancolyear">2023/2024</td><td colspan="1" class="scplancolsemester">2 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="#" target="_blank">Fundamentos da Programação</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td>
+              <td colspan="1" class="scplancolenrollmentstate">Aprovado (EN)</td>
+              <td colspan="1" class="scplancolgrade">15</td><td colspan="1" class="scplancolweight">6.0</td><td colspan="1" class="scplancolects">6.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td>
+              <td colspan="1" class="scplancolyear">2023/2024</td><td colspan="1" class="scplancolsemester">2 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="#" target="_blank">HASS I (Introdução à Economia)</a></td>
+              <td colspan="1">-</td><td colspan="1">Opcional</td>
+              <td colspan="1" class="scplancolenrollmentstate">Aprovado (EN)</td>
+              <td colspan="1" class="scplancolgrade">13</td><td colspan="1" class="scplancolweight">3.0</td><td colspan="1" class="scplancolects">3.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td>
+              <td colspan="1" class="scplancolyear">2023/2024</td><td colspan="1" class="scplancolsemester">2 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="#" target="_blank">Mecânica Aplicada I</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td>
+              <td colspan="1" class="scplancolenrollmentstate">Reprovado (EN)</td>
+              <td colspan="1" class="scplancolgrade">RE</td><td colspan="1" class="scplancolweight">6.0</td><td colspan="1" class="scplancolects">6.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td>
+              <td colspan="1" class="scplancolyear">2023/2024</td><td colspan="1" class="scplancolsemester">2 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+
+            <!-- 2024/2025 1S -->
+            <tr class="scplangroup">
+              <td colspan="14" class="scplancolcurricularcourse">2024/2025, 1º semestre</td>
+              <td colspan="1"></td><td colspan="1"></td><td colspan="1"></td>
+              <td colspan="1" class="scplancolgrade">Nota</td><td colspan="1" class="scplancolweight">Peso</td><td colspan="1" class="scplancolects">ECTS</td>
+              <td colspan="6"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="#" target="_blank">Álgebra Linear</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td>
+              <td colspan="1" class="scplancolenrollmentstate">Aprovado (EN)</td>
+              <td colspan="1" class="scplancolgrade">15</td><td colspan="1" class="scplancolweight">6.0</td><td colspan="1" class="scplancolects">6.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td>
+              <td colspan="1" class="scplancolyear">2024/2025</td><td colspan="1" class="scplancolsemester">1 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="#" target="_blank">Cálculo Diferencial e Integral I</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td>
+              <td colspan="1" class="scplancolenrollmentstate">Aprovado (EN)</td>
+              <td colspan="1" class="scplancolgrade">14</td><td colspan="1" class="scplancolweight">6.0</td><td colspan="1" class="scplancolects">6.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td>
+              <td colspan="1" class="scplancolyear">2024/2025</td><td colspan="1" class="scplancolsemester">1 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="#" target="_blank">Eletromagnetismo e Óptica</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td>
+              <td colspan="1" class="scplancolenrollmentstate">Reprovado (EN)</td>
+              <td colspan="1" class="scplancolgrade">RE</td><td colspan="1" class="scplancolweight">6.0</td><td colspan="1" class="scplancolects">6.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td>
+              <td colspan="1" class="scplancolyear">2024/2025</td><td colspan="1" class="scplancolsemester">1 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="#" target="_blank">Gestão</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td>
+              <td colspan="1" class="scplancolenrollmentstate">Aprovado (EN)</td>
+              <td colspan="1" class="scplancolgrade">14</td><td colspan="1" class="scplancolweight">3.0</td><td colspan="1" class="scplancolects">3.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td>
+              <td colspan="1" class="scplancolyear">2024/2025</td><td colspan="1" class="scplancolsemester">1 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="#" target="_blank">Matemática Computacional</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td>
+              <td colspan="1" class="scplancolenrollmentstate">Reprovado (EN)</td>
+              <td colspan="1" class="scplancolgrade">RE</td><td colspan="1" class="scplancolweight">6.0</td><td colspan="1" class="scplancolects">6.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td>
+              <td colspan="1" class="scplancolyear">2024/2025</td><td colspan="1" class="scplancolsemester">1 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="#" target="_blank">Mecânica dos Materiais</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td>
+              <td colspan="1" class="scplancolenrollmentstate">Reprovado (EN)</td>
+              <td colspan="1" class="scplancolgrade">RE</td><td colspan="1" class="scplancolweight">6.0</td><td colspan="1" class="scplancolects">6.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td>
+              <td colspan="1" class="scplancolyear">2024/2025</td><td colspan="1" class="scplancolsemester">1 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+
+            <!-- 2024/2025 2S -->
+            <tr class="scplangroup">
+              <td colspan="14" class="scplancolcurricularcourse">2024/2025, 2º semestre</td>
+              <td colspan="1"></td><td colspan="1"></td><td colspan="1"></td>
+              <td colspan="1" class="scplancolgrade">Nota</td><td colspan="1" class="scplancolweight">Peso</td><td colspan="1" class="scplancolects">ECTS</td>
+              <td colspan="6"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="#" target="_blank">Arquitectura Naval</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td>
+              <td colspan="1" class="scplancolenrollmentstate">Reprovado (EN)</td>
+              <td colspan="1" class="scplancolgrade">RE</td><td colspan="1" class="scplancolweight">6.0</td><td colspan="1" class="scplancolects">6.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td>
+              <td colspan="1" class="scplancolyear">2024/2025</td><td colspan="1" class="scplancolsemester">2 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="#" target="_blank">Ciência de Materiais</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td>
+              <td colspan="1" class="scplancolenrollmentstate">Aprovado (EN)</td>
+              <td colspan="1" class="scplancolgrade">12</td><td colspan="1" class="scplancolweight">6.0</td><td colspan="1" class="scplancolects">6.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td>
+              <td colspan="1" class="scplancolyear">2024/2025</td><td colspan="1" class="scplancolsemester">2 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="#" target="_blank">Introdução à Mecânica Quântica</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td>
+              <td colspan="1" class="scplancolenrollmentstate">Reprovado (EN)</td>
+              <td colspan="1" class="scplancolgrade">RE</td><td colspan="1" class="scplancolweight">3.0</td><td colspan="1" class="scplancolects">3.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td>
+              <td colspan="1" class="scplancolyear">2024/2025</td><td colspan="1" class="scplancolsemester">2 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="#" target="_blank">Mecânica Aplicada I</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td>
+              <td colspan="1" class="scplancolenrollmentstate">Aprovado (EN)</td>
+              <td colspan="1" class="scplancolgrade">14</td><td colspan="1" class="scplancolweight">6.0</td><td colspan="1" class="scplancolects">6.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td>
+              <td colspan="1" class="scplancolyear">2024/2025</td><td colspan="1" class="scplancolsemester">2 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="#" target="_blank">0558 - Relatividade</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td>
+              <td colspan="1" class="scplancolenrollmentstate">Aprovado (EN)</td>
+              <td colspan="1" class="scplancolgrade">12</td><td colspan="1" class="scplancolweight">3.0</td><td colspan="1" class="scplancolects">3.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td>
+              <td colspan="1" class="scplancolyear">2024/2025</td><td colspan="1" class="scplancolsemester">2 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="#" target="_blank">Tecnologia de Construção Naval</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td>
+              <td colspan="1" class="scplancolenrollmentstate">Reprovado (EN)</td>
+              <td colspan="1" class="scplancolgrade">RE</td><td colspan="1" class="scplancolweight">6.0</td><td colspan="1" class="scplancolects">6.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td>
+              <td colspan="1" class="scplancolyear">2024/2025</td><td colspan="1" class="scplancolsemester">2 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="#" target="_blank">Termodinâmica I</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td>
+              <td colspan="1" class="scplancolenrollmentstate">Reprovado (EN)</td>
+              <td colspan="1" class="scplancolgrade">RE</td><td colspan="1" class="scplancolweight">6.0</td><td colspan="1" class="scplancolects">6.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td>
+              <td colspan="1" class="scplancolyear">2024/2025</td><td colspan="1" class="scplancolsemester">2 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+
+            <!-- 2025/2026 1S -->
+            <tr class="scplangroup">
+              <td colspan="14" class="scplancolcurricularcourse">2025/2026, 1º Semestre</td>
+              <td colspan="1"></td><td colspan="1"></td><td colspan="1"></td>
+              <td colspan="1" class="scplancolgrade">Nota</td><td colspan="1" class="scplancolweight">Peso</td><td colspan="1" class="scplancolects">ECTS</td>
+              <td colspan="6"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="#" target="_blank">Estática e Estabilidade de Embarcações</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td>
+              <td colspan="1" class="scplancolenrollmentstate">Aprovado (EN)</td>
+              <td colspan="1" class="scplancolgrade">14</td><td colspan="1" class="scplancolweight">6.0</td><td colspan="1" class="scplancolects">6.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td>
+              <td colspan="1" class="scplancolyear">2025/2026</td><td colspan="1" class="scplancolsemester">1 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="#" target="_blank">Cálculo Diferencial e Integral III</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td>
+              <td colspan="1" class="scplancolenrollmentstate">Reprovado (EN)</td>
+              <td colspan="1" class="scplancolgrade">RE</td><td colspan="1" class="scplancolweight">6.0</td><td colspan="1" class="scplancolects">6.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td>
+              <td colspan="1" class="scplancolyear">2025/2026</td><td colspan="1" class="scplancolsemester">1 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="#" target="_blank">Mecânica de Fluidos I</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td>
+              <td colspan="1" class="scplancolenrollmentstate">Reprovado (EN)</td>
+              <td colspan="1" class="scplancolgrade">RE</td><td colspan="1" class="scplancolweight">6.0</td><td colspan="1" class="scplancolects">6.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td>
+              <td colspan="1" class="scplancolyear">2025/2026</td><td colspan="1" class="scplancolsemester">1 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="#" target="_blank">Resistência e Propulsão</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td>
+              <td colspan="1" class="scplancolenrollmentstate">Aprovado (EN)</td>
+              <td colspan="1" class="scplancolgrade">12</td><td colspan="1" class="scplancolweight">6.0</td><td colspan="1" class="scplancolects">6.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td>
+              <td colspan="1" class="scplancolyear">2025/2026</td><td colspan="1" class="scplancolsemester">1 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="#" target="_blank">Mecânica de Materiais</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td>
+              <td colspan="1" class="scplancolenrollmentstate">Aprovado (EN)</td>
+              <td colspan="1" class="scplancolgrade">14</td><td colspan="1" class="scplancolweight">6.0</td><td colspan="1" class="scplancolects">6.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td>
+              <td colspan="1" class="scplancolyear">2025/2026</td><td colspan="1" class="scplancolsemester">1 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="#" target="_blank">HASS II (Crise Climática e Transição Justa)</a></td>
+              <td colspan="1">-</td><td colspan="1">Opcional</td>
+              <td colspan="1" class="scplancolenrollmentstate">Aprovado (EN)</td>
+              <td colspan="1" class="scplancolgrade">11</td><td colspan="1" class="scplancolweight">3.0</td><td colspan="1" class="scplancolects">3.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td>
+              <td colspan="1" class="scplancolyear">2025/2026</td><td colspan="1" class="scplancolsemester">1 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="#" target="_blank">Matemática Computacional</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td>
+              <td colspan="1" class="scplancolenrollmentstate">Aprovado (EN)</td>
+              <td colspan="1" class="scplancolgrade">12</td><td colspan="1" class="scplancolweight">6.0</td><td colspan="1" class="scplancolects">6.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td>
+              <td colspan="1" class="scplancolyear">2025/2026</td><td colspan="1" class="scplancolsemester">1 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+      <!-- LEGEND -->
+      <div class="print_fsize08">
+        <p class="mtop2 mbottom0"><strong>Legenda</strong></p>
+        <div style="width: 350px; float: left;">
+          <p class="mvert05"><em>m (): mínimo de créditos no grupo curricular</em></p>
+          <p class="mvert05"><em>c (): créditos contabilizados no grupo curricular</em></p>
+          <p class="mvert05"><em>ca (): créditos aprovados no grupo curricular</em></p>
+          <p class="mvert05"><em>M (): máximo de créditos no grupo curricular</em></p>
+          <p class="mvert05"><em>EX: Época Extraordinária</em></p>
+          <p class="mvert05"><em>AE: Autorização Especial</em></p>
+          <p class="mvert05"><em>EE: Época Especial</em></p>
+          <p class="mvert05"><em>MN: Melhoria de Nota</em></p>
+          <p class="mvert05"><em>EN: Época Normal</em></p>
         </div>
+      </div>
+
+      <div class="cboth"></div>
+      <div id="graph">[ Gráfico de aprovações por semestre ]</div>
+
     </div>
+  </main>
 
-    <div class="main-content">
-        <div class="header">
-            <div class="student-info">
-                <h1>Currículo do Aluno</h1>
-                <div class="student-details">
-                    Aluno: André Duarte Maia (110501) - Bilhete de Identidade (30570349)
-                </div>
-            </div>
-            <div class="student-photo">
-                <img src="student.jpg" alt="Foto do Estudante">
-            </div>
-        </div>
+</div><!-- end page-wrapper -->
 
-        <div class="section">
-            <h2>Detalhes da Matrícula</h2>
-            <table class="details-table">
-                <tr>
-                    <td>Data de Início:</td>
-                    <td>01-09-2023</td>
-                </tr>
-                <tr>
-                    <td>Número:</td>
-                    <td>110501</td>
-                </tr>
-                <tr>
-                    <td>Curso:</td>
-                    <td>Licenciatura Bolonha em Engenharia Naval e Oceânica</td>
-                </tr>
-                <tr>
-                    <td>Estado Actual:</td>
-                    <td>Matriculado</td>
-                </tr>
-                <tr>
-                    <td>Acordo:</td>
-                    <td>Normal</td>
-                </tr>
-                <tr>
-                    <td>Inscrições no Ano Corrente:</td>
-                    <td>13</td>
-                </tr>
-                <tr>
-                    <td>Data de Homologação:</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>Data de Início de Estudos:</td>
-                    <td>14/09/2023</td>
-                </tr>
-                <tr>
-                    <td>Código de Ingresso:</td>
-                    <td>CNA01 - Contingente Geral</td>
-                </tr>
-                <tr>
-                    <td>Fase de Entrada:</td>
-                    <td>1</td>
-                </tr>
-            </table>
-        </div>
+<!-- FOOTER -->
+<footer>
+  <div>
+    <span class="brand-text">FenixEdu</span>
+  </div>
+  <p>
+    <span>© Instituto Superior Técnico</span>
+    <a href="#">Formulário de Suporte</a>
+  </p>
+</footer>
 
-        <div class="section">
-            <div style="background-color: #fff8dc; padding: 10px; margin: 20px 0;">
-                <strong>LENO</strong>
-            </div>
-
-            <table class="courses-table">
-                <thead>
-                    <tr>
-                        <th>1º Ciclo m(180.0), c(24.0), M(183.0)</th>
-                        <th>Aprovado/Reprovado</th>
-                        <th>Nota</th>
-                        <th></th>
-                        <th>Peso</th>
-                        <th>ECTS</th>
-                        <th></th>
-                        <th></th>
-                        <th>Estatísticas</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- 2023/2024, 1º semestre -->
-                    <tr class="course-group">
-                        <td colspan="9" style="background-color: #fff8dc; font-weight: bold;">2023/2024, 1º semestre</td>
-                    </tr>
-                    <tr class="course-row">
-                        <td>Álgebra Linear</td>
-                        <td><span class="status-reprovado">Reprovado (EN)</span></td>
-                        <td>RE</td>
-                        <td>-</td>
-                        <td>6.0</td>
-                        <td>6.0</td>
-                        <td>EN</td>
-                        <td>-</td>
-                        <td><a href="curriculo-clone.html" class="link">Estatísticas</a></td>
-                    </tr>
-                    <tr class="course-row">
-                        <td>Cálculo Diferencial e Integral I</td>
-                        <td><span class="status-reprovado">Reprovado (EN)</span></td>
-                        <td>RE</td>
-                        <td>-</td>
-                        <td>6.0</td>
-                        <td>6.0</td>
-                        <td>EN</td>
-                        <td>-</td>
-                        <td><a href="curriculo-clone.html" class="link">Estatísticas</a></td>
-                    </tr>
-                    <tr class="course-row">
-                        <td>Desenho de Construção Naval</td>
-                        <td><span class="status-approved">Aprovado (EN)</span></td>
-                        <td>15</td>
-                        <td>-</td>
-                        <td>6.0</td>
-                        <td>6.0</td>
-                        <td>EN</td>
-                        <td>-</td>
-                        <td><a href="curriculo-clone.html" class="link">Estatísticas</a></td>
-                    </tr>
-                    <tr class="course-row">
-                        <td>Gestão</td>
-                        <td><span class="status-reprovado">Reprovado (EN)</span></td>
-                        <td>RE</td>
-                        <td>-</td>
-                        <td>3.0</td>
-                        <td>3.0</td>
-                        <td>EN</td>
-                        <td>-</td>
-                        <td><a href="curriculo-clone.html" class="link">Estatísticas</a></td>
-                    </tr>
-                    <tr class="course-row">
-                        <td>Introdução à Engenharia Naval e Oceânica</td>
-                        <td><span class="status-approved">Aprovado (EN)</span></td>
-                        <td>13</td>
-                        <td>-</td>
-                        <td>3.0</td>
-                        <td>3.0</td>
-                        <td>EN</td>
-                        <td>-</td>
-                        <td><a href="curriculo-clone.html" class="link">Estatísticas</a></td>
-                    </tr>
-                    <tr class="course-row">
-                        <td>N9 - Química Geral</td>
-                        <td><span class="status-approved">Aprovado (EN)</span></td>
-                        <td>13</td>
-                        <td>-</td>
-                        <td>6.0</td>
-                        <td>6.0</td>
-                        <td>EN</td>
-                        <td>-</td>
-                        <td><a href="curriculo-clone.html" class="link">Estatísticas</a></td>
-                    </tr>
-
-                    <!-- 2023/2024, 2º semestre -->
-                    <tr class="course-group">
-                        <td colspan="9" style="background-color: #fff8dc; font-weight: bold;">2023/2024, 2º semestre</td>
-                    </tr>
-                    <tr class="course-row">
-                        <td>Cálculo Diferencial e Integral II</td>
-                        <td><span class="status-reprovado">Reprovado (EN)</span></td>
-                        <td>RE</td>
-                        <td>-</td>
-                        <td>6.0</td>
-                        <td>6.0</td>
-                        <td>EN</td>
-                        <td>-</td>
-                        <td><a href="curriculo-clone.html" class="link">Estatísticas</a></td>
-                    </tr>
-                    <tr class="course-row">
-                        <td>Ciência de Materiais</td>
-                        <td><span class="status-reprovado">Reprovado (EN)</span></td>
-                        <td>RE</td>
-                        <td>-</td>
-                        <td>3.0</td>
-                        <td>3.0</td>
-                        <td>EN</td>
-                        <td>-</td>
-                        <td><a href="curriculo-clone.html" class="link">Estatísticas</a></td>
-                    </tr>
-                    <tr class="course-row">
-                        <td>Fundamentos da Programação</td>
-                        <td><span class="status-approved">Aprovado (EN)</span></td>
-                        <td>15</td>
-                        <td>-</td>
-                        <td>6.0</td>
-                        <td>6.0</td>
-                        <td>EN</td>
-                        <td>-</td>
-                        <td><a href="curriculo-clone.html" class="link">Estatísticas</a></td>
-                    </tr>
-                    <tr class="course-row">
-                        <td>HASS I (Introdução à Economia)</td>
-                        <td><span class="status-approved">Aprovado (EN)</span></td>
-                        <td>13</td>
-                        <td>Opcional</td>
-                        <td>3.0</td>
-                        <td>3.0</td>
-                        <td>EN</td>
-                        <td>-</td>
-                        <td><a href="curriculo-clone.html" class="link">Estatísticas</a></td>
-                    </tr>
-                    <tr class="course-row">
-                        <td>Mecânica Aplicada I</td>
-                        <td><span class="status-reprovado">Reprovado (EN)</span></td>
-                        <td>RE</td>
-                        <td>-</td>
-                        <td>6.0</td>
-                        <td>6.0</td>
-                        <td>EN</td>
-                        <td>-</td>
-                        <td><a href="curriculo-clone.html" class="link">Estatísticas</a></td>
-                    </tr>
-
-                    <!-- 2024/2025, 1º semestre -->
-                    <tr class="course-group">
-                        <td colspan="9" style="background-color: #fff8dc; font-weight: bold;">2024/2025, 1º semestre</td>
-                    </tr>
-                    <tr class="course-row">
-                        <td>Álgebra Linear</td>
-                        <td><span class="status-approved">Aprovado (EN)</span></td>
-                        <td>15</td>
-                        <td>-</td>
-                        <td>6.0</td>
-                        <td>6.0</td>
-                        <td>EN</td>
-                        <td>-</td>
-                        <td><a href="curriculo-clone.html" class="link">Estatísticas</a></td>
-                    </tr>
-                    <tr class="course-row">
-                        <td>Cálculo Diferencial e Integral I</td>
-                        <td><span class="status-approved">Aprovado (EN)</span></td>
-                        <td>14</td>
-                        <td>-</td>
-                        <td>6.0</td>
-                        <td>6.0</td>
-                        <td>EN</td>
-                        <td>-</td>
-                        <td><a href="curriculo-clone.html" class="link">Estatísticas</a></td>
-                    </tr>
-                    <tr class="course-row">
-                        <td>Eletromagnetismo e Óptica</td>
-                        <td><span class="status-approved">Rerovado (EN)</span></td>
-                        <td>RE</td>
-                        <td>-</td>
-                        <td>6.0</td>
-                        <td>6.0</td>
-                        <td>EN</td>
-                        <td>-</td>
-                        <td><a href="curriculo-clone.html" class="link">Estatísticas</a></td>
-                    </tr>
-                    <tr class="course-row">
-                        <td>Gestão</td>
-                        <td><span class="status-approved">Aprovado (EN)</span></td>
-                        <td>14</td>
-                        <td>-</td>
-                        <td>3.0</td>
-                        <td>3.0</td>
-                        <td>EN</td>
-                        <td>-</td>
-                        <td><a href="curriculo-clone.html" class="link">Estatísticas</a></td>
-                    </tr>
-                    <tr class="course-row">
-                        <td>Matemática Computacional</td>
-                        <td><span class="status-reprovado">Reprovado (EN)</span></td>
-                        <td>RE</td>
-                        <td>-</td>
-                        <td>6.0</td>
-                        <td>6.0</td>
-                        <td>EN</td>
-                        <td>-</td>
-                        <td><a href="curriculo-clone.html" class="link">Estatísticas</a></td>
-                    </tr>
-                    <tr class="course-row">
-                        <td>Mecânica dos Materiais</td>
-                        <td><span class="status-reprovado">Reprovado (EN)</span></td>
-                        <td>RE</td>
-                        <td>-</td>
-                        <td>6.0</td>
-                        <td>6.0</td>
-                        <td>EN</td>
-                        <td>-</td>
-                        <td><a href="curriculo-clone.html" class="link">Estatísticas</a></td>
-                    </tr>
-
-                    <!-- 2024/2025, 2º semestre -->
-                    <tr class="course-group">
-                        <td colspan="9" style="background-color: #fff8dc; font-weight: bold;">2024/2025, 2º semestre</td>
-                    </tr>
-                    <tr class="course-row">
-                        <td>Arquitectura Naval</td>
-                        <td><span class="status-enrolled">Reprovado (EN)</span></td>
-                        <td>RE</td>
-                        <td>-</td>
-                        <td>6.0</td>
-                        <td>6.0</td>
-                        <td>EN</td>
-                        <td>-</td>
-                        <td><a href="curriculo-clone.html" class="link">Estatísticas</a></td>
-                    </tr>
-                    <tr class="course-row">
-                        <td>Ciência de Materiais</td>
-                        <td><span class="status-enrolled">Aprovado (EN)</span></td>
-                        <td>12</td>
-                        <td>-</td>
-                        <td>6.0</td>
-                        <td>6.0</td>
-                        <td>EN</td>
-                        <td>-</td>
-                        <td><a href="curriculo-clone.html" class="link">Estatísticas</a></td>
-                    </tr>
-                    <tr class="course-row">
-                        <td>Introdução à Mecânica Quântica</td>
-                        <td><span class="status-enrolled">Reprovado (EN)</span></td>
-                        <td>RE</td>
-                        <td>-</td>
-                        <td>3.0</td>
-                        <td>3.0</td>
-                        <td>EN</td>
-                        <td>-</td>
-                        <td><a href="curriculo-clone.html" class="link">Estatísticas</a></td>
-                    </tr>
-                    <tr class="course-row">
-                        <td>Mecânica Aplicada I</td>
-                        <td><span class="status-approved">Aprovado (EN)</span></td>
-                        <td>14</td>
-                        <td>-</td>
-                        <td>6.0</td>
-                        <td>6.0</td>
-                        <td>EN</td>
-                        <td>-</td>
-                        <td><a href="curriculo-clone.html" class="link">Estatísticas</a></td>
-                    </tr>
-                    <tr class="course-row">
-                        <td>0558 - Relatividade</td>
-                        <td><span class="status-enrolled">Aprovado (EN)</span></td>
-                        <td>12</td>
-                        <td>-</td>
-                        <td>3.0</td>
-                        <td>3.0</td>
-                        <td>EN</td>
-                        <td>-</td>
-                        <td><a href="curriculo-clone.html" class="link">Estatísticas</a></td>
-                    </tr>
-                    <tr class="course-row">
-                        <td>Tecnologia de Construção Naval</td>
-                        <td><span class="status-approved">Reprovado (EN)</span></td>
-                        <td>RE</td>
-                        <td>-</td>
-                        <td>6.0</td>
-                        <td>6.0</td>
-                        <td>EN</td>
-                        <td>-</td>
-                        <td><a href="curriculo-clone.html" class="link">Estatísticas</a></td>
-                    </tr>
-                    <tr class="course-row">
-                        <td>Termodinâmica I</td>
-                        <td><span class="status-approved">Reprovado (EN)</span></td>
-                        <td>RE</td>
-                        <td>-</td>
-                        <td>6.0</td>
-                        <td>6.0</td>
-                        <td>EN</td>
-                        <td>-</td>
-                        <td><a href="curriculo-clone.html" class="link">Estatísticas</a></td>
-                    </tr> 
-                    <!-- 2025/2026, 1º semestre -->
-                    <tr class="course-group">
-                        <td colspan="9" style="background-color: #fff8dc; font-weight: bold;">2025/2026, 1º semestre</td>
-                    </tr>
-                    <tr class="course-row">
-                        <td>Estática e Estabilidade de Embarcações</td>
-                        <td><span class="status-enrolled">Aprovado (EN)</span></td>
-                        <td>14</td>
-                        <td>-</td>
-                        <td>6.0</td>
-                        <td>6.0</td>
-                        <td>EN</td>
-                        <td>-</td>
-                        <td><a href="curriculo-clone.html" class="link">Estatísticas</a></td>
-                    </tr>
-                    <tr class="course-row">
-                        <td>Cálculo Diferencial e Integral III</td>
-                        <td><span class="status-enrolled">Reprovado (EN)</span></td>
-                        <td>RE</td>
-                        <td>-</td>
-                        <td>6.0</td>
-                        <td>6.0</td>
-                        <td>EN</td>
-                        <td>-</td>
-                        <td><a href="curriculo-clone.html" class="link">Estatísticas</a></td>
-                    </tr>
-                    <tr class="course-row">
-                        <td>Mecânica de Fluidos I</td>
-                        <td><span class="status-enrolled">Reprovado (EN)</span></td>
-                        <td>RE</td>
-                        <td>-</td>
-                        <td>6.0</td>
-                        <td>6.0</td>
-                        <td>EN</td>
-                        <td>-</td>
-                        <td><a href="curriculo-clone.html" class="link">Estatísticas</a></td>
-                    </tr>
-                    <tr class="course-row">
-                        <td>Resistência e Propulsão</td>
-                        <td><span class="status-enrolled">Aprovado (EN)</span></td>
-                        <td>12</td>
-                        <td>-</td>
-                        <td>6.0</td>
-                        <td>6.0</td>
-                        <td>EN</td>
-                        <td>-</td>
-                        <td><a href="curriculo-clone.html" class="link">Estatísticas</a></td>
-                    </tr>
-                    <tr class="course-row">
-                        <td>Mecânica de Materiais</td>
-                        <td><span class="status-enrolled">Aprovado (EN)</span></td>
-                        <td>14</td>
-                        <td>-</td>
-                        <td>6.0</td>
-                        <td>6.0</td>
-                        <td>EN</td>
-                        <td>-</td>
-                        <td><a href="curriculo-clone.html" class="link">Estatísticas</a></td>
-                    </tr>
-                    <tr class="course-row">
-                        <td>HASS II (Crise Climática e Transição Justa)</td>
-                        <td><span class="status-enrolled">Aprovado (EN)</span></td>
-                        <td>11</td>
-                        <td>Opcional</td>
-                        <td>3.0</td>
-                        <td>3.0</td>
-                        <td>EN</td>
-                        <td>-</td>
-                        <td><a href="curriculo-clone.html" class="link">Estatísticas</a></td>
-                    </tr>
-                    <tr class="course-row">
-                        <td>Matemática Computacional</td>
-                        <td><span class="status-enrolled">Aprovado (EN)</span></td>
-                        <td>12</td>
-                        <td>-</td>
-                        <td>6.0</td>
-                        <td>6.0</td>
-                        <td>EN</td>
-                        <td>-</td>
-                        <td><a href="curriculo-clone.html" class="link">Estatísticas</a></td>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="legend">
-            <h3>Legenda</h3>
-            <div class="legend-item"><strong>m ():</strong> mínimo de créditos no grupo curricular</div>
-            <div class="legend-item"><strong>c ():</strong> créditos contabilizados no grupo curricular</div>
-            <div class="legend-item"><strong>ca ():</strong> créditos aprovados no grupo curricular</div>
-            <div class="legend-item"><strong>M ():</strong> máximo de créditos no grupo curricular</div>
-            <div class="legend-item"><strong>EX:</strong> Época Extraordinária</div>
-            <div class="legend-item"><strong>AE:</strong> Autorização Especial</div>
-            <div class="legend-item"><strong>EE:</strong> Época Especial</div>
-            <div class="legend-item"><strong>MN:</strong> Melhoria de Nota</div>
-            <div class="legend-item"><strong>EN:</strong> Época Normal</div>
-        </div>
-    </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
