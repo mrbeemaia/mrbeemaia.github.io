@@ -1,134 +1,466 @@
+
 <!DOCTYPE html>
 <html dir="ltr" lang="pt_PT">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="Content-Language" content="pt" />
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Language" content="pt" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Description" content="FenixEdu™ is an open-source academic information platform." />
+    <meta name="Keywords" content="FenixEdu, open-source, academic, information, platform, academic administration, higher education, e-learning" />
+    <meta name="Language" content="pt_PT" />
+    <meta name="Author" content="FenixEdu" />
+    <meta name="Email" content="hello@fenixedu.org" />
+    <meta name="Copyright" content="Técnico Lisboa - Instituto Superior Técnico" />
+    <meta name="Distribution" content="Global" />
+    <meta name="Rating" content="General" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5">
+    <!-- OpenGraph Specific Metas -->
+    <meta property="og:title" content="FenixEdu™" />
+    <meta property="og:type" content="application" />
+    <meta property="og:url" content="http://www.fenixedu.org" />
+    <meta property="og:site_name" content="FenixEdu" />
+    <meta property="og:description" content="FenixEdu Learning is an open-source academic information platform." />
+    <meta property="fb:profile_id" content="379238245509413" />
 
-  <!-- 🔧 IMPORTANTE: mantém links relativos a funcionar -->
-  <base href="https://fenix.tecnico.ulisboa.pt/">
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5">
 
-  <title>Clone · Cálculo Diferencial e Integral II</title>
+            <title>Página Inicial · Cálculo Diferencial e Integral II</title>
+    
+    <link href="https://fenix.tecnico.ulisboa.pt/cms/assets/fenixedu-learning-theme/117a7569aa22b88e/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fenix.tecnico.ulisboa.pt/cms/assets/fenixedu-learning-theme/117a7569aa22b88e/css/publicPages.css" rel="stylesheet">
+    <script src="https://fenix.tecnico.ulisboa.pt/cms/assets/fenixedu-learning-theme/117a7569aa22b88e/js/jquery-2.1.1.min.js" type="text/javascript"></script>
 
-  <link href="https://fenix.tecnico.ulisboa.pt/cms/assets/fenixedu-learning-theme/117a7569aa22b88e/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fenix.tecnico.ulisboa.pt/cms/assets/fenixedu-learning-theme/117a7569aa22b88e/css/publicPages.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://fenix.tecnico.ulisboa.pt/cms/assets/fenixedu-learning-theme/117a7569aa22b88e/js/html5shiv.js"></script>
+      <script src="https://fenix.tecnico.ulisboa.pt/cms/assets/fenixedu-learning-theme/117a7569aa22b88e/js/respond.min.js"></script>
+    <![endif]-->
 
-  <script src="https://fenix.tecnico.ulisboa.pt/cms/assets/fenixedu-learning-theme/117a7569aa22b88e/js/jquery-2.1.1.min.js"></script>
-</head>
+    
+    <!-- Header -->
+        <!-- End Header -->
+    
+    <link rel="shortcut icon" type="image/x-icon" href="/api/bennu-portal/configuration/favicon">
+  </head>
 
-<body>
+  <body>
 
-<!-- 🔶 BANNER ADICIONADO -->
-<div style="background:#ffeb3b; padding:12px; text-align:center; font-weight:600;">
-  ⚠️ Clone da página do Fénix — versão modificada
-</div>
+        	<div id="headcounter">
+		<div class="container">
+			
 
-<!-- HEADER -->
-<div id="headcounter">
-  <div class="container">
-    <div class="row" style="padding-top:50px; padding-bottom:25px;">
-      <div class="col-sm-9">
-        <a href="http://tecnico.ulisboa.pt" target="_blank">
-          <img class="logo" src="https://fenix.tecnico.ulisboa.pt/api/bennu-portal/configuration/logo" />
-        </a>
+		<div class="row" style="padding-top:50px; padding-bottom:25px;" >
+			<div class="col-sm-9">
+        <div>
+				  <a href="http://tecnico.ulisboa.pt" target="_blank"><img class="logo" src="/api/bennu-portal/configuration/logo" /></a>
+        </div>
+			</div>
+			<div class="col-sm-3 ">
+        <div >
+	           
+        </div>
+			</div>
+		</div>
+		</div>
+	</div>
+	
+		<div class="container">
+      <div class="row">
+        <div class="col-sm-9">
+          <h2 style="font-weight:300;" class="site-header"><a href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre">Cálculo Diferencial e Integral II</a> <a style="padding-left:20px; font-size:15px; color:#009EE2; font-weight:300" href="#" data-toggle="modal" data-target="#myModal">+
+	Info</a>
+ </h2>
+          
+            <div style="font-size:15px; color:#888; margin-top:5px; margin-bottom:15px;"><small>
+              &nbsp;</small></div>          
+        </div>
+        <div class="col-sm-3 hidden-xs">
+              <div style="margin-top: 25px;">
+                <img src="https://fenix.tecnico.ulisboa.pt/cms/assets/fenixedu-learning-theme/117a7569aa22b88e/images/icon_global.svg" width="13" height="13" style="margin-bottom:2px;margin-right:10px"/>
+                                        <a class="locale-changer active" title="português (Portugal)" onclick="setLang('pt_PT')">pt</a>
+                                        <a class="locale-changer " title="inglês (Reino Unido)" onclick="setLang('en_GB')">en</a>
+                                </div>
+        </div>
       </div>
-    </div>
-  </div>
+	  		</div>
+	
+    <div class="container">
+
+      <main class="row">
+
+        <div class="col-sm-9 main-content" id="content-block">
+          <h3 style="font-weight:300; margin-bottom: 22px; margin-top:0px;">
+            	Últimos anúncios            
+          </h3>
+          
+
+
+			<div>
+			<div>
+				
+    <div>
+        
+                            <h5 style="margin-top: 0; font-weight:400"><a href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/ver-post/map1--notas-provisorias-e-revisao-de-provas">MAP1 | notas provisórias e revisão de provas</a></h5>
+                    <p class="small" style="font-size:11px; color:#888;margin-top:5px; margin-bottom:18px;"> 
+                    <span>10 abril 2026, 09:18 </span>
+                    <span style="padding-left:5px; padding-right:5px; color:#ddd;">&bull;</span>
+                    <span>DIOGO OLIVEIRA E SILVA</span>
+                </p>
+            
+            <p><h5>Bom dia,</h5><h5><br />As notas do MAP1 (antes da revisão de provas) estão disponíveis <a href="https://fenix.tecnico.ulisboa.pt/downloadFile/2252418289030275/Notas%20MAP1.pdf">aqui</a>, e o histograma correspondente está <a href="https://fenix.tecnico.ulisboa.pt/downloadFile/2252418289030276/histograma%20MAP1.pdf">aqui</a>.<br /></h5><h5>A revisão de provas terá lugar <b>na sala P2 (Pav. Matemática)</b> no <b>dia 20 de abril (2ª feira) às 15:30</b>, e obedece às seguintes regras:<br /></h5><h5><i>O aluno deverá trazer uma folha onde poderá solicitar a revisão; cada aluno fará individualmente a revisão da sua prova e eventual solicitação, por escrito e com a devida fundamentação (usando até 20 minutos por prova); a correção da prova não será discutida com os professores presentes; a prova será revista após a revisão de provas, podendo a revisão subir, manter ou descer a classificação, conforme os eventuais erros de correcção detectados.</i></h5><h5>Cumprimentos,</h5><h5>Diogo Oliveira e Silva</h5></p>
+
+            
+        
+    </div><!-- /.blog-post -->
+
+
+				
+								<hr />
+					<h5 style="margin-top: 0; font-weight:400"><a href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/ver-post/salas-de-estudo--resolucao-map1">salas de estudo / resolução MAP1</a></h5>
+					<p class="small" style="font-size:11px; color:#888;margin-top:5px; margin-bottom:18px;"> 
+                    <span>3 abril 2026, 10:40 </span>
+          </p>
+					
+								<hr />
+					<h5 style="margin-top: 0; font-weight:400"><a href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/ver-post/aula-de-problemas-tolerancia-de-ponto">Aula de problemas-Tolerância de ponto</a></h5>
+					<p class="small" style="font-size:11px; color:#888;margin-top:5px; margin-bottom:18px;"> 
+                    <span>1 abril 2026, 19:16 </span>
+          </p>
+					
+								<hr />
+					<h5 style="margin-top: 0; font-weight:400"><a href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/ver-post/tolerancia-de-ponto">tolerância de ponto </a></h5>
+					<p class="small" style="font-size:11px; color:#888;margin-top:5px; margin-bottom:18px;"> 
+                    <span>31 março 2026, 13:56 </span>
+          </p>
+					
+								<hr />
+					<h5 style="margin-top: 0; font-weight:400"><a href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/ver-post/map1--salas-e-materia">MAP1 | salas e matéria</a></h5>
+					<p class="small" style="font-size:11px; color:#888;margin-top:5px; margin-bottom:18px;"> 
+                    <span>23 março 2026, 15:23 </span>
+          </p>
+					
+								
+			</div>
+		</div>
+
+
+          <h3 style="font-weight:300; margin-bottom: 22px; margin-top:45px;">            
+            Corpo Docente            
+          </h3>
+
+	
+									
+	<div class="row" style="margin-top:25px;">
+				<div class="col-sm-1">
+					<img class="img-circle" width="60" src="https://fenix.tecnico.ulisboa.pt/user/photo/ist429204?s=60"/>
+				</div>
+				<div class="col-sm-11" style="margin-top:12px;padding-left:25px;">
+											<a href="https://fenix.tecnico.ulisboa.pt/homepage/ist429204">DIOGO OLIVEIRA E SILVA</a>
+						
+													<p class="badge" style="font-weight:400; background:#aaa; font-size:11px; padding-left:10px; padding-right:10px; margin-left:5px; margin-bottom:0px;">Responsável</p>
+																<div>
+												diogo.oliveira.e.silva@tecnico.ulisboa.pt											</div>
+			</div>
+	</div>
+
+							<hr>
+				
+	<div class="row" style="margin-top:25px;">
+				<div class="col-sm-1">
+					<img class="img-circle" width="60" src="https://fenix.tecnico.ulisboa.pt/user/photo/ist12485?s=60"/>
+				</div>
+				<div class="col-sm-11" style="margin-top:12px;padding-left:25px;">
+											Gabriel Esperança Pires
+													<p class="badge" style="font-weight:400; background:#aaa; font-size:11px; padding-left:10px; padding-right:10px; margin-left:5px; margin-bottom:0px;">Responsável</p>
+																<div>
+												gpires@math.tecnico.ulisboa.pt											</div>
+			</div>
+	</div>
+
+							<hr>
+				
+	<div class="row" style="margin-top:25px;">
+				<div class="col-sm-1">
+					<img class="img-circle" width="60" src="https://fenix.tecnico.ulisboa.pt/user/photo/ist156809?s=60"/>
+				</div>
+				<div class="col-sm-11" style="margin-top:12px;padding-left:25px;">
+											<a href="https://fenix.tecnico.ulisboa.pt/homepage/ist156809">Gonçalo Oliveira</a>
+						
+																<div>
+												galato97@gmail.com											</div>
+			</div>
+	</div>
+
+							<hr>
+				
+	<div class="row" style="margin-top:25px;">
+				<div class="col-sm-1">
+					<img class="img-circle" width="60" src="https://fenix.tecnico.ulisboa.pt/user/photo/ist14003?s=60"/>
+				</div>
+				<div class="col-sm-11" style="margin-top:12px;padding-left:25px;">
+											Helena Mascarenhas
+																<div>
+												helena.mascarenhas@tecnico.ulisboa.pt											</div>
+			</div>
+	</div>
+
+			
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<spanaria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title" id="myModalLabel">
+					More information				</h4>
+			</div>
+			<div class="modal-body">
+				<div role="tabpanel">
+
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active">
+							<a href="#info" aria-controls="home" role="tab" data-toggle="tab">
+								Details							</a>
+						</li>
+						<li role="presentation">
+							<a href="#older" aria-controls="profile" role="tab" data-toggle="tab">
+								Previous Years							</a>
+						</li>
+						<li role="presentation">
+							<a href="#courses" aria-controls="messages" role="tab" data-toggle="tab">
+								Degrees							</a>
+						</li>
+					</ul>
+
+					<!-- Tab panes -->
+					<div class="tab-content">
+
+						<!-- extra information -->
+						<div role="tabpanel" class="tab-pane active" id="info">
+															<h5>Descrição:</h5>
+								Domínio do cálculo diferencial de funções de várias variáveis reais com valores escalares e vetoriais e de integrais múltiplos e de linha, incluindo teoremas fundamentais do cálculo para integrais de linha e 
+integrais duplos, e aplicações geométricas e físicas.
+							
+													</div>
+
+						<!-- Previous execution courses -->
+						<div role="tabpanel" class="tab-pane" id="older">
+							<p>
+																	<ul class="list-unstyled">
+																																<li>
+												<a href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI1036/2024-2025/2-semestre">
+													2024/2025 
+													-
+													2º semestre 
+													--
+													(LEMec21, LEAN)
+												</a>
+											</li>
+																																											<li>
+												<a href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103/2023-2024/2-semestre">
+													2023/2024 
+													-
+													2º semestre 
+													--
+													(LEMec21, LEAN)
+												</a>
+											</li>
+																																											<li>
+												<a href="https://www.math.tecnico.ulisboa.pt/~pmartins/CDI-II/CDI2-22-23.html">
+													2022/2023 
+													-
+													2º semestre 
+													--
+													(LEMec21, LEAN)
+												</a>
+											</li>
+																																											<li>
+												<a href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI10/2021-2022/2-semestre">
+													2021/2022 
+													-
+													2º Semestre 
+													--
+													(LEMec21, LEAN)
+												</a>
+											</li>
+																														</ul>
+															</p>
+						</div>
+
+						<!-- Degrees -->
+						<div role="tabpanel" class="tab-pane" id="courses">
+							<p>
+																	<ul class="list-unstyled">
+																																	<li>Licenciatura Bolonha em Engenharia Mecânica - LEMec 2021</li>
+																																												<li>
+													<a href="https://fenix.tecnico.ulisboa.pt/cursos/lean">
+														Licenciatura Bolonha em Engenharia Naval e Oceânica - LENO 2021													</a>
+												</li>
+																														</ul>
+															</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">
+					Voltar				</button>
+			</div>
+		</div>
+	</div>
 </div>
 
-<!-- TITLE -->
-<div class="container">
-  <div class="row">
-    <div class="col-sm-9">
-      <h2 style="font-weight:300;">
-        <a href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre">
-          Cálculo Diferencial e Integral II
-        </a>
-      </h2>
+        </div>
+        
+
+
+<nav class="col-sm-3" style="padding-left:0px; padding-top:60px;z-index:999; margin-left:-1px;">
+  <!-- REGULAR MENU -->
+            <div class="sidebar-module">
+            
+                  <ul class="nav nav-pills nav-stacked list-unstyled children">
+                              <li class="menuItem open active">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/pagina-inicial">
+      Página Inicial              <a class="rsslink" href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/rss/announcement"><i style="float:right;">&nbsp;</i></a>
+          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/grupos">
+      Grupos          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/avaliacao">
+      Avaliação          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/bibliografia">
+      Bibliografia          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/horario">
+      Horário          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/metodos-de-avaliacao">
+      Métodos de Avaliação          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/objectivos">
+      Objectivos          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/planeamento">
+      Planeamento          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/programa">
+      Programa          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/turnos">
+      Turnos          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/anuncios">
+      Anúncios              <a class="rsslink" href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/rss/announcement"><i style="float:right;">&nbsp;</i></a>
+          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/sumarios">
+      Sumários              <a class="rsslink" href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/rss/summary"><i style="float:right;">&nbsp;</i></a>
+          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/pre-requisitos">
+      Pré-requisitos          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/componente-laboratorial">
+      Componente Laboratorial          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/componente-de-programacao-e-computacao">
+      Componente de Programação e Computação          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/competencias-transversais">
+      Competências Transversais          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/principios-eticos">
+      Princípios Éticos          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/notas">
+      Notas          </a>
+        </li>
+                    </ul>
+          </div>
+            <div class="sidebar-module">
+            
+                  <ul class="nav nav-pills nav-stacked list-unstyled children">
+                              <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/fichas-das-aulas-praticas-990">
+      Fichas das Aulas Práticas          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/exercicios-resolvidos">
+      Exercícios Resolvidos          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/material-de-estudo">
+      Material de Estudo          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/salas-de-estudo">
+      Salas de Estudo          </a>
+        </li>
+                                        <li class="menuItem  ">
+    <a class="item" href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/plataforma-partners">
+      Plataforma Partners          </a>
+        </li>
+                    </ul>
+          </div>
+    
+    <div class="sidebar-module">
     </div>
-  </div>
-</div>
+</nav>
 
-<!-- CONTENT -->
-<div class="container">
+<script type="text/javascript">
+(function() {
+  $('.menuFolder:not(.open)>.children').hide();
+  $('.menuFolder>p').click(function(event){
+    $(this).parent().toggleClass('open');
+    $(this).parent().children('.children').slideToggle();
+    event.preventDefault();
+  });
+  setLang=function(l){$.post('/api/bennu-core/profile/locale/'+l.replace('_', '-')).always(function(){location.reload();})}
+})();
+</script>
 
-  <main class="row">
+      </main><!-- /.row -->
 
-    <div class="col-sm-9">
+    </div><!-- /.container -->
 
-      <h3>Últimos anúncios</h3>
+    <footer class="container" style="border-top:1px solid #ddd; margin-top:30px">
+      <div class="col-sm-9">
+        <a class="brand" href="http://fenixedu.org"><img width="150" height="34" src="https://fenix.tecnico.ulisboa.pt/cms/assets/fenixedu-learning-theme/117a7569aa22b88e/images/logo_fenixedu_footer.svg" alt="Powered by FenixEdu"></a>
+      </div>
 
-      <h5>
-        <a href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/ver-post/map1--notas-provisorias-e-revisao-de-provas">
-          MAP1 | notas provisórias e revisão de provas
-        </a>
-      </h5>
+      <div class="col-sm-3" style="color:#888">
+        <span style="padding-left:15px;">© Instituto Superior Técnico</span>
+      </div>
+      
+    </footer>
 
-      <p>
-        As notas do MAP1 estão disponíveis
-        <a href="https://fenix.tecnico.ulisboa.pt/downloadFile/2252418289030275/Notas%20MAP1.pdf">aqui</a>.
-      </p>
-
-      <hr>
-
-      <h5>
-        <a href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/ver-post/salas-de-estudo--resolucao-map1">
-          salas de estudo / resolução MAP1
-        </a>
-      </h5>
-
-      <hr>
-
-      <h5>
-        <a href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/ver-post/aula-de-problemas-tolerancia-de-ponto">
-          Aula de problemas - Tolerância de ponto
-        </a>
-      </h5>
-
-      <hr>
-
-      <h5>
-        <a href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre/ver-post/tolerancia-de-ponto">
-          tolerância de ponto
-        </a>
-      </h5>
-
-      <hr>
-
-      <h3>Corpo Docente</h3>
-
-      <p><b>Diogo Oliveira e Silva</b> (Responsável)</p>
-      <p><b>Gabriel Esperança Pires</b></p>
-      <p><b>Gonçalo Oliveira</b></p>
-      <p><b>Helena Mascarenhas</b></p>
-
-    </div>
-
-    <!-- SIDEBAR (simplificada mas funcional) -->
-    <div class="col-sm-3">
-
-      <ul>
-        <li><a href="#">Página Inicial</a></li>
-        <li><a href="#">Grupos</a></li>
-        <li><a href="#">Avaliação</a></li>
-        <li><a href="#">Bibliografia</a></li>
-        <li><a href="#">Horário</a></li>
-        <li><a href="#">Anúncios</a></li>
-        <li><a href="#">Notas</a></li>
-      </ul>
-
-    </div>
-
-  </main>
-</div>
-
-<!-- FOOTER -->
-<footer class="container" style="margin-top:40px; border-top:1px solid #ccc; padding-top:20px;">
-  <p>Clone educativo da página Fénix</p>
-</footer>
-
-</body>
+    <script src="https://fenix.tecnico.ulisboa.pt/cms/assets/fenixedu-learning-theme/117a7569aa22b88e/js/bootstrap.min.js" type="text/javascript" async></script>
+  </body>
 </html>
