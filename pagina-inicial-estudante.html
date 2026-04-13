@@ -1,213 +1,996 @@
+
+<!--
+
+    Copyright © 2013 Instituto Superior Técnico
+
+    This file is part of FenixEdu IST Integration.
+
+    FenixEdu IST Integration is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Lesser General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    FenixEdu IST Integration is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public License
+    along with FenixEdu IST Integration.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+
 <!DOCTYPE html>
-<html dir="ltr" lang="pt_PT">
-<head>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html lang="en" class="ie ie9"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html dir="ltr" lang="pt_PT"> <!--<![endif]-->
+  <head>
+
+	<!-- Basic Page Needs -->
 	<meta charset="utf-8">
+	<meta http-equiv="Content-Language" content="pt" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="Description" content="FenixEdu™ is an open-source academic information platform." />
+	<meta name="Keywords" content="FenixEdu, open-source, academic, information, platform, academic administration, higher education, e-learning" />
+	<meta name="Language" content="pt_PT" />
+	<meta name="Robots" content="all" />
+	<meta name="Author" content="FenixEdu" />
+	<meta name="Email" content="hello@fenixedu.org" />
+	<meta name="Copyright" content="Técnico Lisboa — Instituto Superior Técnico" />
+	<meta name="Distribution" content="Global" />
+	<meta name="Rating" content="General" />
+
+	<!-- OpenGraph Specific Metas -->
+	<meta property="og:title" content="FenixEdu™" />
+	<meta property="og:type" content="application" />
+	<meta property="og:url" content="http://www.fenixedu.org" />
+	<meta property="og:site_name" content="FenixEdu" />
+	<meta property="og:description" content="FenixEdu™ is an open-source academic information platform." />
+	<meta property="fb:profile_id" content="379238245509413" />
+
+	<!-- Mobile Specific Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5">
-	<title>Página Inicial · Estudante</title>
-	<link rel="stylesheet" href="https://fenix.tecnico.ulisboa.pt/themes/ashes/css/general.css">
-	<link rel="stylesheet" href="https://fenix.tecnico.ulisboa.pt/themes/ashes/css/style.css">
-	<script src="https://fenix.tecnico.ulisboa.pt/bennu-portal/js/jquery.min.js"></script>
-	<script src="https://fenix.tecnico.ulisboa.pt/themes/ashes/js/bootstrap.min.js"></script>
-	<link rel="shortcut icon" href="https://fenix.tecnico.ulisboa.pt/api/bennu-portal/configuration/favicon">
-	<style>
-	table tr.disabled td { color: #bbb; }
-	table tr.disabled td span.success0 { color: #555; background: #e5e5e5; }
-	</style>
-</head>
-<body>
+
+    <title>Página Inicial · Estudante</title>
+
+    <!-- Bootstrap core CSS -->
+	<link rel="stylesheet" type="text/css" media="screen" href="/themes/ashes/css/general.css">
+    <link href="/themes/ashes/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="/bennu-portal/js/jquery.min.js"></script>
+	<script src="/themes/ashes/js/bootstrap.min.js"></script>
+	<script> setLang = function(l) {
+		$.post('/api/bennu-core/profile/locale/' + l.replace('_', '-')).always(function() { location.reload(); });
+	}
+	</script>
+	
+	<!-- Favicons & TouchIcons-->
+	<link rel="shortcut icon" type="image/x-icon" href="/api/bennu-portal/configuration/favicon">
+
+  </head>
+
+  <body>
+  	<!-- Bar -->
 <div class="navbar navbar-inverse hidden-xs fenixedu-bar">
 	<div class="container-fluid">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="/" target="_blank">Técnico Lisboa</a>
+			<a class="navbar-brand" href="/" target="_blank">Técnico Lisboa</a></li>
 		</div>
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a><img src="https://fenix.tecnico.ulisboa.pt/user/photo/ist1110501?s=20" width="20" height="20" style="margin-right: 10px" class="img-circle"/>André Duarte Maia</a></li>
-				<li class="active"><a href="/logout">Logout</a></li>
-			</ul>
+				<li></li>
+								<li><a><img src="https://fenix.tecnico.ulisboa.pt/user/photo/ist1110501?s=20" width="20" heigth="20" style="margin-right: 10px" class="img-circle"/>André Duarte Maia</a></li>
+								<li class="active"><a href="/logout">Logout</a></li>
+							</ul>
 		</div>
 	</div>
 </div>
-<header class="clearfix" role="banner">
-	<div class="col-sm-2 logo-container text-center">
-		<button type="button" class="navbar-toggle hamburger" data-toggle="collapse" data-target="#topNav">
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		</button>
-		<a href="http://tecnico.ulisboa.pt" target="_blank">
-			<img src="https://fenix.tecnico.ulisboa.pt/api/bennu-portal/configuration/logo" title="Técnico Lisboa" />
-		</a>
-	</div>
-	<nav class="col-sm-10 collapse" id="topNav" role="navigation">
-		<ul class="nav navbar-bottom nav-pills nav-menu">
-			<li><a href="/messaging">Comunicação</a></li>
-			<li class="active"><a href="/student">Estudante</a></li>
-			<li><a href="/personal">Pessoal</a></li>
-			<li><a href="/space-management">Gestão de Espaços</a></li>
-			<li><a href="/fenixedu-smart-forms">Formulários</a></li>
-			<li class="visible-xs"><a href="/logout"><strong>Logout</strong></a></li>
-		</ul>
-	</nav>
-</header>
-<div>
-	<main class="col-sm-10 col-sm-push-2" role="main">
-		<ol class="breadcrumb">
-			<li><a href="/student">Estudante</a></li>
-			<li><a href="/student/start-page">Página Inicial</a></li>
-			<span class="pull-right">
-				<a class="locale-changer active">pt</a>
-				<a class="locale-changer">en</a>
-			</span>
-		</ol>
-		<div id="main-content-wrapper">
-			<div class="hidden-xs" align="center" style="margin-bottom: 15px">
-				<img src="https://fenix.tecnico.ulisboa.pt/images/student_photo1.jpg" alt="Fotografia de estudante" width="185" height="123" class="img-thumbnail" />
-				<img src="https://fenix.tecnico.ulisboa.pt/images/student_photo2.jpg" alt="Fotografia de estudante" width="185" height="123" class="img-thumbnail" />
-				<img src="https://fenix.tecnico.ulisboa.pt/images/student_photo3.jpg" alt="Fotografia de estudante" width="185" height="123" class="img-thumbnail" />
-			</div>
-			<p class="hidden-xs">Nesta área poderá encontrar, de uma forma centralizada, alguns serviços académicos tradicionais, que normalmente se encontram dispersos. O objectivo é que consiga consultar informação de forma rápida e eficiente, acelerando alguns dos processos relacionados com o seu trajecto escolar, e minimizando o tempo despendido na procura de informação. Aos serviços existentes irão sendo adicionados novos serviços ao longo do ano lectivo.</p>
-			<h3 class="mtop15 mbottom05">
-				Licenciatura Bolonha em Engenharia Naval e Oceânica - 1º Semestre 2025/2026
-				<a href="https://fenix.tecnico.ulisboa.pt/cursos/lean" target="_blank">
-					<span style="font-size: 12px; font-weight: normal;">(Link)</span>
+<div id="alerts" style="display: none;">
+</div>
+
+	<header class="clearfix" role="banner">
+		<div class="col-sm-2 logo-container text-center">
+			<button type="button" class="navbar-toggle hamburger" data-toggle="collapse" data-target="#topNav">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+							<a href="http://tecnico.ulisboa.pt" target="_blank">
+					<img src="/api/bennu-portal/configuration/logo" title="Técnico Lisboa" />
 				</a>
-			</h3>
-			<div class="table-responsive">
-			<table class="tstyle1 thlight table table-condensed">
-				<tr style="border-top: 2px solid #ddd;">
-					<th rowspan="1" style="vertical-align: top; padding-right: 2em; text-align: left;">
-						<h4 class="mtop025"><a href="https://fenix.tecnico.ulisboa.pt/disciplinas/CCTJ/2025-2026/1-semestre" target="_blank">Crise Climática e Transição Justa</a></h4>
-					</th>
-					<th></th><th>Data de Realização</th><th>Sala(s)</th><th>Período de Inscrição</th><th></th>
-				</tr>
-				<tr class="clear"><td colspan="5" style="border: none; padding: 0.75em 0; background: #fff;"></td></tr>
-				<tr style="border-top: 2px solid #ddd;">
-					<th rowspan="6" style="vertical-align: top; padding-right: 2em; text-align: left;">
-						<h4 class="mtop025"><a href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI18112/2025-2026/1-semestre" target="_blank">Cálculo Diferencial e Integral III</a></h4>
-					</th>
-					<th></th><th>Data de Realização</th><th>Sala(s)</th><th>Período de Inscrição</th><th></th>
-				</tr>
-				<tr><td>Teste: 1º MAP 45</td><td class="acenter"><span class="color888 smalltxt">2025-10-17 20:00</span></td><td class="acenter"><span class="color888 smalltxt">VA4 VA3 V1.17 V1.16 V1.15 V1.14 C9 C01 PA2 PA1 P13 P12 IA EA2 EA1 QA02.4 QA02.3 QA02.2 QA02.1</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td></tr>
-				<tr><td>Teste: 2º MAP 45</td><td class="acenter"><span class="color888 smalltxt">2025-12-05 20:00</span></td><td class="acenter"><span class="color888 smalltxt">VA4 VA3 V1.17 V1.16 V1.15 V1.14 C9 C01 PA2 PA1 P13 P12 IA EA2 EA1 QA02.4 QA02.3 QA02.2 QA02.1</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td></tr>
-				<tr><td>Exam: CDI18112, CDI10112, CDI7112</td><td class="acenter"><span class="color888 smalltxt">2026-01-19 08:00</span></td><td class="acenter"><span class="color888 smalltxt">VA4 VA3 V1.17 V1.16 V1.15 V1.14 C9 C01 PA2 PA1 P13 P12 IA EA2 EA1 QA02.4 QA02.3 QA02.2 QA02.1</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td></tr>
-				<tr><td>Exam: CDI18112, CDI10112, CDI7112</td><td class="acenter"><span class="color888 smalltxt">2026-02-04 08:00</span></td><td class="acenter"><span class="color888 smalltxt">IA VA4 VA3 V1.17 V1.16 V1.15 V1.14 C9 C01 PA2 PA1 P13 P12 EA2 EA1 QA02.4 QA02.3 QA02.2 QA02.1</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td></tr>
-				<tr><td>Exam: CDI18112, CDI15222, CDI14222, CDI7112, CDI6112, CDI3112, CDI2112</td><td class="acenter"><span class="color888 smalltxt">2026-07-15 13:00</span></td><td class="acenter"><span class="color888 smalltxt">C01 IA</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td></tr>
-				<tr class="clear"><td colspan="5" style="border: none; padding: 0.75em 0; background: #fff;"></td></tr>
-				<tr style="border-top: 2px solid #ddd;">
-					<th rowspan="5" style="vertical-align: top; padding-right: 2em; text-align: left;">
-						<h4 class="mtop025"><a href="https://fenix.tecnico.ulisboa.pt/disciplinas/Ges112/2025-2026/1-semestre" target="_blank">Mecânica de Materiais</a></h4>
-					</th>
-					<th></th><th>Data de Realização</th><th>Sala(s)</th><th>Período de Inscrição</th><th></th>
-				</tr>
-				<tr><td>Exam: Ges112</td><td class="acenter"><span class="color888 smalltxt">2026-01-20 13:00</span></td><td class="acenter"><span class="color888 smalltxt">V1.34 V1.33 V1.32 V1.31 V1.26 V1.25 V1.24 V1.23 V1.17 V1.16 V1.15 V1.14 V1.09 V1.08 V1.07 C9 C01 IA EA2 EA1</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td></tr>
-				<tr><td>Exam: Ges112</td><td class="acenter"><span class="color888 smalltxt">2026-01-20 15:30</span></td><td class="acenter"><span class="color888 smalltxt">V1.34 V1.33 V1.32 V1.31 V1.26 V1.25 V1.24 C9 C01 IA</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td></tr>
-				<tr><td>Exam: Ges112</td><td class="acenter"><span class="color888 smalltxt">2026-02-03 15:30</span></td><td class="acenter"><span class="color888 smalltxt">V1.34 V1.33 V1.32 V1.31 V1.26 V1.25 V1.24 V1.23 V1.17 V1.16 V1.15 V1.09 V1.08 V1.07 C9 C01 IA EA2 EA1</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td></tr>
-				<tr><td>Exam: Ges2112, Ges112</td><td class="acenter"><span class="color888 smalltxt">2026-07-16 15:30</span></td><td class="acenter"><span class="color888 smalltxt">C01 IA</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td></tr>
-				<tr class="clear"><td colspan="5" style="border: none; padding: 0.75em 0; background: #fff;"></td></tr>
-				<tr style="border-top: 2px solid #ddd;">
-					<th rowspan="8" style="vertical-align: top; padding-right: 2em; text-align: left;">
-						<h4 class="mtop025"><a href="https://fenix.tecnico.ulisboa.pt/disciplinas/MC222/2025-2026/1-semestre" target="_blank">Matemática Computacional</a></h4>
-					</th>
-					<th></th><th>Data de Realização</th><th>Sala(s)</th><th>Período de Inscrição</th><th></th>
-				</tr>
-				<tr><td>Exam: MC2112, MC222</td><td class="acenter"><span class="color888 smalltxt">2025-11-03 13:00</span></td><td class="acenter"><span class="color888 smalltxt">V1.26 V1.25 V1.24 V1.23 V1.14 V1.17 V1.16 V1.15</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td></tr>
-				<tr><td>Exam: MC2112, MC222</td><td class="acenter"><span class="color888 smalltxt">2026-02-06 10:30</span></td><td class="acenter"><span class="color888 smalltxt">V1.17 V1.16 V1.15 V1.14</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td></tr>
-				<tr><td>Exam: MC4112, MC3112, MC2112, MC222</td><td class="acenter"><span class="color888 smalltxt">2026-07-17 10:30</span></td><td class="acenter"><span class="color888 smalltxt">IA</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td></tr>
-				<tr class="disabled"><td>Teste: MAP45</td><td class="acenter"><span class="color888 smalltxt">2025-09-25 18:00</span></td><td class="acenter"><span class="color888 smalltxt">IA</span></td><td class="acenter nowrap"><span class="color888 smalltxt">2025-09-12 a 2025-09-22</span></td><td class="acenter nowrap"><span class="color888 smalltxt">Não inscrito</span></td></tr>
-				<tr class="disabled"><td>Teste: 1º MAP 45</td><td class="acenter"><span class="color888 smalltxt">2025-09-30 18:00</span></td><td class="acenter"><span class="color888 smalltxt">C01</span></td><td class="acenter nowrap"><span class="color888 smalltxt">2025-09-12 a 2025-09-22</span></td><td class="acenter nowrap"><span class="success0">Inscrito</span></td></tr>
-				<tr class="disabled"><td>Agrupamento: Projeto</td><td class="acenter"><span class="color888 smalltxt">-</span></td><td class="acenter"><span class="color888 smalltxt">-</span></td><td class="acenter nowrap"><span class="color888 smalltxt">2025-08-31 a 2025-09-11</span></td><td class="acenter nowrap"><span class="color888 smalltxt">Não inscrito</span></td></tr>
-				<tr class="disabled"><td>Agrupamento: Alunos sem grupo</td><td class="acenter"><span class="color888 smalltxt">-</span></td><td class="acenter"><span class="color888 smalltxt">-</span></td><td class="acenter nowrap"><span class="color888 smalltxt">2025-08-31 a 2025-09-11</span></td><td class="acenter nowrap"><span class="color888 smalltxt">Não inscrito</span></td></tr>
-				<tr class="clear"><td colspan="5" style="border: none; padding: 0.75em 0; background: #fff;"></td></tr>
-				<tr style="border-top: 2px solid #ddd;">
-					<th rowspan="3" style="vertical-align: top; padding-right: 2em; text-align: left;">
-						<h4 class="mtop025"><a href="https://fenix.tecnico.ulisboa.pt/disciplinas/MF222/2025-2026/1-semestre" target="_blank">Mecânica dos Fluidos I</a></h4>
-					</th>
-					<th></th><th>Data de Realização</th><th>Sala(s)</th><th>Período de Inscrição</th><th></th>
-				</tr>
-				<tr><td>Exam: MF222</td><td class="acenter"><span class="color888 smalltxt">2026-01-19 13:00</span></td><td class="acenter"><span class="color888 smalltxt">-</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td></tr>
-				<tr><td>Exam: MF222</td><td class="acenter"><span class="color888 smalltxt">2026-02-02 13:00</span></td><td class="acenter"><span class="color888 smalltxt">-</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td></tr>
-				<tr class="clear"><td colspan="5" style="border: none; padding: 0.75em 0; background: #fff;"></td></tr>
-				<tr style="border-top: 2px solid #ddd;">
-					<th rowspan="1" style="vertical-align: top; padding-right: 2em; text-align: left;">
-						<h4 class="mtop025"><a href="https://fenix.tecnico.ulisboa.pt/disciplinas/RP112/2025-2026/1-semestre" target="_blank">Resistência e Propulsão</a></h4>
-					</th>
-					<th></th><th>Data de Realização</th><th>Sala(s)</th><th>Período de Inscrição</th><th></th>
-				</tr>
-				<tr class="clear"><td colspan="5" style="border: none; padding: 0.75em 0; background: #fff;"></td></tr>
-				<tr style="border-top: 2px solid #ddd;">
-					<th rowspan="6" style="vertical-align: top; padding-right: 2em; text-align: left;">
-						<h4 class="mtop025"><a href="https://fenix.tecnico.ulisboa.pt/disciplinas/AL11112/2025-2026/1-semestre" target="_blank">Estática e Estabilidade de Corpos Flutuantes</a></h4>
-					</th>
-					<th></th><th>Data de Realização</th><th>Sala(s)</th><th>Período de Inscrição</th><th></th>
-				</tr>
-				<tr><td>Teste: 1º MAP45</td><td class="acenter"><span class="color888 smalltxt">2025-10-03 20:00</span></td><td class="acenter"><span class="color888 smalltxt">VA4 V1.26 V1.25 V1.24 V1.23 C9 C01 PA1 P13 P12 IA EA2 EA1 QA02.4 QA02.3 QA02.2 QA02.1</span></td><td class="acenter nowrap"><span class="color888 smalltxt">2025-09-24 a 2025-10-01</span></td><td class="acenter nowrap"><span class="success0">Inscrito</span></td></tr>
-				<tr><td>Teste: 2º MAP45</td><td class="acenter"><span class="color888 smalltxt">2025-11-21 20:00</span></td><td class="acenter"><span class="color888 smalltxt">VA4 V1.26 V1.25 V1.24 V1.23 C9 C01 PA2 P13 P12 IA EA2 EA1 QA02.4 QA02.3 QA02.2 QA02.1</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td></tr>
-				<tr><td>Teste: 3º MAP45</td><td class="acenter"><span class="color888 smalltxt">2026-01-09 20:00</span></td><td class="acenter"><span class="color888 smalltxt">VA4 V1.26 V1.25 V1.24 V1.23 C9 C01 PA1 P13 P12 IA EA2 EA1 QA02.4 QA02.3 QA02.2 QA02.1</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td></tr>
-				<tr><td>Exam: AL11112, AL6112</td><td class="acenter"><span class="color888 smalltxt">2026-01-22 08:00</span></td><td class="acenter"><span class="color888 smalltxt">VA4 VA3 V1.17 V1.16 V1.15 V1.14 C9 C01 PA2 PA1 P13 P12 IA EA2 EA1 QA02.4 QA02.3 QA02.2 QA02.1</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td></tr>
-				<tr><td>Exam: AL5112-2, AL11112, AL10112, AL9112, AL7112, AL6112, AL5112, AL2112</td><td class="acenter"><span class="color888 smalltxt">2026-07-16 10:30</span></td><td class="acenter"><span class="color888 smalltxt">C01 IA</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td><td class="acenter nowrap"><span class="color888 smalltxt">-</span></td></tr>
-			</table>
-			</div>
-		</div>
-	</main>
-	<nav class="col-sm-2 col-sm-pull-10" id="context">
-		<ul class="nav nav-pills nav-stacked">
-			<li class="navheader"><strong>Consultar</strong></li>
-			<li><a href="/student/consult/curriculum">Currículo</a></li>
-			<li><a href="/student/consult/calendar">Calendário</a></li>
-			<li><a href="/student/consult/data-share">Cedência de Dados</a></li>
-			<li><a href="/student/consult/phds">Doutoramentos</a></li>
-			<li><a href="/student/consult/statistics">Estatísticas do Aluno</a></li>
-			<li><a href="/student/consult/statutes">Estatutos do Aluno</a></li>
-			<li><a href="/student/consult/time-table">Horário</a></li>
-			<li><a href="/student/consult/sync">Sincronizar</a></li>
-			<li><a href="/student/consult/tutor-info">Tutoria</a></li>
-		</ul>
-		<ul class="nav nav-pills nav-stacked">
-			<li class="navheader"><strong>Participar</strong></li>
-			<li><a href="/student/participate/weekly-workload">Esforço Semanal</a></li>
-			<li><a href="/student/participate/forums">Fóruns das Disciplinas</a></li>
-			<li><a href="/student/participate/outbound-mobility">Mobilidade</a></li>
-			<li><a href="/student/participate/delegate-election">Eleição de Delegados</a></li>
-			<li><a href="/student/participate/inquiry">QUC - Inquéritos</a></li>
-			<li><a href="/student/participate/quc-audit-processes">QUC - Processos de Auditoria</a></li>
-		</ul>
-		<ul class="nav nav-pills nav-stacked">
-			<li class="navheader"><strong>Submeter</strong></li>
-			<li><a href="/student/submit/thesis">Dissertação</a></li>
-			<li><a href="/student/submit/tests">Fichas de Trabalho</a></li>
-			<li><a href="/student/submit/projects">Projectos</a></li>
-		</ul>
-		<ul class="nav nav-pills nav-stacked">
-			<li class="navheader"><strong>Inscrever</strong></li>
-			<li><a href="/student/enroll/enrollment-evaluations-showEvaluations">Avaliações</a></li>
-			<li><a href="/student/enroll/courses">Disciplinas</a></li>
-			<li><a href="/student/enroll/student-groups">Grupos</a></li>
-			<li><a href="/student/enroll/special-season">Época Especial</a></li>
-			<li><a href="/student/enroll/extraordinary-season">Época Extraordinária</a></li>
-			<li><a href="/student/enroll/shift-enrollment">Turmas</a></li>
-		</ul>
-		<ul class="nav nav-pills nav-stacked">
-			<li class="navheader"><strong>Finalistas</strong></li>
-			<li><a href="/student/finalists/studentCandidacies">Candidatura a Dissertação/Projeto</a></li>
-		</ul>
-		<ul class="nav nav-pills nav-stacked">
-			<li class="navheader"><strong>Serviços Académicos</strong></li>
-			<li><a href="/student/academic-services/view-document-requests">Consultar Pedidos</a></li>
-			<li><a href="/student/academic-services/prices">Preçário</a></li>
-			<li><a href="/student/academic-services/registrationSelfService">Gerir Regime Integral/Parcial</a></li>
-		</ul>
-	</nav>
+					</div>
+		<nav class="col-sm-10 collapse" id="topNav" role="navigation">
+			<ul class="nav navbar-bottom nav-pills nav-menu">
+							<li class=""><a href="/messaging">Comunicação</a></li>
+							<li class="active"><a href="/student">Estudante</a></li>
+							<li class=""><a href="/personal">Pessoal</a></li>
+							<li class=""><a href="/space-management">Gestão de Espaços</a></li>
+							<li class="visible-xs"><a href="/logout"><strong>Logout</strong></a></li>
+			</ul>
+		</nav>
+	</header>
+	<div>
+				<main class="col-sm-10 col-sm-push-2" role="main">
+			<ol class="breadcrumb">
+							<li><a href="/student">Estudante</a></li>
+							<li><a href="/student/start-page">Página Inicial</a></li>
+			
+				<span class="pull-right">
+											<a class="locale-changer active" title="português (Portugal)" onclick="setLang('pt_PT')">pt</a>
+											<a class="locale-changer " title="inglês (Reino Unido)" onclick="setLang('en_GB')">en</a>
+									</span>
+			</ol>
+			<div id="main-content-wrapper">
+				
+
+
+
+
+
+
+
+<style>
+table tr.disabled td { color: #bbb; }
+table tr.disabled td span.success0 { color: #555; background: #e5e5e5; }
+</style>
+
+<span class="error"><!-- Error messages go here --></span>
+<div class="hidden-xs" align="center" style="margin-bottom: 15px">
+	<img src="/images/student_photo1.jpg" alt="Fotografia de estudante" width="185" height="123" class="img-thumbnail" />
+	<img src="/images/student_photo2.jpg" alt="Fotografia de estudante" width="185" height="123" class="img-thumbnail" />
+	<img src="/images/student_photo3.jpg" alt="Fotografia de estudante" width="185" height="123" class="img-thumbnail" />
 </div>
-<footer class="clearfix" role="contentinfo">
-	<div class="col-sm-2 text-center">
-		<a class="brand" href="http://fenixedu.org"><img src="https://fenix.tecnico.ulisboa.pt/themes/ashes/img/logo_fenixedu_footer.svg" alt="Powered by FenixEdu"></a>
+<p class="hidden-xs">
+	Nesta área poderá encontrar, de uma forma centralizada, alguns serviços académicos tradicionais, que normalmente se encontram dispersos. O objectivo é que consiga consultar informação de forma rápida e eficiente, acelerando alguns dos processos relacionados com o seu trajecto escolar, e minimizando o tempo despendido na procura de informação. Aos serviços existentes irão sendo adicionados novos serviços ao longo do ano lectivo.
+</p>
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="alert alert-warning">
+		<b>Inscrições</b>
+		
+			<p class="mvert05">LEAN: As inscrições em avaliações de Época Especial decorrem de 2026-07-10 a 2026-07-13.</p>
+		
 	</div>
-	<p class="col-sm-10">
-		<span>© Instituto Superior Técnico</span>
-		<a href="#">Formulário de Suporte</a>
-	</p>
+
+
+
+	
+		<h3 class="mtop15 mbottom05">
+			Licenciatura Bolonha em Engenharia Naval e Oceânica - 2º Semestre 2025/2026
+			
+			<a href="https://fenix.tecnico.ulisboa.pt/cursos/lean" target="_blank">
+				<span style="font-size: 12px; font-weight: normal;">(Link)</span>
+			</a>
+			
+		</h3>
+
+		<div class="table-responsive">
+		<table class="tstyle1 thlight table table-condensed">
+		
+			<tr style="border-top: 2px solid #ddd;">
+				
+
+				
+
+				<th rowspan="1" style="vertical-align: top; padding-right: 2em; text-align: left;">
+					<h4 class="mtop025">
+					<a href="https://fenix.tecnico.ulisboa.pt/disciplinas/ANav3610/2025-2026/2-semestre" target="_blank">
+						Arquitectura Naval
+					</a>
+					</h4>
+				</th>
+				<th></th>
+				<th>Data de Realização</th>
+				<th>Sala(s)</th>
+				<th>Período de Inscrição</th>
+				<th></th>
+			</tr>
+			
+
+			<tr class="clear">
+				<td colspan="5" style="border: none; padding: 0.75em 0; background: #fff;"></td>
+			</tr>
+
+		
+			<tr style="border-top: 2px solid #ddd;">
+				
+
+				
+
+				<th rowspan="2" style="vertical-align: top; padding-right: 2em; text-align: left;">
+					<h4 class="mtop025">
+					<a href="https://fenix.tecnico.ulisboa.pt/disciplinas/CMat23610/2025-2026/2-semestre" target="_blank">
+						Introdução à Mecânica Quântica
+					</a>
+					</h4>
+				</th>
+				<th></th>
+				<th>Data de Realização</th>
+				<th>Sala(s)</th>
+				<th>Período de Inscrição</th>
+				<th></th>
+			</tr>
+			
+				
+					
+					 
+				<tr class="">
+				
+					<td>Exam:
+						CMat23610
+					</td>
+					<td class="acenter"><span class="color888 smalltxt">2026-07-02 15:30</span></td>
+					<td class="acenter"><span class="color888 smalltxt">V1.10
+V1.09
+V1.01
+V0.09
+V0.07
+V0.06
+V0.04
+V0.03
+</span></td>
+					<td class="acenter nowrap"><span class="color888 smalltxt">-</span></td>
+					<td class="acenter nowrap">
+						
+						
+							<span class="color888 smalltxt">
+		
+													
+								-
+							
+							
+							
+							</span>
+						
+					</td>
+			
+				</tr>
+					
+				
+			
+
+			<tr class="clear">
+				<td colspan="5" style="border: none; padding: 0.75em 0; background: #fff;"></td>
+			</tr>
+
+		
+			<tr style="border-top: 2px solid #ddd;">
+				
+
+				
+
+				<th rowspan="6" style="vertical-align: top; padding-right: 2em; text-align: left;">
+					<h4 class="mtop025">
+					<a href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre" target="_blank">
+						Cálculo Diferencial e Integral II
+					</a>
+					</h4>
+				</th>
+				<th></th>
+				<th>Data de Realização</th>
+				<th>Sala(s)</th>
+				<th>Período de Inscrição</th>
+				<th></th>
+			</tr>
+			
+				
+					
+					 
+				<tr class="">
+				
+					<td>Teste:
+						2º MAP45
+					</td>
+					<td class="acenter"><span class="color888 smalltxt">2026-05-08 19:00</span></td>
+					<td class="acenter"><span class="color888 smalltxt">VA4
+VA3
+V1.17
+V1.16
+V1.15
+V1.14
+PA2
+PA1
+P13
+P12
+IA
+C9
+C01
+EA2
+EA1
+QA02.4
+QA02.3
+QA02.2
+QA02.1
+</span></td>
+					<td class="acenter nowrap"><span class="color888 smalltxt">-</span></td>
+					<td class="acenter nowrap">
+						
+						
+							<span class="color888 smalltxt">
+		
+													
+								-
+							
+							
+							
+							</span>
+						
+					</td>
+			
+				</tr>
+					
+				
+					
+					 
+				<tr class="">
+				
+					<td>Exam:
+						CDI1131110, CDI103610, CDI83610
+					</td>
+					<td class="acenter"><span class="color888 smalltxt">2026-06-15 11:00</span></td>
+					<td class="acenter"><span class="color888 smalltxt">QA02.2
+VA4
+VA3
+V1.17
+V1.16
+V1.15
+V1.14
+C9
+C01
+PA2
+PA1
+P13
+P12
+IA
+EA2
+EA1
+QA02.4
+QA02.3
+QA02.1
+</span></td>
+					<td class="acenter nowrap"><span class="color888 smalltxt">-</span></td>
+					<td class="acenter nowrap">
+						
+						
+							<span class="color888 smalltxt">
+		
+													
+								-
+							
+							
+							
+							</span>
+						
+					</td>
+			
+				</tr>
+					
+				
+					
+					 
+				<tr class="">
+				
+					<td>Exam:
+						CDI1131110, CDI103610, CDI83610
+					</td>
+					<td class="acenter"><span class="color888 smalltxt">2026-06-29 13:00</span></td>
+					<td class="acenter"><span class="color888 smalltxt">VA4
+VA3
+V1.17
+V1.16
+V1.15
+V1.14
+C9
+C01
+PA2
+PA1
+P13
+P12
+IA
+EA2
+EA1
+QA02.4
+QA02.3
+QA02.2
+QA02.1
+</span></td>
+					<td class="acenter nowrap"><span class="color888 smalltxt">-</span></td>
+					<td class="acenter nowrap">
+						
+						
+							<span class="color888 smalltxt">
+		
+													
+								-
+							
+							
+							
+							</span>
+						
+					</td>
+			
+				</tr>
+					
+				
+					
+					 
+				<tr class="">
+				
+					<td>Exam:
+						CDI1131110, CDI103610, CDI93610, CDI83610, CDI63610, CDI53610, CDI43610, CDI23610
+					</td>
+					<td class="acenter"><span class="color888 smalltxt">2026-07-17 08:00</span></td>
+					<td class="acenter"><span class="color888 smalltxt">C01
+IA
+</span></td>
+					<td class="acenter nowrap"><span class="color888 smalltxt">-</span></td>
+					<td class="acenter nowrap">
+						
+						
+							<span class="color888 smalltxt">
+		
+													
+								-
+							
+							
+							
+							</span>
+						
+					</td>
+			
+				</tr>
+					
+				
+					
+					 
+				<tr class="disabled">
+				
+					<td>Teste:
+						1º MAP45
+					</td>
+					<td class="acenter"><span class="color888 smalltxt">2026-03-27 19:00</span></td>
+					<td class="acenter"><span class="color888 smalltxt">VA4
+VA3
+V1.17
+V1.16
+V1.15
+V1.14
+PA2
+PA1
+P13
+P12
+IA
+C9
+C01
+EA2
+EA1
+QA02.4
+QA02.3
+QA02.2
+QA02.1
+</span></td>
+					<td class="acenter nowrap"><span class="color888 smalltxt">-</span></td>
+					<td class="acenter nowrap">
+						
+						
+							<span class="color888 smalltxt">
+		
+													
+								-
+							
+							
+							
+							</span>
+						
+					</td>
+			
+				</tr>
+					
+				
+			
+
+			<tr class="clear">
+				<td colspan="5" style="border: none; padding: 0.75em 0; background: #fff;"></td>
+			</tr>
+
+		
+			<tr style="border-top: 2px solid #ddd;">
+				
+
+				
+
+				<th rowspan="5" style="vertical-align: top; padding-right: 2em; text-align: left;">
+					<h4 class="mtop025">
+					<a href="https://fenix.tecnico.ulisboa.pt/disciplinas/MA26610/2025-2026/2-semestre" target="_blank">
+						Termodinâmica
+					</a>
+					</h4>
+				</th>
+				<th></th>
+				<th>Data de Realização</th>
+				<th>Sala(s)</th>
+				<th>Período de Inscrição</th>
+				<th></th>
+			</tr>
+			
+				
+					
+					 
+				<tr class="">
+				
+					<td>Exam:
+						MA26610, MA25610
+					</td>
+					<td class="acenter"><span class="color888 smalltxt">2026-04-17 10:30</span></td>
+					<td class="acenter"><span class="color888 smalltxt">V1.09
+V1.08
+V1.07
+V1.06
+IA
+C9
+C01
+QA02.4
+QA02.3
+QA02.2
+QA02.1
+</span></td>
+					<td class="acenter nowrap"><span class="color888 smalltxt">-</span></td>
+					<td class="acenter nowrap">
+						
+						
+							<span class="color888 smalltxt">
+		
+													
+								-
+							
+							
+							
+							</span>
+						
+					</td>
+			
+				</tr>
+					
+				
+					
+					 
+				<tr class="disabled">
+				
+					<td>Teste:
+						1º MAP45
+					</td>
+					<td class="acenter"><span class="color888 smalltxt">2026-03-06 19:00</span></td>
+					<td class="acenter"><span class="color888 smalltxt">V1.17
+V1.16
+V1.15
+V1.14
+V1.10
+V1.09
+V1.08
+V1.06
+IA
+C9
+C01
+</span></td>
+					<td class="acenter nowrap"><span class="color888 smalltxt">-</span></td>
+					<td class="acenter nowrap">
+						
+						
+							<span class="color888 smalltxt">
+		
+													
+								-
+							
+							
+							
+							</span>
+						
+					</td>
+			
+				</tr>
+					
+				
+					
+					 
+				<tr class="disabled">
+				
+					<td>Teste:
+						2º MAP45
+					</td>
+					<td class="acenter"><span class="color888 smalltxt">2026-03-20 19:00</span></td>
+					<td class="acenter"><span class="color888 smalltxt">V1.34
+V1.33
+V1.32
+V1.31
+V1.26
+V1.25
+V1.24
+IA
+C9
+C01
+</span></td>
+					<td class="acenter nowrap"><span class="color888 smalltxt">-</span></td>
+					<td class="acenter nowrap">
+						
+						
+							<span class="color888 smalltxt">
+		
+													
+								-
+							
+							
+							
+							</span>
+						
+					</td>
+			
+				</tr>
+					
+				
+					
+					 
+				<tr class="disabled">
+				
+					<td>Teste:
+						3º MAP45
+					</td>
+					<td class="acenter"><span class="color888 smalltxt">2026-04-01 19:00</span></td>
+					<td class="acenter"><span class="color888 smalltxt">V1.25
+V1.24
+V1.23
+V1.17
+V1.16
+V1.15
+V1.14
+V1.08
+V1.07
+V1.06
+C9
+C01
+</span></td>
+					<td class="acenter nowrap"><span class="color888 smalltxt">-</span></td>
+					<td class="acenter nowrap">
+						
+						
+							<span class="color888 smalltxt">
+		
+													
+								-
+							
+							
+							
+							</span>
+						
+					</td>
+			
+				</tr>
+					
+				
+			
+
+			<tr class="clear">
+				<td colspan="5" style="border: none; padding: 0.75em 0; background: #fff;"></td>
+			</tr>
+
+		
+			<tr style="border-top: 2px solid #ddd;">
+				
+
+				
+
+				<th rowspan="4" style="vertical-align: top; padding-right: 2em; text-align: left;">
+					<h4 class="mtop025">
+					<a href="https://fenix.tecnico.ulisboa.pt/disciplinas/PEstatisticad83610/2025-2026/2-semestre" target="_blank">
+						Probabilidade e Estatística
+					</a>
+					</h4>
+				</th>
+				<th></th>
+				<th>Data de Realização</th>
+				<th>Sala(s)</th>
+				<th>Período de Inscrição</th>
+				<th></th>
+			</tr>
+			
+				
+					
+					 
+				<tr class="">
+				
+					<td>Exam:
+						PEstatisticad103610, PEstatisticad83610, PEstatisticad53610
+					</td>
+					<td class="acenter"><span class="color888 smalltxt">2026-06-16 13:00</span></td>
+					<td class="acenter"><span class="color888 smalltxt">V1.34
+V1.33
+V1.32
+V1.31
+V1.26
+V1.25
+V1.24
+V1.23
+V1.17
+V1.16
+V1.15
+V1.14
+C9
+C01
+IA
+</span></td>
+					<td class="acenter nowrap"><span class="color888 smalltxt">2026-06-01 a 2026-06-11</span></td>
+					<td class="acenter nowrap">
+						
+						
+							<span class="color888 smalltxt">
+		
+													
+								Não inscrito
+							
+							
+							
+							</span>
+						
+					</td>
+			
+				</tr>
+					
+				
+					
+					 
+				<tr class="">
+				
+					<td>Exam:
+						PEstatisticad103610, PEstatisticad83610, PEstatisticad53610
+					</td>
+					<td class="acenter"><span class="color888 smalltxt">2026-06-30 13:00</span></td>
+					<td class="acenter"><span class="color888 smalltxt">V1.34
+V1.33
+V1.32
+V1.31
+V1.26
+V1.25
+V1.24
+V1.23
+V1.17
+V1.16
+V1.15
+V1.14
+C9
+C01
+IA
+</span></td>
+					<td class="acenter nowrap"><span class="color888 smalltxt">2026-06-17 a 2026-06-25</span></td>
+					<td class="acenter nowrap">
+						
+						
+							<span class="color888 smalltxt">
+		
+													
+								Não inscrito
+							
+							
+							
+							</span>
+						
+					</td>
+			
+				</tr>
+					
+				
+					
+					 
+				<tr class="">
+				
+					<td>Exam:
+						PEstatisticad103610, PEstatisticad93610, PEstatisticad83610, PEstatisticad73610, PEstatisticad53610, PEstatisticad23610
+					</td>
+					<td class="acenter"><span class="color888 smalltxt">2026-07-21 10:30</span></td>
+					<td class="acenter"><span class="color888 smalltxt">C01
+IA
+</span></td>
+					<td class="acenter nowrap"><span class="color888 smalltxt">-</span></td>
+					<td class="acenter nowrap">
+						
+						
+							<span class="color888 smalltxt">
+		
+													
+								-
+							
+							
+							
+							</span>
+						
+					</td>
+			
+				</tr>
+					
+				
+			
+
+			<tr class="clear">
+				<td colspan="5" style="border: none; padding: 0.75em 0; background: #fff;"></td>
+			</tr>
+
+		
+			<tr style="border-top: 2px solid #ddd;">
+				
+
+				
+
+				<th rowspan="1" style="vertical-align: top; padding-right: 2em; text-align: left;">
+					<h4 class="mtop025">
+					<a href="https://fenix.tecnico.ulisboa.pt/disciplinas/TCN3610/2025-2026/2-semestre" target="_blank">
+						Tecnologia de Construção Naval
+					</a>
+					</h4>
+				</th>
+				<th></th>
+				<th>Data de Realização</th>
+				<th>Sala(s)</th>
+				<th>Período de Inscrição</th>
+				<th></th>
+			</tr>
+			
+
+			<tr class="clear">
+				<td colspan="5" style="border: none; padding: 0.75em 0; background: #fff;"></td>
+			</tr>
+
+		
+		</table>
+		</div>
+	
+
+			</div>
+		</main>
+		<nav class="col-sm-2 col-sm-pull-10" id="context">
+												<ul class="nav nav-pills nav-stacked">
+				<li class="navheader"><strong>Consultar</strong></li>
+									<li><a href="/student/consult/curriculum" target="_self">Currículo</a></li>
+									<li><a href="/student/consult/calendar" target="_self">Calendário</a></li>
+									<li><a href="/student/consult/data-share" target="_self">Cedência de Dados</a></li>
+									<li><a href="/student/consult/phds" target="_self">Doutoramentos</a></li>
+									<li><a href="/student/consult/statistics" target="_self">Estatísticas do Aluno</a></li>
+									<li><a href="/student/consult/statutes" target="_self">Estatutos do Aluno</a></li>
+									<li><a href="/student/consult/time-table" target="_self">Horário</a></li>
+									<li><a href="/student/consult/sync" target="_self">Sincronizar</a></li>
+									<li><a href="/student/consult/tutor-info" target="_self">Tutoria</a></li>
+							</ul>
+					<ul class="nav nav-pills nav-stacked">
+				<li class="navheader"><strong>Participar</strong></li>
+									<li><a href="/student/participate/weekly-workload" target="_self">Esforço Semanal</a></li>
+									<li><a href="/student/participate/forums" target="_self">Fóruns das Disciplinas</a></li>
+									<li><a href="/student/participate/outbound-mobility" target="_self">Mobilidade</a></li>
+									<li><a href="/student/participate/delegate-election" target="_self">Eleição de Delegados</a></li>
+									<li><a href="/student/participate/inquiry" target="_self">QUC - Inquéritos</a></li>
+									<li><a href="/student/participate/quc-audit-processes" target="_self">QUC - Processos de Auditoria</a></li>
+							</ul>
+					<ul class="nav nav-pills nav-stacked">
+				<li class="navheader"><strong>Submeter</strong></li>
+									<li><a href="/student/submit/thesis" target="_self">Dissertação</a></li>
+									<li><a href="/student/submit/tests" target="_self">Fichas de Trabalho</a></li>
+									<li><a href="/student/submit/projects" target="_self">Projectos</a></li>
+							</ul>
+					<ul class="nav nav-pills nav-stacked">
+				<li class="navheader"><strong>Inscrever</strong></li>
+									<li><a href="/student/enroll/enrollment-evaluations-showEvaluations" target="">Avaliações</a></li>
+									<li><a href="/student/enroll/courses" target="_self">Disciplinas</a></li>
+									<li><a href="/student/enroll/student-groups" target="_self">Grupos</a></li>
+									<li><a href="/student/enroll/special-season" target="_self">Época Especial</a></li>
+									<li><a href="/student/enroll/extraordinary-season" target="">Época Extraordinária</a></li>
+									<li><a href="/student/enroll/shift-enrollment" target="_self">Turmas</a></li>
+							</ul>
+					<ul class="nav nav-pills nav-stacked">
+				<li class="navheader"><strong>Finalistas</strong></li>
+									<li><a href="/student/finalists/studentCandidacies" target="_self">Candidatura a Dissertação/Projeto</a></li>
+							</ul>
+					<ul class="nav nav-pills nav-stacked">
+				<li class="navheader"><strong>Serviços Académicos</strong></li>
+									<li><a href="/student/academic-services/view-document-requests" target="_self">Consultar Pedidos</a></li>
+									<li><a href="/student/academic-services/prices" target="_self">Preçário</a></li>
+									<li><a href="/student/academic-services/registrationSelfService" target="">Gerir Regime Integral/Parcial</a></li>
+							</ul>
+				</nav>
+			</div>
+		<footer class="clearfix" role="contentinfo" >
+		<div class="col-sm-2 text-center">
+			<a class="brand" href="http://fenixedu.org"><img src="/themes/ashes/img/logo_fenixedu_footer.svg" alt="Powered by FenixEdu XXX"></a>
+		</div>
+		<p class="col-sm-10">
+			<span>© Instituto Superior Técnico</span>
+			<a href="" onclick="openSupport(); return false;">
+				Formulário de Suporte			</a>
+		</p>
 </footer>
-</body>
+<div class="modal fade" id="supportModal"></div>
+<script>
+	openSupport = function() {
+		$('#supportModal').load('/themes/ashes-ist/supportModal.jsp'); $('#supportModal').modal('show');
+		window.current$functionality = '7400228653057';
+	};
+
+	var alertString = '' ;
+	if (alertString !== "") {
+		var alerts = JSON.parse(alertString);
+		var alertDiv = document.getElementById('alerts');
+		var i = 0;
+		for (var alert of alerts) {
+
+			var tag = alert.type;
+			var color = tag === 'success' ? '#d9ffb3' : tag === 'info' ? '#ccffff' : tag === 'warning' ? '#ffe0b3' : tag === 'danger' ? '#ffb3d1' : '#f2f2f2';
+			alertDiv.innerHTML += '<div style="background-color: ' + color + '; font-weight: bolder; text-align: center; vertical-align: middle; padding-top: 15px; padding-bottom: 15px;">' + alert.message.replaceAll('##X##', i) + '</div>';
+
+			fetch("/api/bennu-portal/alert/count", {
+				method: "POST",
+				body: JSON.stringify(alert),
+				headers: {
+					"Content-type": "application/json; charset=UTF-8",
+					"X-Requested-With": "XMLHttpRequest"
+				}
+			});
+
+			i++;
+		}
+		if (alerts.length > 0) {
+			alertDiv.style.display = "block";
+		}
+	}
+
+	function dismissAlert(num) {
+		if (alertString !== "") {
+			var alerts = JSON.parse(alertString);
+			var alert = alerts[num];
+
+			fetch("/api/bennu-portal/alert/dismiss", {
+				method: "POST",
+				body: JSON.stringify(alert),
+				headers: {
+					"Content-type": "application/json; charset=UTF-8",
+					"X-Requested-With": "XMLHttpRequest"
+				}
+			});
+
+			var linkElement = document.getElementById('alert' + num);
+			linkElement.parentElement.style.display = "none";
+		}
+		return;
+	}
+</script>
+	</body>
 </html>
