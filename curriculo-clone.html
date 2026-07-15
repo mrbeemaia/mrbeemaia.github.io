@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html dir="ltr" lang="pt_PT">
 <head>
@@ -30,6 +31,7 @@
     }
     .fenixedu-bar .nav-right li a:hover { color: #fff; background-color: #080808; }
     .fenixedu-bar .nav-right li.active a { color: #fff; background-color: #080808; }
+    .mini-avatar { width: 20px; height: 20px; margin-right: 8px; border-radius: 50%; object-fit: cover; vertical-align: -5px; }
 
     /* MAIN HEADER */
     header {
@@ -40,8 +42,7 @@
       width: 200px; flex-shrink: 0; display: flex; align-items: center;
       justify-content: center; padding: 10px 15px; border-right: 1px solid #e7e7e7;
     }
-    .logo-text { font-size: 22px; font-weight: bold; color: #006fba; font-family: Georgia, serif; display: block; }
-    .logo-sub { font-size: 9px; color: #888; display: block; letter-spacing: 1px; text-transform: uppercase; text-align: right; }
+    .logo-container img { display: block; max-height: 44px; max-width: 160px; }
     nav#topNav { flex: 1; display: flex; align-items: flex-end; padding: 0 10px; }
     .nav-menu { list-style: none; display: flex; }
     .nav-menu li a {
@@ -156,16 +157,25 @@
     footer .brand-text { font-size: 14px; font-weight: bold; color: #006fba; opacity: 0.7; }
     footer a { color: #337ab7; margin-left: 12px; }
     footer span { margin-right: 5px; }
+
+    @media (max-width: 760px) {
+      .logo-container { width: 132px; }
+      nav#context { width: 160px; padding: 7px; }
+      main { padding: 12px; }
+      .col-sm-6 { width: 100%; }
+      .scplancolyear, .scplancolsemester, .scplancolstatistics { display: none !important; }
+      .fenixedu-bar .nav-right li:first-child { display: none; }
+    }
   </style>
 </head>
-<body>
+<body data-fenix-page="https://fenix.tecnico.ulisboa.pt/student/consult/curriculum">
 
 <!-- TOP BAR -->
 <div class="fenixedu-bar">
   <div class="inner">
     <a class="navbar-brand" href="#">Técnico Lisboa</a>
     <ul class="nav-right">
-      <li><a>André Duarte Maia</a></li>
+      <li><a><img class="mini-avatar" src="https://fenix.tecnico.ulisboa.pt/user/photo/ist1110501?s=20" alt="" />André Duarte Maia</a></li>
       <li class="active"><a href="#">Logout</a></li>
     </ul>
   </div>
@@ -174,8 +184,8 @@
 <!-- MAIN HEADER -->
 <header>
   <div class="logo-container">
-    <a href="#">
-      <img src="ist-logo.png" alt="Técnico Lisboa" style="max-height: 45px; max-width: 160px;" />
+    <a href="https://tecnico.ulisboa.pt/" target="_blank" rel="noopener" aria-label="Técnico Lisboa">
+      <img src="https://fenix.tecnico.ulisboa.pt/api/bennu-portal/configuration/logo" alt="Técnico Lisboa" />
     </a>
   </div>
   <nav id="topNav">
@@ -258,8 +268,7 @@
       <h2>Currículo do Aluno</h2>
 
       <div style="float: right;">
-        <img class="img-thumbnail" src="student.jpg" width="100" height="100"
-          onerror="this.style.background='#eee';" />
+        <img class="img-thumbnail" src="https://fenix.tecnico.ulisboa.pt/user/photo/ist1110501?s=100" width="100" height="100" alt="Fotografia do aluno" />
       </div>
 
       <p class="mvert2">
@@ -580,7 +589,7 @@
               <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
             </tr>
             <tr class="scplanenrollment">
-              <td colspan="14" class="scplancolcurricularcourse"><a href="#" target="_blank">Termodinâmica I</a></td>
+              <td colspan="14" class="scplancolcurricularcourse"><a href="https://fenix.tecnico.ulisboa.pt/disciplinas/T53610/2025-2026/2-semestre" target="_blank" rel="noopener">Termodinâmica</a></td>
               <td colspan="1">-</td><td colspan="1">-</td>
               <td colspan="1" class="scplancolenrollmentstate">Reprovado (EN)</td>
               <td colspan="1" class="scplancolgrade">RE</td><td colspan="1" class="scplancolweight">6.0</td><td colspan="1" class="scplancolects">6.0</td>
@@ -660,6 +669,56 @@
               <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
             </tr>
 
+            <!-- 2025/2026 2S - planeamento pessoal -->
+            <tr class="scplangroup">
+              <td colspan="14" class="scplancolcurricularcourse">2025/2026, 2º semestre</td>
+              <td colspan="1"></td><td colspan="1"></td><td colspan="1"></td>
+              <td colspan="1" class="scplancolgrade">Nota</td><td colspan="1" class="scplancolweight">Peso</td><td colspan="1" class="scplancolects">ECTS</td>
+              <td colspan="6"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="https://fenix.tecnico.ulisboa.pt/disciplinas/ANav3610/2025-2026/2-semestre" target="_blank" rel="noopener">Arquitetura Naval</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td><td colspan="1" class="scplancolenrollmentstate">Inscrito (EN)</td>
+              <td colspan="1" class="scplancolgrade">—</td><td colspan="1" class="scplancolweight">6.0</td><td colspan="1" class="scplancolects">6.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td><td colspan="1" class="scplancolyear">2025/2026</td><td colspan="1" class="scplancolsemester">2 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="https://fenix.tecnico.ulisboa.pt/disciplinas/IMQ3610/2025-2026/2-semestre" target="_blank" rel="noopener">Introdução à Mecânica Quântica</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td><td colspan="1" class="scplancolenrollmentstate">Inscrito (EN)</td>
+              <td colspan="1" class="scplancolgrade">—</td><td colspan="1" class="scplancolweight">6.0</td><td colspan="1" class="scplancolects">6.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td><td colspan="1" class="scplancolyear">2025/2026</td><td colspan="1" class="scplancolsemester">2 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="https://fenix.tecnico.ulisboa.pt/disciplinas/CDI103610/2025-2026/2-semestre" target="_blank" rel="noopener">Cálculo Diferencial e Integral II</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td><td colspan="1" class="scplancolenrollmentstate">Inscrito (EN)</td>
+              <td colspan="1" class="scplancolgrade">—</td><td colspan="1" class="scplancolweight">6.0</td><td colspan="1" class="scplancolects">6.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td><td colspan="1" class="scplancolyear">2025/2026</td><td colspan="1" class="scplancolsemester">2 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="https://fenix.tecnico.ulisboa.pt/disciplinas/T53610/2025-2026/2-semestre" target="_blank" rel="noopener">Termodinâmica</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td><td colspan="1" class="scplancolenrollmentstate">Inscrito (EN)</td>
+              <td colspan="1" class="scplancolgrade">—</td><td colspan="1" class="scplancolweight">6.0</td><td colspan="1" class="scplancolects">6.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td><td colspan="1" class="scplancolyear">2025/2026</td><td colspan="1" class="scplancolsemester">2 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="https://fenix.tecnico.ulisboa.pt/disciplinas/PEstatisticad83610/2025-2026/2-semestre" target="_blank" rel="noopener">Probabilidade e Estatística</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td><td colspan="1" class="scplancolenrollmentstate">Inscrito (EN)</td>
+              <td colspan="1" class="scplancolgrade">—</td><td colspan="1" class="scplancolweight">6.0</td><td colspan="1" class="scplancolects">6.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td><td colspan="1" class="scplancolyear">2025/2026</td><td colspan="1" class="scplancolsemester">2 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+            <tr class="scplanenrollment">
+              <td colspan="14" class="scplancolcurricularcourse"><a href="https://fenix.tecnico.ulisboa.pt/disciplinas/TCN3610/2025-2026/2-semestre" target="_blank" rel="noopener">Tecnologia de Construção Naval</a></td>
+              <td colspan="1">-</td><td colspan="1">-</td><td colspan="1" class="scplancolenrollmentstate">Inscrito (EN)</td>
+              <td colspan="1" class="scplancolgrade">—</td><td colspan="1" class="scplancolweight">6.0</td><td colspan="1" class="scplancolects">6.0</td>
+              <td colspan="1" class="scplancolenrolmentevaluationtype">EN</td><td colspan="1" class="scplancolyear">2025/2026</td><td colspan="1" class="scplancolsemester">2 Sem.</td>
+              <td class="scplancolstatistics"><a href="#">Estatísticas</a></td><td colspan="3"></td>
+            </tr>
+
           </tbody>
         </table>
       </div>
@@ -699,5 +758,47 @@
   </p>
 </footer>
 
+  <script>
+    (() => {
+      const base = 'https://fenix.tecnico.ulisboa.pt';
+      const routes = {
+        'Currículo': '/student/consult/curriculum',
+        'Calendário': '/student/consult/calendar',
+        'Cedência de Dados': '/student/consult/data-share',
+        'Doutoramentos': '/student/consult/phds',
+        'Estatísticas do Aluno': '/student/consult/statistics',
+        'Estatutos do Aluno': '/student/consult/statutes',
+        'Horário': '/student/consult/time-table',
+        'Sincronizar': '/student/consult/sync',
+        'Tutoria': '/student/consult/tutor-info',
+        'Esforço Semanal': '/student/participate/weekly-workload',
+        'Fóruns das Disciplinas': '/student/participate/forums',
+        'Mobilidade': '/student/participate/outbound-mobility',
+        'Eleição de Delegados': '/student/participate/delegate-election',
+        'QUC - Inquéritos': '/student/participate/inquiry',
+        'QUC - Processos de Auditoria': '/student/participate/quc-audit-processes',
+        'Dissertação': '/student/submit/thesis',
+        'Fichas de Trabalho': '/student/submit/tests',
+        'Projectos': '/student/submit/projects',
+        'Avaliações': '/student/enroll/enrollment-evaluations-showEvaluations',
+        'Disciplinas': '/student/enroll/courses',
+        'Grupos': '/student/enroll/student-groups',
+        'Época Especial': '/student/enroll/special-season',
+        'Época Extraordinária': '/student/enroll/extraordinary-season',
+        'Turmas': '/student/enroll/shift-enrollment',
+        'Candidatura a Dissertação/Projeto': '/student/finalists/studentCandidacies',
+        'Consultar Pedidos': '/student/academic-services/view-document-requests',
+        'Preçário': '/student/academic-services/prices',
+        'Gerir Regime Integral/Parcial': '/student/academic-services/registrationSelfService'
+      };
+
+      document.querySelectorAll('#context a').forEach((link) => {
+        const route = routes[link.textContent.trim()];
+        if (route) link.href = base + route;
+      });
+    })();
+  </script>
 </body>
 </html>
+
+
